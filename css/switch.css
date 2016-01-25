@@ -1,0 +1,67 @@
+
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+#switch-1 ul { list-style: none; }
+#switch-1 .nav { overflow: hidden; }
+#switch-1 .nav li {  float: left;}
+#switch-1 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images13/sub_menu_1_1.gif)  }
+
+#switch-2 ul { list-style: none; }
+#switch-2 .nav { overflow: hidden; }
+#switch-2 .nav li {  float: left;}
+#switch-2 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images13/sub_menu_1_1.gif)  }
+
+#switch-3 ul { list-style: none; }
+#switch-3 .nav { overflow: hidden; }
+#switch-3 .nav li {  float: left;}
+#switch-3 li a.current,#example-two li a.current:hover { float:left; width:44px; height:27px; margin: 0 5px 0 0; padding: 3px 0 0 0; color:#FFF; text-align:center; background-image:url(../images13/sub_menu_2_1.gif) }
+
+#switch-4 ul { list-style: none; }
+#switch-4 .nav { overflow: hidden; }
+#switch-4 .nav li {  float: left;}
+#switch-4 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images13/sub_menu_1_1.gif)  }
+
+.ct_menu{float:left; height: 32px; width: 95%; padding: 8px 0 0 10px; }
+.ct_menu li {float:left;}
+.ct_menu li a{float:left; width:72px; height:25px; *height:24px; margin: 0 5px 0 0; padding: 1px 0 0 0; *padding: 2px 0 0 0; text-align:center; background-image:url(../images13/ft_tag_bg_1_2.gif)}
+.ct_menu li.hover a{float:left; width:72px; height:25px; *height:24px; margin: 0 5px 0 0; padding: 1px 0 0 0; *padding: 2px 0 0 0; color:#FFF; text-align:center; background-image:url(../images13/ft_tag_bg_1_1.gif)}
+.ct_menu li.hover A:link {color: #fff; TEXT-DECORATION: none}
+.ct_menu li.hover A:visited {color: #fff; TEXT-DECORATION: none}
+.ct_menu li.hover A:hover {color: #fff;TEXT-DECORATION:none}
+
+.jjgd-list,.dkb-list{padding:0 0 0 4px}
+
+.gd_menu{float:left; height: 32px; width: 95%; padding: 8px 0 0 10px; }
+.gd_menu li {float:left; font-size:14px;}
+.gd_menu li a{float:left; color:#333; width:88px; height:25px; *height:24px; margin: 0 5px 0 0; padding: 1px 0 0 0; *padding: 2px 0 0 0; text-align:center; }
+.gd_menu li a:link { TEXT-DECORATION: none}
+.gd_menu li a:visited { TEXT-DECORATION: none}
+.gd_menu li a:hover,.gd_menu li.hover {TEXT-DECORATION:none;background:url(../images13/ys-25.jpg) no-repeat 0 20px;}
+
+.dkb_menu{float:left;  width:84px; overflow:hidden  }
+.dkb-p-box{ float:left ; }
+.dkb-p-box img{ width:210px; height:115px;}
+.dkb_menu li {float:left;}
+
+
+.dkb_menu li a{height:24px;line-height:24px;  text-align:right; margin-top:5px   }
+.dkb_menu li.hover a{float:left; height:24px; line-height:24px;color:#FFF;   }
+.dkb_menu li.hover A:link,.dkb_menu li.hover A:visited {color: #fff; }
+.dkb_menu li.hover a,.dkb_menu li a:hover {color: #fff;background-color:#e13c26; font-weight:bold; text-decoration:none;  }
+
+
+
+.dkb_menu li a.dkb1{ width:55px; display:block; padding-right:12px;  text-align:right; position:relative; left:19px;*left:17px;  } 
+.dkb_menu li a.dkb2{ width:65px;   display:block; padding-right:12px; text-align:right; position:relative; left:10px;*left:8px;  } 
+.dkb_menu li a.dkb3{ width:75px;   display:block; padding-right:14px; text-align:right; }
+.dkb_menu li a.dkb4{ width:75px;   display:block; padding-right:14px; text-align:right;  }
+  
+
+.rslides_tabs { float:right; text-align: center; width:73px; height:30px; margin-top:5px;}
+.xggz-box .rslides_tabs li {height:30px;display: inline; float:left; margin-top:12px; margin-right:1px;margin-left:1px; }
+.rslides_tabs a {background:url(../images13/s-dot.jpg) no-repeat 0 4px;height:30px; display:block;width: 9px;}
+.rslides_tabs .rslides_here a {  background:url(../images13/s-dot-c.jpg) no-repeat 0 4px; }
+
+.rslides_tabs .rslides1_t1 a { height:30px; padding-top:0px; background:url(../images13/s-dot-t.jpg) no-repeat; height: 15px; display:block;    width: 15px; padding-right:3px;}
+.rslides_tabs .rslides1_b1 a { height:30px; padding-top:0px;background:url(../images13/s-dot-b.jpg) no-repeat; height: 15px; display:block;    width: 15px; padding-left:3px;}

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title><trs_document field='DOCTITLE' autocolor='FALSE'>标题</trs_document>_<trs_curpage only='true' autolink='false'>当前栏目</trs_curpage>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>"/>
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>"/>
+    <link href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/public.fix.css" rel="stylesheet" type="text/css">
+    <link href="http://www.p5w.net/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public14-v1.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="http://www.p5w.net/gdaty/datalist.js"></script>
+    <script type="text/javascript" src="../js/func.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="mininav">
+    <script type="text/javascript">
+        mininav();
+    </script>
+</div>
+<div class="banner"></div>
+<!--主体内容-->
+<div class="width1100 main_content">
+    <!--rightbox-->
+    <div class="main_content_right clearfix">
+        <div class="box-moder clearfix">
+            <h3><span class="span-mark"></span>栏目简介</h3>
+            <p>
+                <script type="text/javascript">
+                    getChannelDesc();
+                </script>
+            </p>
+        </div>
+
+        <div class="box-moder clearfix">
+            <h3><span class="span-mark"></span>下期体验公司</h3>
+            <script type="text/javascript">
+                getNextIssue();
+            </script>
+        </div>
+
+        <div class="box-moder clearfix">
+            <h3><span class="span-mark"></span>报名入口</h3>
+            <script type="text/javascript">
+                getSignup();
+            </script>
+        </div>
+
+        <div class="box-moder clearfix">
+            <h3><span class="span-mark"></span>往期回顾</h3>
+            <script type="text/javascript">
+                dataist10();
+            </script>
+        </div>
+
+        <div class="box-moder clearfix">
+            <ul>
+                <li class="noborder"><trs_appendix mode="pic" index="8" autolink="false" seperator="" upload="false" extra='width="250" height="250"'>附件</trs_appendix></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--left_content-->
+    <div class="left_box">
+        <div class="left_box1 clearfix">
+            <h1>第<i><TRS_Document Field="docpeople" autolink="false">首页标题</TRS_Document></i>期：<TRS_DOCUMENT field="doctitle" autolink="true" target="_blank">文档标题</TRS_DOCUMENT></h1>
+
+            <div class="left_box_content">
+                <i>全文</i>
+                <div class="source">
+                    <span>
+                        来源：<ins><trs_document field="DOCSOURCE" autolink="TRUE" target="_blank" linkalt="FALSE">来源</trs_document></ins>
+                        发布时间：<trs_document field="DOCRELTIME" dateformat="yyyy年MM月dd日 HH:mm">发布时间</trs_document>
+                    </span>
+                </div>
+                <div class="text">
+                    <TRS_Document Field="DOCHTMLCON">正文</TRS_Document>
+                </div>
+            </div>
+
+            <div class="left_box_video">
+                <i>视频</i>
+                <div class="left_box_video2">
+                    <object width="690" height="518" id="Object1" name="videoPlayer" type="application/x-shockwave-flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+                        <param name="movie" value="http://www.p5w.net/tradingday/swfs/qjwjryvideo.swf" IGNOREAPD="1" />
+                        <param name="quality" value="high" />
+                        <param name="bgcolor" value="#000000" />
+                        <param name="allowfullscreen" value="true" />
+                        <param name="flashvars" value="&flvSrc=http://lxvideo.p5w.net/<TRS_DOCUMENT field='SubDocTitle'>副标题</TRS_DOCUMENT>&adtime=1&picload=&adlink=&preroll=qjwadv002.flv&postroll=qjwadv001.flv&flvAuto=true" />
+                        <embed src="http://www.p5w.net/tradingday/swfs/qjwjryvideo.swf" IGNOREAPD="1" width="690" height="518" id="Embed1" quality="high" bgcolor="#000000" name="videoPlayer" allowfullscreen="true" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" flashvars="&flvSrc=http://lxvideo.p5w.net/<TRS_DOCUMENT field='SubDocTitle'>副标题</TRS_DOCUMENT>&adtime=1&picload=&adlink=&preroll=qjwadv002.flv&postroll=qjwadv001.flv&flvAuto=true"></embed>
+                    </object>
+                </div>
+            </div>
+
+            <div class="left_box_pic clearfix">
+                <div class="left_box_pic_banner"><a href="http://www.p5w.net/tradingday/gdaty/index.html" target="_blank"><img src="../images/ggao.jpg" width="690" height="150" alt="全景网" /></a></div>
+                <!--<i>图文</i>
+                <ul>
+                    <li><trs_appendix mode="pic" index="1" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                    <li><trs_appendix mode="pic" index="2" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                    <li><trs_appendix mode="pic" index="3" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                    <li><trs_appendix mode="pic" index="4" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                    <li><trs_appendix mode="pic" index="5" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                    <li><trs_appendix mode="pic" index="6" autolink="false" seperator="" upload="false" extra='width="235" height="163"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix></li>
+                </ul>-->
+            </div>
+
+            <div class="left_box_link">
+                <i>报道</i>
+                <ul><TRS_RELNEWS startpos="0" mode="USERDEF">
+                    <li>- <TRS_DOCUMENT FIELD="DOCTITLE" num="38" target="_blank">相关文档</TRS_DOCUMENT></li></TRS_RELNEWS>
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+
+            <div class="left_box_comment">
+                <i>评论</i>
+                <div class="left_box_comment2">
+                    <div id="SOHUCS"></div>
+                    <script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js"></script>
+                    <script type="text/javascript">
+                        var _config = { categoryId : '963.1451873096'};
+                        window.changyan.api.config({
+                            appid: 'cyqCGM0j5',
+                            conf: 'prod_1ce927f875864094e3906a4a0b5ece68'
+                        });
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <!--end-->
+
+    </div>
+</div>
+<div class="clearfloat"></div>
+<script type="text/javascript">
+    foot14();
+    shareButton();
+</script>
+<div class="footer">
+    <p></p>
+</div>
+</body>
+</html>

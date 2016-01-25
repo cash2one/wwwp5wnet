@@ -1,0 +1,22 @@
+a:link { color: #383838;TEXT-DECORATION: none}
+a:visited { color: #383838;TEXT-DECORATION: none}
+a:hover { color:#c80000;/*color:#383838;*/TEXT-DECORATION: underline}
+.cate-tag a{ float:left;  padding: 0px 10px 0px 13px; *padding: 1px 10px 0px 13px; margin: 0 0 0 -10px; *margin: -1px 0 0 -10px; _margin: 0 0 0 -10px;font-size: 13px; font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå"; color:#FFF; background-image: url(../images13/tag_red.gif); background-repeat: no-repeat;}
+.cate-tag a:link, .cate-tag a:visited, .cate-tag a:hover { color: #fff;TEXT-DECORATION: none}
+.style-selet-1 {float:left;width: 13px; height:12px; margin: 2px 7px 0 0; background-image:url(../images13/black_style_btn_2.gif); background-repeat: no-repeat; cursor:pointer;}
+.style-selet-2 {float:left; width: 13px; height:12px; margin: 2px 3px 0 0; background-image:url(../images13/blue_style_btn_1.gif); background-repeat: no-repeat; cursor:pointer;}
+.mod-title a:hover,.mod-title a:link,.mod-title a:visited{color:#383838;}
+.ft-title a:hover,.ft-title a:link,.ft-title a:visited{color:#383838;}
+.ct-title a:hover,.ct-title a:link,.ct-title a:visited{color:#383838;}
+.ft-title a:hover, .ct-title a:hover {color:#c80000;}
+.flink-title a:hover,.flink-title a:link,.flink-title a:visited{color:#383838;}
+.mag-title a:hover,.mag-title a:link,.mag-title a:visited{color:#383838;}
+.hd-star-title a:hover,.hd-star-title a:link,.hd-star-title a:visited{color:#383838;}
+.headlines h1 a:link,.headlines h1 a:visited{color:#c80000;}
+.headlines h1 a:hover{color:#c80000;}
+/*
+.headlines li a, .headlines li a:link, .headlines li a:visited {color:#878787;}
+.headlines li a:hover {color:#c80000;}
+.mod-head-zy a, .mod-head-zy a:link, .mod-head-zy a:visited {color:#878787;}
+.mod-head-zy a:hover {color:#c80000;}
+*/

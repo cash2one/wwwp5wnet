@@ -1,0 +1,32 @@
+.top-link { padding-top:15px  }
+#user-menu { float :left; }
+.menu li.item { margin-right: 2px; float: left; display: inline; position: relative; }
+.menu .link { padding: 0px 7px; height: 29px; line-height: 29px; display: inline-block; position: relative; color: #fff; text-decoration: none; }
+.nav-right .menu .link { color: #fff; }
+.menu .link:hover { color: #fff; text-decoration: none; }
+.menu .link span { padding-right: 11px; position: relative; z-index: 25; cursor: pointer; _zoom: 1; }
+.menu .link span em { border-width: 3px 3px 0px; border-style: solid dashed dashed; border-color: rgb(255, 255, 255) transparent transparent; top: 50%; height: 0px; right: 0px; line-height: 0; font-size: 0px; margin-top: -2px; position: absolute; cursor: pointer; }
+.menu li.current { background: #b93c3c; }
+.menu .link-hover em {font-style:normal;}
+.menu .link-hover:hover { background-image: url(../images13/hover_bg.png); background-color: transparent; _background: #b93c3c; }
+.menu li.hover { margin-right: 0px; margin-left: -1px; position: relative; z-index: 22; box-shadow: 1px 1px 3px rgba(0,0,0,0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
+.menu li.hover .link { background-image: url(../images13/layer_bg.png); background-color: transparent; padding: 0px 8px 0px 7px; text-decoration: none; margin-bottom: -1px; border: solid 1px #000; border-bottom: none; position: relative; z-index: 24; _background: #FFF; color: rgb(99, 99, 99); }
+.menu li.hover .link:hover { color: rgb(99, 99, 99); }
+.menu li.hover .link span { top: -1px; }
+.menu li.hover .link span em { border-color: rgb(99, 99, 99) transparent transparent; }
+.menu .welcome { height :28px;line-height :28px; color:#f0f0f0 }
+.menu-sublist { background: url(../images13/layer_bg.png); padding: 3px 2px; border: 1px solid #000; width: 125px; position: absolute; z-index: 21; _background: #FFF; left: 0; top: 29px; display: none; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-border-radius-bottomright: 3px; -moz-border-radius-topright: 3px; -webkit-border-bottom-right-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-right-radius: 3px; }
+.menu-sublist .solid-line { background: rgb(223, 220, 220); margin: 3px 0px; height: 1px; line-height: 1px; overflow: hidden; font-size: 0px; }
+.menu-sublist .border { padding: 4px 0px 9px 0; margin: 0 0px 0 0px; zoom: 1; background-image: url(../images13/menu_title_bg.png); background-color: transparent; background-repeat: repeat-x; background-position: 0% 0%; }
+.menu div ul div { top: 0; left: 0; margin-left: 120px; z-index: 26; border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; }
+.menu div ul div ul { }
+.menu div ul li { padding: 0; z-index: 24; position: relative; }
+.menu div ul li span { padding-right: 60px; position: relative; z-index: 25; cursor: pointer; _zoom: 1; }
+.menu div ul li span em { border-width: 3px 0px 3px 3px; border-style: solid dashed dashed; border-color: transparent #000 transparent; top: 50%; height: 0px; right: 0px; line-height: 0; font-size: 0px; margin-top: -2px; position: absolute; cursor: pointer; }
+.menu div ul li a:hover span em { border-color: transparent #fff transparent; }
+.menu ul.ul-list { }
+.menu ul.ul-list li { height: 25px; line-height: 25px; vertical-align: bottom; }
+.menu ul.ul-list li a { color: rgb(99, 99, 99); padding-left: 10px; display: block; zoom: 1; }
+.menu ul.ul-list li a:visited { color: rgb(99, 99, 99); padding-left: 10px; display: block; zoom: 1; }
+.menu ul.ul-list li a:link, .ul-list li a:active { color :rgb(99, 99, 99) } 
+.menu ul.ul-list li a:hover { text-decoration: none; background-color: #b93c3c; color: #fff; }

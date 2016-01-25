@@ -1,0 +1,17 @@
+a:link { color: #004276;TEXT-DECORATION: none}
+a:visited { color: #004276;TEXT-DECORATION: none}
+a:hover { color:#c80000;/*color:#004276;*/TEXT-DECORATION: underline}
+.cate-tag a{ float:left;  padding: 0px 10px 0px 13px; *padding: 1px 10px 0px 13px; margin: 0 0 0 -10px; *margin: -1px 0 0 -10px; _margin: 0 0 0 -10px;font-size: 13px; font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå"; color:#FFF; background-image: url(../images13/tag_blue.gif); background-repeat: no-repeat;}
+.cate-tag a:link, .cate-tag a:visited, .cate-tag a:hover { color: #fff;TEXT-DECORATION: none}
+.style-selet-1 {float:left;width: 13px; height:12px; margin: 2px 7px 0 0; background-image:url(../images13/black_style_btn_1.gif); background-repeat: no-repeat; cursor:pointer;}
+.style-selet-2 {float:left; width: 13px; height:12px; margin: 2px 3px 0 0; background-image:url(../images13/blue_style_btn_2.gif); background-repeat: no-repeat; cursor:pointer;}
+.headlines h1 a:link,.headlines h1 a:visited{color:#004276;}
+.headlines h1 a:hover{color:#c80000;/*color:#004276;*/}
+.headlines{ color:#004276;}
+.ct-list{ color:#004276;}
+/*
+.headlines li a, .headlines li a:link, .headlines li a:visited {color:#004276;}
+.headlines li a:hover {color:#c80000;}
+.mod-head-zy a, .mod-head-zy a:link, .mod-head-zy a:visited {color:#004276;}
+.mod-head-zy a:hover {color:#c80000;}
+*/

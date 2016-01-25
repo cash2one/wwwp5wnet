@@ -1,0 +1,103 @@
+ol, ul { list-style: none outside none; }
+
+.clearfloat { display: block; clear: both; content: ""; visibility: hidden; height: 0; line-height: 0; font-size: 0px; }
+
+.Pdialog { padding: 0px; position: absolute; left: 46%; top: 20%; font-size: 12px; z-index: 1001; }
+.Pdialog-main { width: 450px; z-index: 120; position: relative; border: 1px solid #aaa; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); border-radius: 5px; background-color: #fff; overflow: hidden; }
+.Pdialog-iframe { width: auto; }
+.Pdialog-main .Pdialog-title { background-color: #eaeaea; color: #000; font-size: 12px; font-weight: bold; padding: 5px 15px; line-height: 25px; text-align: left; border-bottom: solid 1px #cccccc; border-radius: 5px 5px 0 0; }
+.Pdialog-main .Pdialog-content { padding: 0px; background-color: #fff; }
+.Pdialog-main .Pdialog-close { position: absolute; right: 8px; top: 8px; height: 18px; width: 18px; }
+.Pdialog-main a.pop-close { text-indent: -10000px; outline: 0 none; background: url(http://www.p5w.net/images13/dialog.gif) no-repeat 0px 0px; cursor: pointer; height: 18px; width: 18px; display: block; }
+.Pdialog-main a.pop-close:hover { background-position: -18px 0; }
+.Pdialog-content .Pdialog-item-tab { background: #fff; height: 28px; border-bottom-color: #cccccc; border-bottom-width: 1px; border-bottom-style: solid; margin-top: 8px; }
+.Pdialog-content .Pdialog-item-tab ul { height: 28px; border-top-color: #000; border-top-width: 0px; border-top-style: solid; position: relative; }
+.Pdialog-content .Pdialog-item-tab li { font-size: 14px; font-family: 'Microsoft YaHei',SimSun; width: 45px; height: 27px; text-align: center; color: rgb(102, 102, 102); border: solid 1px #ccc; border-bottom: 0; background-color: #f5f5f5; float: left; font-size-adjust: none; font-stretch: normal; margin-left: 5px;list-style:none; }
+.MacOS .Pdialog-content .Pdialog-item-tab li { font-family: 'lucida Grande', Verdana; }
+.Pdialog-content .Pdialog-item-tab li.selected { height: 28px; color: rgb(51, 51, 51); position: relative; background-color: #fff; margin-bottom: -1px; }
+.Pdialog-content .Pdialog-item-tab li a { line-height: 28px; }
+.Pdialog-content .Pdialog-item-tab a:link { color: rgb(102, 102, 102); text-decoration: none; }
+.Pdialog-content .Pdialog-item-tab a:visited { color: rgb(102, 102, 102); text-decoration: none; }
+.Pdialog-content .Pdialog-item-tab a:hover { color: rgb(141, 0, 0); text-decoration: none; }
+.Pdialog-content .Pdialog-item-tab .selected a:link { color: rgb(51, 51, 51); text-decoration: none; }
+.Pdialog-content .Pdialog-item-tab .selected a:visited { color: rgb(51, 51, 51); text-decoration: none; }
+.Pdialog-content .Pdialog-item-tab .selected a:hover { color: rgb(141, 0, 0); text-decoration: none; }
+.Pdialog-content .Pdialog-item-panel { border: 0; padding: 5px; }
+.Pdialog-item { display: none; }
+.Pdialog-content .Pdialog-hot { padding: 3px 0 0 5px; display: block; }
+.Pdialog-content .Pdialog-hot a { line-height: 25px; }
+.Pdialog-item { display: none; }
+.Pdialog-item li { display: inline-block; line-height: 22px; padding: 2px 0 2px 25px; border-bottom: 1px dashed #ddd; width: 92%; }
+.Pdialog-item li strong { float: left; color: #b5cfd9; font-size: 16px; margin-left: -20px; padding-top: 3px; }
+.Pdialog-item a { font-size: 12px !important; color: #0271b9 !important; float: left; margin-right: 5px; padding: 0 5px; text-decoration: none; white-space: nowrap; outline: 0 none; border: 1px solid #fff; }
+.Pdialog-item a:hover, .Pdialog-item a.selected { background: #2680e9; color: #fff !important; text-decoration: none !important; border-color: #66acff #094fa1 #094fa1 #66acff; border-style: solid; border-width: 1px; }
+.Pdialog-frame { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: #000; opacity: 0; filter: alpha(opacity = 0); z-index: 110; }
+.Pdialog-frame-wrap { width: 100%; height: 100%; position: absolute; top: -6px; left: -6px; background: #000; opacity: 0; filter: alpha(opacity = 0); z-index: 110; }
+.Pdialog-shadow { width: 100%; height: 100%; position: absolute; top: 2px; left: 4px; background: #000; opacity: .2; filter: alpha(opacity = 30); z-index: 110; }
+.Pdialog-shadow-wrap { width: 100%; height: 100%; position: absolute; top: -6px; left: -6px; background: #000; opacity: .2; filter: alpha(opacity = 30); z-index: 110; }
+.tips_login { line-height: 20px; text-align: center; filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=6 ); -moz-box-shadow: 0px 0px #969696; -webkit-box-shadow: 0px 0px 5px #969696; box-shadow: 0px 0px 5px #969696; background: none repeat scroll 0 0 #fffcd2; border: 1px solid #d4d4d4; color: black; left: 30%; padding: 8px 20px 5px; position: absolute; top: 40%; z-index: 100; }
+.tips_login .close { text-indent: -10000px; cursor: pointer; width: 18px; height: 18px; position: absolute; right: -1px; top: 0; display: block; }
+.p5w-dialog { border: 1px solid #aaa; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); border-radius: 5px; background-color: #fff; padding: 0px; }
+.p5w-dialog .ui-dialog-titlebar { background-image: none; background-color: #eaeaea; color: #000; font-size: 12px; font-weight: bold; padding: 5px 15px; line-height: 25px; height: 25px; text-align: left; border: 0; border-bottom: solid 1px #cccccc; border-radius: 5px 5px 0 0; }
+.p5w-dialog .ui-dialog-titlebar .ui-button-text { padding: 0; }
+.p5w-dialog .ui-dialog-title { float: left; margin: .1em 0; white-space: nowrap; width: auto; overflow: hidden; text-overflow: ellipsis; }
+.p5w-dialog .ui-dialog-titlebar-close { position: absolute; right: .5em; top: 50%; width: 21px; margin: -10px 0 0 0; padding: 1px; height: 20px; }
+.p5w-dialog .ui-dialog-content { overflow: hidden; }
+.p5w-dialog .ui-dialog-buttonpane { border-radius: 0 0 5px 5px; }
+
+.mininav { font-family: SimSun,Tahoma; font-size: 12px; background: url(http://www.p5w.net/images13/bg.jpg) repeat-x left top; width: 100%; height: 38px; padding-top: 0px; z-index: 99; }
+.mininav .nc { margin: 0px auto; width: 1020px; position: relative; height: 36px; }
+.mininav .nav { margin-left: -8px; float: left; }
+.mininav .nav li { padding: 0px 9px 0px 8px; line-height: 36px; float: left; }
+.mininav .nav a:link, .mininav .nav a:visited { color: #383838; text-decoration: none; }
+.mininav .nav a:hover { color: #c80000; text-decoration: underline; }
+.mininav .nav_login { position: absolute; top: 2px; right: 10px; width: 300px; text-align: right; }
+.mininav .nav_login a, .mininav .nav_login a:link, .mininav .nav_login a:visited, .mininav .nav_login a:active { color: #383838; }
+.mininav .nav_login a:hover { color: #c80000; }
+.mininav .nav_login .loginarea { height: 32px; line-height: 32px; }
+
+.copyright{ width:100%; border-top:1px solid #ddd; background-color:#f8f8f8; height:165px; position:relative}
+.copyright-in{ width:1020px; margin:0 auto; padding-top: 30px;}
+.c-logo,.c-text,.c-img{ float:left; margin-right:30px; }
+.c-text{ width:500px; font-size:12px; line-height:22px; color:#8f8f8f}
+.c-img{ width:200px;}
+
+.tj_www_ccc { clear: both; text-align: center; display: none; height: 1px; overflow: hidden; }
+
+/*.gototop-wrap { display: none; }*/
+.gototop { height: 36px; margin: 5px 0 0; position: static; width: 58px; }
+.gototop .toplink { background: url(http://www.p5w.net/images13/gototop.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0); display: block; height: 36px; text-indent: -9999px; width: 58px; }
+.gototop .toplink:hover { background: url(http://www.p5w.net/images13/gototop.png) no-repeat scroll -58px 0 rgba(0, 0, 0, 0); }
+.gototop-wrap { bottom: 60px; left: 50%; margin: 0 0 0 560px; position: fixed; width: 50px; z-index: 100; }
+.gototop-wrap-resize { margin-left: 460px; }
+
+.pages { height: auto; margin: 50px auto 20px; padding-bottom: 0; }
+.p5w-page { text-align: center; margin: 1em auto 2em; }
+.p5w-page a, .p5w-page a:link, .p5w-page a:visited, .p5w-page a:hover, .p5w-page a:active { text-decoration: none; display: inline-block; line-height: 14px; padding: 6px 10px; color: #000; border: 1px solid #d0d0d0; margin: 0 2px; }
+.p5w-page a:hover, .p5w-page a.on { background: #d21300; color: #fff; border: 1px solid #d21300; text-decoration: none; }
+.p5w-page a.on { font-weight: bold; }
+.p5w-page a.unclick, .p5w-page a.unclick:hover { background: none; border: 1px solid #ccc; color: #999; cursor: default; }
+
+.left_box_content { position: relative; padding-left: 80px; padding-bottom:50px; }
+.left_box_content i { display: inline-block; width: 43px; height: 32px; background: url(../images/lefticon.png) no-repeat 0 -445px; position: absolute; top: 60px; left: 0px; z-index: 100; text-align: center; padding-top: 35px; color: #ccc; padding-top: 50px; }
+.left_box_content .source { margin-left: 140px; margin-bottom: 20px; text-align: center; color: #696969; line-height: 28px; display: inline-block; }
+.left_box_content .source span { display: block; font-family: SimSun; }
+.left_box_content .source ins { text-decoration: none; }
+.left_box_content .source ins a { text-decoration: none; }
+
+.left_box_content .text { font-size: 16px; color: #252525; line-height: 28px; font-family: SimSun; margin-bottom: 20px; }
+.left_box_content .text p { margin-bottom: 12px; padding-bottom: 0; padding-left: 0; }
+.left_box_content .text, .left_box_content .text p, .left_box_content .text div { word-wrap: break-word; word-break: break-all; font-size: 16px; color: #252525; line-height: 28px; font-family: SimSun; }
+.left_box_content .text a, .left_box_content .text a:link, .left_box_content .text a:visited, .left_box_content .text a:active { color: #004276; text-decoration: underline; }
+.left_box_content .text a:hover { color: #c80000; text-decoration: none; }
+.left_box_content .text table, .left_box_content .text td, .left_box_content .text th { border-collapse: collapse; border-spacing: 0; border: 1px solid #2b2b2b; }
+
+.left_box_pic_banner {}
+.left_box_video, .left_box_video2 { height: auto; z-index: 0; }
+.left_box_video object, .left_box_video embed { z-index: 0; }
+
+.left_box_comment { position:relative; padding-left:80px;  padding-bottom:10px; }
+.left_box_comment > i {display:inline-block; width:43px; height:43px; text-align:center; padding-top:40px;  background:url(../images/lefticon.png) no-repeat 0 -574px;  position:absolute; top:10px; left:0px; z-index:100; color:#ccc;}
+
+
+.fancybox-skin { z-index: 9999; }

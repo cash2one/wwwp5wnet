@@ -1,0 +1,280 @@
+﻿var tips = "\u4e3b\u529e\u65b9\u6b22\u8fce\u6295\u8d44\u8005\u7684\u5e7f\u6cdb\u610f\u89c1\uff0c\u4f46\u4e3a\u4e86\u5171\u540c\u8425\u9020\u548c\u8c10\u7684\u4ea4\u6d41\u6c14\u6c1b\uff0c\u9700\u63d0\u9192\u6295\u8d44\u8005\u7684\u662f\uff0c\u6295\u8d44\u8005\u63d0\u51fa\u7684\u95ee\u9898\u5185\u5bb9\u4e0d\u5f97\u542b\u6709\u4e2d\u4f24\u4ed6\u4eba\u7684\u3001\u8fb1\u9a82\u6027\u7684\u3001\u653b\u51fb\u6027\u7684\u3001\u7f3a\u4e4f\u4e8b\u5b9e\u4f9d\u636e\u7684\u548c\u8fdd\u53cd\u5f53\u524d\u6cd5\u5f8b\u7684\u8bed\u8a00\u4fe1\u606f\uff0c\u76f8\u5173\u91cd\u590d\u95ee\u9898\u4e0d\u518d\u63d0\u4ea4\u3002";
+function setTab(name, cursel, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var con = document.getElementById("con_" + name + "_" + i);
+        menu.className = i == cursel ? "hover" : "";
+        con.style.display = i == cursel ? "block" : "none";
+    }
+}
+// 对Date的扩展，将 Date 转化为指定格式的String   
+// 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符，   
+// 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)   
+// 例子：   
+// (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423   
+// (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18   
+Date.prototype.format = function (fmt) { //author: meizz   
+    var o = {
+        "M+": this.getMonth() + 1,                 //月份   
+        "d+": this.getDate(),                    //日   
+        "h+": this.getHours(),                   //小时   
+        "m+": this.getMinutes(),                 //分   
+        "s+": this.getSeconds(),                 //秒   
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度   
+        "S": this.getMilliseconds()             //毫秒   
+    };
+    if (/(y+)/.test(fmt))
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt))
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+};
+String.prototype.replaceAll = function (s1, s2) {
+    return this.replace(new RegExp(s1, "gm"), s2);
+};
+String.prototype.len = function () {
+    return this.replace(/[^\x00-\xff]/g, "aa").length;
+};
+String.prototype.sub = function (n, o) {
+    var r = /[^\x00-\xff]/g;
+    if (this.replace(r, "mm").length <= n) return this;
+    // n = n - 3;  
+    var p = o ? o : "";
+    var m = Math.floor(n / 2);
+    for (var i = m; i < this.length; i++) {
+        if (this.substr(0, i).replace(r, "mm").length >= n) {
+            var rs = this.substr(0, i) + p;
+            return rs;
+        }
+    } return this;
+};
+function setCookie(name, value, expires, path, domain) {
+    var str = name + "=" + escape(value);
+    if (expires) {
+        if (expires == 'never') {
+            expires = 100 * 365 * 24 * 60;
+        }
+        var exp = new Date();
+        exp.setTime(exp.getTime() + expires * 60 * 1000);
+        str += "; expires=" + exp.toGMTString();
+    }
+    if (path) {
+        str += "; path=" + path;
+    }
+    if (domain) {
+        str += "; domain=" + domain;
+    }
+    document.cookie = str;
+}
+function getCookie(name) {
+    var tmp, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)", "gi");
+    tmp = reg.exec(unescape(document.cookie));
+    if (tmp) { return (tmp[2]); }
+    return null;
+}
+//改变正文文字大小
+function chgFontSize(obj, size) {
+    setCookie("NewsContent_FontSize", size, 9999);
+    $(obj).css({ 'font-size': size + 'px' });
+    $(obj+' p').css({ 'font-size': size + 'px' });
+}
+
+
+$(function () {
+    $('div.source div').remove();
+    $('div.zwright div.news').eq(0).addClass('first');
+    $('div.footer-left').html('<br />经营许可证号 粤B2-20050249号  信息传播视听节目许可证号：1903034<br />全景网络有限公司版权所有  未经全景网书面授权，请勿转载内容或建立镜像，违者依法必究！<br />Copyright&copy;2000-2013 Panorama Network Co., Ltd, All Rights Reserved<br />');
+    //删除编辑器的样式
+    var trs_editor=$('DIV.TRS_Editor');
+    trs_editor.removeClass('TRS_Editor');
+    $('style', trs_editor).eq(0).remove();
+    $('.text style').remove();
+	//替换正文中的<BR>为<p>
+	$('.text br').each(function() {
+	    $(this).after($('<p></p>')).remove();
+    });
+	//没有翻页的删除翻页标签<div>
+	var nbpage = $('.number');
+	var curs= $('.current', nbpage);
+	if (curs.length<=0){
+		nbpage.remove();
+	}
+    //新财富手机报广告添加至正文下
+	$('.down').after('<div class="xcfsjb"><img src="/images13/xcfsjb.jpg" alt="全景网" /></div>');
+
+    //登录接口地址
+    var loginSrv = 'http://company.p5w.net';
+
+    $.getJSON(loginSrv + '/api/getuserinfo.asp?timespan=' + Math.floor(new Date().getSeconds()) + '&callback=?', function (data) {
+        if (data.result == 0) {
+            //已登录
+            var uid = data.data.uid;
+            var uname = decodeURIComponent(data.data.username);
+            var url_forward = encodeURIComponent(document.location.href);
+            var panel = $('.rq-tab-4').empty();
+            $('<span>欢迎您，' + uname + '</span>(<a href="http://company.p5w.net/logout.asp?forward=' + encodeURIComponent(url_forward) + '">退出</a>)&nbsp;&nbsp;<label>提问请遵守相关规定</label>').appendTo(panel);
+            $('#question-questioner').val(uname);
+        } else {
+
+        }
+    });
+    //easyloader.theme = "metro";
+    //using(['messager'], function () { });
+    var irmSrv = "http://irm.p5w.net/";
+    var ircsSrv = "http://ircs.p5w.net/";
+
+    var reg = new RegExp(/^[036]\d{5}$/);
+    var code = $('#stockcode').val();
+    code = code.split(";")[0];
+    $('#stockcode').val(code);
+    var jsonurl = irmSrv + 'ssgs/S' + code + '/p5w_questions.js';
+    var hascode = true;
+    if (!reg.test(code)) {
+        jsonurl = irmSrv + "gszz/p5w_mostcompany.js";
+        hascode = false;
+    }
+    using([jsonurl], function () {
+        var qdata = null;
+        if (hascode) {
+            qdata = lastreplies;
+        } else {
+            qdata = latestRepliedQuestions;
+        }
+        if (typeof qdata != "undefined") {
+            var panel = $('.qa-question-list');
+            panel.empty();
+
+            $(qdata.items).each(function (i) {
+                //取4条数据
+                if (i > 3) return false;
+                var questioner = this.questioner;
+                var content = this.content;
+                content = content.replaceAll('\n', '');
+
+                var replyContent = this.replyContent;
+                replyContent = replyContent.replaceAll('\n', '').sub(250, "...");
+
+                var replyDate = "";
+                if (hascode) {
+                    replyDate = this.replydate;
+                } else {
+                    replyDate = this.replyDate;
+                }
+                var replydate = (new Date(replyDate.replaceAll('-', '/'))).format("yyyy-MM-dd");
+                var stockname = "";
+                if (hascode) {
+                    stockname = this.shortName;
+                } else {
+                    stockname = this.stockname;
+                }
+                var replyer = "";
+                if (hascode) {
+                    replyer = stockname;
+                } else {
+                    replyer = this.replyer;
+                }
+
+                $('<div class="qa-question">网友<span class="red">问</span>' + stockname + '(' + this.stockcode + '):<a href="' + ircsSrv + 'ircs/interaction/viewQuestion.do?questionId=' + this.questionid + '" target="_blank">' + content + '</a></div>').appendTo(panel);
+                $('<div class="qa-answer">' + replyer + '<span class="red">答</span>网友:<a href="' + ircsSrv + 'ircs/interaction/viewQuestion.do?questionId=' + this.questionid + '" target="_blank">' + replyContent + '</a><span class="replydate">' + replydate + '</span></div>').appendTo(panel);
+            });
+        }
+    }, "utf-8");    
+    $('#question-content').bind('focus', function () {       
+        if (this.value == tips) {
+            this.value = "";
+        }
+    }).bind('blur', function () {
+        if (this.value == "") {
+            this.value = tips;
+        }
+    });
+    var goToTop = function () {
+        var html = '<div class="gototop-wrap"><div id="gototop_btn" class="gototop"><a style="display:none;" title="返回顶部" href="javascript:void(0);" onfocus="this.blur();" class="toplink">TOP</a></div></div>';       
+        var win = $(window);
+        var side = $(html).appendTo($('body'));
+        var topBtn = $('#gototop_btn a');
+        //屏幕小于1024时添加类
+        var resizeClz = 'gototop-wrap-resize';
+        //返回顶部
+        topBtn.click(function () {
+            if (!p5w.ie6) {
+                $('html,body').animate({ scrollTop: 0 }, 120);
+            } else {
+                document.documentElement.scrollTop = 0;
+            }
+        });       
+        var sideFun = function () {
+            var st = $(document).scrollTop(),
+			winh = win.height();
+            (st > 0) ? topBtn.fadeIn() : topBtn.fadeOut();
+        };
+        if (p5w.ie6) {
+            sideFun = function () {
+                var st = $(document).scrollTop(),
+				winh = win.height();
+                (st > 0) ? topBtn.fadeIn() : topBtn.fadeOut();
+                side.css("top", st + winh - 225);
+            };
+        };
+        var resize = function () {
+            var winw = win.width();
+            if (winw < 1074) {
+                side.addClass(resizeClz);
+            } else {
+                side.removeClass(resizeClz);
+            }
+        };
+        win.bind('resize', resize).bind('scroll', sideFun);
+        resize();
+        sideFun();
+    };
+    //添加右边返回顶部按扭
+    goToTop();
+});
+
+
+function checkCMNT(f) {
+    var code = f.stockcode.value;
+    if (code == "") {
+        alert("请输入您要提问的公司代码。");
+        return false;
+    }
+    var reg = new RegExp(/^[036]\d{5}$/);
+    if (!reg.test(code)) {
+        alert("请输入正确的股票代码。");
+        return false;
+    }
+    var arr = new Array();
+    $("input[type='checkbox'][name='questionAtr']:checked").each(function () {
+        arr.push(this.value);
+    });
+    if (arr.length < 1) {
+        alert("请选择您要提问的类型。");
+        return false;
+    }
+    if ($('#question-questioner').val() == "") {
+        alert("请输入您的用户名。");
+        return false;
+    }
+    if ($('#question-content').val() == "" || $('#question-content').val() == tips) {
+        alert("请输入您的提问内容。");
+        return false;
+    }
+    if ($('#question-content').val().length > 200) {
+        alert("您的提问内容过长，请重新输入。");
+        return false;
+    }
+    if (document.getElementById("comment_post_span") == null) {
+        $('<span/>').attr('id', 'comment_post_span').hide().insertBefore($('body'));
+
+    };
+
+    $('#comment_post_span').empty();
+    $('<iframe name="comment_post_frame" style="display:none" width="0" height="0"></iframe><form name="cmnt_post_form" action="http://ircs.p5w.net/ircs/interaction/saveQuestion.do" method="post" target="comment_post_frame"><input type="hidden" name="question.questionPort" value="2" /><input type="hidden" name="stocktype" value="S" /><input type="hidden" name="userType" value="2" /><input type="hidden" name="password" value="" /><input type="hidden" name="stockcode" value="' + f.stockcode.value + '" /><input type="hidden" name="questionAtr" value="' + arr.join(',') + '" /><input type="hidden" name="question.content" value="' + f.content.value + '" /><input type="hidden" name="question.questioner" value="' + f.questioner.value + '" /></form>').appendTo($('#comment_post_span'));
+
+    document.cmnt_post_form.submit();
+    alert("问题提交成功并等待审核中，上市公司将准备好所需数据后回复您的问题，请继续关注！");
+    f.reset();
+    return false;
+}

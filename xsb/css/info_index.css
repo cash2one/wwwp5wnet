@@ -1,0 +1,133 @@
+body,h2{color: #333333;margin:0 auto;padding:0;font:14px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,Arial,Verdana}input,button,textarea,select{vertical-align:middle;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}a{text-decoration:none}h2,th{font-size:100%;font-weight:normal}
+
+.mt20{margin-top: 20px!important;}.ml20{margin-left: 20px!important;}.mb20{margin-bottom: 20px!important;}.mr20{margin-right: 20px!important;}
+
+.tt{ height: 40px; line-height: 40px; font-size: 18px;margin-bottom:30px; font-weight: 600;  border-bottom: 2px solid #dadada;}
+.tt span{display: inline-block; margin-bottom: -2px; border-bottom: 2px solid #0085da; }
+.tt .ttmore{float: right; font-size:14px; font-weight:normal;color: #474E5D;}
+.tt .ttmore:hover{color: #D7000F;}
+
+.red , a.red{color:#d7000f;}
+
+.wrap_mainsq{margin: 0px auto auto auto; width: 1260px;}
+.main-eq{ margin-left:30px;width: 1200px; margin-bottom:100px;}
+.main-eq input {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 7px 6px;
+	margin: 0 4px;
+	text-align:center;
+	COLOR: #555555;
+	TEXT-DECORATION: none;
+	border: 1px solid #aaaaaa; font-size:15px;
+}
+
+.hqsj-banner {
+	width:100%;
+	height: 350px;
+	overflow:hidden;
+	background-color:#2c4aa2;
+}
+.hqsj-img {
+	width:100%;
+	height:350px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.main-eq select {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 6px 6px;
+	margin: 0 4px;
+	text-align:center;
+	COLOR: #555555;
+	TEXT-DECORATION: none;
+	border: 1px solid #aaaaaa;font-size:15px;
+}
+.pagfr{font-weight: normal; margin-bottom:20px;font-size: 17px; color: #0454a7;}
+
+.pagfr2{font-weight: normal; line-height:40px; font-size: 14px; color: #999999;}
+
+.pagination {
+	width: 100%;
+	float: left;
+	PADDING-BOTTOM: 100px;
+	PADDING-TOP: 50px;
+	TEXT-ALIGN: center;
+	height: 40px
+}
+.pagination a {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 12px;
+	margin: 0 4px;
+	COLOR: #323232;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+.pagination input {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 6px;
+	margin: 0 4px;
+	text-align:center;
+	COLOR: #323232;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+ .pagination span {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 12px;
+	margin: 0 4px;
+	COLOR: #c0c6c3;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+.pagination a:hover {
+	background-color: #f8f9fb; 
+	border: 1px solid #cacaca;
+} 
+.pagination .current {
+	background-color: #339adc; 
+	border: 1px solid #339adc; 
+	COLOR: #fff;
+	TEXT-DECORATION: none;
+}
+.pagination .current.prev, .pagination .current.next {
+	background-color: #fff; 
+	padding: 4px 9px 4px 9px;
+	MARGIN-RIGHT: 5px;
+	COLOR: #767676;
+	TEXT-DECORATION: none;
+	border: 1px solid #c4c4c4;
+}
+
+.tab-market{border-collapse: collapse;}
+.tab-market tbody tr td{ font-size: 12px; padding:5px; }
+.tab-market tbody tr a{ color:#333333;}
+.tab-market tbody tr a:hover{ color:#0286db;}
+.tab-market tr.bg_on{background: #f7f7f7;}
+.tab-market tr.bg_fa{background: #f7f7f7;}
+.tab-market tr.bg_da{background: #eaeff4; color:#555555;font-size:15px;}
+.tab-market th,.tab-market td{height: 50px; text-align: center; border: 1px solid #ffffff;}
+.tab-market th {font-size: 13px;color: #fff; background: #69bbf9;}
+.tab-market td.bg_fa{background: #fafafa;}
+.tab-market th.zd{cursor: pointer;}
+.tab-market th.zd span{ display: inline-block; }
+.tab-market th.zd span.market_down{ background-position: right 0px;}
+.tab-market th.zd span.market_up{ background-position: right -20px;}
+.tab-market th.on,.tab-market td.on{background: #eaeff4;}
+.tab-market th.on1,.tab-market td.on1{background: #4fa7ed;}
+.tab-market td a.bule2{color: #0454a7;}
+.tab-market td a.bule2:hover{color: #d7000f;}

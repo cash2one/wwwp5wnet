@@ -1,0 +1,73 @@
+@charset "gb2312";
+/*----- 全局 -----*/
+body{ margin:0; padding:0}
+div,form,img,ul,ol,li,dl,dt,dd,p { margin: 0; padding: 0; border: 0; list-style:none ;font-family:"宋体", Tahoma; font-size:12px;}
+h1,h2,h3,h4,h5 { font-size:100%; font-weight:normal; margin:0; padding:0 }
+.white,a.white{ color: #fff;}
+.red,a.red{ color: #c80000; }
+.green,a.green{ color: #009a00; }
+.blue,a.blue{ color: #0053c0; }
+.f12{ font-size:12px; color:#666 }
+.f14{ font-size:14px }
+.FL{ float:left}
+.FR{ float:right} 
+input{font-family:"宋体", Tahoma;}
+.bold{ font-weight:bold}
+.normal{ font-weight:normal}
+
+.cb{ clear:both}
+.mt10{ margin-top:10px;}.mt20{ margin-top:20px;}
+
+.topnav{ background:url(/images14/top-bg.jpg) repeat-x; height:45px; width:100%; margin-bottom:15px;}
+.topnav-c,.header,.main,.content,.copyright-in{ width:1020px; margin:0 auto; }
+.header,.main,.copyright{margin-bottom:15px;}
+.t-ad{ margin-bottom:15px;}
+.m-tit{margin-top:25px; margin-bottom:10px;}
+.m-weather{ }
+
+.topnav-c { height:45px;}
+.topnav-c ul{    float: left; width:700px; height:35px; line-height:45px;  }
+.topnav-c ul li {     float: left;    line-height: 36px;    padding: 0 9px 0 8px;}
+.topnav-c a:link, .topnav-c a:visited {    color: #fff;    text-decoration: none; font-size:12px;}
+.topnav-c a:hover {    color: #fff;    text-decoration: underline;}
+.topnav_login { float:right; margin-right:5px;}
+.topnav_login a, .topnav_login a:link, .topnav_login a:visited, .topnav_login a:active {    color:#fff;}
+.topnav_login a:hover {    color:#fff;}
+.topnav_login .loginarea {    height: 32px;    line-height: 32px; color:#fff}
+
+.content{background:url(/images14/c-bg.jpg) repeat-x; padding-top:40px; margin-top:10px;}
+.content dl{width:458px; float:left; height:75px; position:relative; margin:10px}
+.content dl.c-1{  margin-right:40px; display:inline}
+.content dl.c-2{   margin-left:40px; display:inline}
+.content dl dt{ float:left; width:86px; height:56px; margin-right:15px; border:1px solid #b9b9b9; margin-top:4px; }
+.content dl dd h2{ font-size:18px; font-family:"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif }
+.content dl dd p{ font-size:12px; color:#999;  line-height:18px; margin-top:8px;}
+.content dl dd.time{ position:absolute; right:5px; top:3px; font-size:12px; color:#999}
+ 
+.pages {  height: 60px;    margin: 0 auto; padding-top:20px; padding-bottom:20px;      text-align: center;height: 60px;      width: 500px;margin-top:50px;}
+.pages p {    color: #666;    margin: 5px 0 0;}
+.pages a {    border-color: #d0d0d0;    border-right: 1px solid #d0d0d0;
+    border-style: solid;    border-width: 1px;    color: #000;    margin-right: 7px;    padding:6px 10px;    text-decoration: none;}
+.pages a:hover {    background-color: #d21300;    border-color: #d21300;
+    border-right: 1px solid #d21300;    border-style: solid;    border-width: 1px;
+    color: #fff;    margin-right: 7px;      padding: 6px 10px;    text-decoration: none;}
+.pages a:active {    background-color: #d21300;    border-color: #d21300;
+    border-right: 1px solid #d21300;    border-style: solid;
+    border-width: 1px;    color: #fff;    margin-right: 7px;    padding: 4px 7px;    text-decoration: none;}
+.pages span.current {    background-color: #d21300;    border-color: #d21300;    border-right: 1px solid #d21300;
+    border-style: solid;    border-width: 1px;    color: #fff;    font-weight: bold;    margin-right: 5px;     padding: 6px 10px;}
+.pages span.disabled {
+    border-color: #ccc;    border-right: 1px solid #ccc;    border-style: solid;
+    border-width: 1px;    color: #ccc;    margin-right: 5px;    padding: 6px 10px;}
+	
+.copyright{ width:100%; border-top:1px solid #ddd; background-color:#f8f8f8; height:165px; position:relative}
+.copyright-in{ padding-top: 30px;}
+ .c-logo,.c-text,.c-img{ float:left; margin-right:30px; }
+ .c-text{ width:500px; font-size:12px; line-height:22px; color:#8f8f8f}
+ .c-img{ width:200px;}
+ .footer{ background-color:#b50001; height:40px;}
+  .footer p{ width:1020px; margin:0 auto; height:40px; line-height:40px; color:#d3d3d3}
+
+.f-search{ position:absolute; right:10px; top:40px;width: 50px; height: 50px;    }
+.go-top { position:absolute; right:10px; top:100px;width: 50px; height: 50px;    }
+ 
