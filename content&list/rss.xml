@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312"?>
+<rss version="2.0">
+<channel>
+	<title><TRS_CHANNEL FIELD="CHNLNAME" AUTOLINK="FALSE"/></title>
+	<link>http://www.p5w.net/</link>
+	<language>zh-CN</language>
+	<description>全景网</description>
+	<webMaster>tongsk@cninfo.com.cn</webMaster><TRS_DOCUMENTS NUM="500" PAGESIZE="50">
+	<item>
+		<title><TRS_DOCUMENT FIELD="DOCTITLE" AUTOFORMAT="TRUE" AUTOFORMATTYPE="XML" AUTOLINK="FALSE"/></title>
+		<category><TRS_CHANNEL FIELD="CHNLNAME" AUTOLINK="FALSE"/></category>
+		<stockcode><TRS_DOCUMENT field="stockcode"></TRS_DOCUMENT></stockcode>
+		<link><![CDATA[<TRS_Document field="_RECURL" UrlIsAbs="true"/>]]></link>
+		<pubDate><TRS_DOCUMENT FIELD="DOCPUBTIME"/></pubDate>
+		<src><TRS_DOCUMENT field="DOCSOURCE" autolink="false"></TRS_DOCUMENT></src>
+		<ztflag><TRS_DOCUMENT field="SUBDOCTITLE" autolink="false"></TRS_DOCUMENT></ztflag>
+		<description><TRS_DOCUMENT FIELD="DOCABSTRACT" AUTOFORMAT="TRUE" AUTOFORMATTYPE="XML" NUM="300"/></description>
+		<newstype><TRS_DOCUMENT field="newstype"></TRS_DOCUMENT></newstype>
+		<image><TRS_Appendix field='_RECURL' UrlIsAbs='true' MODE='PIC' INDEX='-1' seperator=";" autolink='false' memo='FALSE' upload="true"></TRS_Appendix></image>
+	</item></TRS_DOCUMENTS>
+</channel>
+</rss>

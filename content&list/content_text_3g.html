@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <meta content="width=device-width,user-scalable=no" name="viewport">
+  <title>手机全景网</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="bookmark" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="http://3g.p5w.net/css/style1.css">
+  <script type="text/javascript" src="http://3g.p5w.net/js/jquery.min.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="http://3g.p5w.net/">要闻</a></li>
+      <li><a href="http://3g.p5w.net/scyw/">市场</a></li>
+      <li><a href="http://3g.p5w.net/gsyw/">公司</a></li>
+      <li><a href="http://3g.p5w.net/kuaixun/">独家</a></li>
+      <li><a href="http://3g.p5w.net/cjyw/">财经</a></li>
+      <li><a href="http://3g.p5w.net/http://3g/p5w.net/sp/">视频</a></li>
+      <li><a href="http://3g.p5w.net/lcyw/">理财</a></li>
+      <li><a href="http://3g.p5w.net/jjyw/">基金</a></li>
+      <li><a href="http://3g.p5w.net/qhyw/">期货</a></li>
+      <li><a href="http://3g.p5w.net/whyw/">外汇</a></li>
+      <li><a href="http://3g.p5w.net/hd/">互动</a></li>
+      <li><a href="http://bbs.p5w.net/">论坛</a></li>
+    </ul>
+  </div>
+  <article>
+    <div class="articleTitle" id="dTitle">
+      <h2>定向降准扩军 最大“放水量”可达2500亿</h2>
+      <p>来源：第一财经日报 发布时间：2014年06月17日 05:31</p>
+    </div>
+    <div class="articleContent" id="dContent"></div>
+     <div style="display:none;" id="dPic">1558:scyw;1514:appyw;1515:gsyw;1552:kuaixun;1532:cjyw;1516:lcyw</div>
+  </article>
+  <footer>
+    <div class="btn-feedback"></div>
+    <div class="btn-gotop"><a href="#">回顶部</a></div>
+    <div class="copyright">
+      @2015 经营许可证号 粤B2-20050249号<br />http://3g.p5w.net 手机全景网
+      <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_5730192'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s17.cnzz.com/stat.php%3Fid%3D5730192%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+var share_title = $.trim($('#dTitle').find('h2').html());
+var desc = $('meta[name="description"]').attr('content');
+var share_desc = $.trim(desc);
+var share_link = location.href;
+//var share_img = 'http://www.p5w.net/images/p5wlog.jpg';
+//var share_img='http://3g.p5w.net/gsyw/201509/W020150918326644031446.jpg';
+var share_img = $.trim($('#dPic').html());
+
+function shareFriend(shareTitle,descContent,lineLink) {
+    wx.onMenuShareAppMessage({
+	  title: shareTitle,
+	  desc: descContent,
+	  link: lineLink,
+	  imgUrl: share_img,
+	  trigger: function (res) {
+		  $('#mcover').hide();
+	  },
+	  fail: function (res) {
+	    alert(JSON.stringify(res));
+	  }
+    });
+}
+
+function shareTimeline(shareTitle,descContent,lineLink) {
+	wx.onMenuShareTimeline({
+	  title: descContent,
+	  link: lineLink,
+	  imgUrl: share_img,
+	  trigger: function (res) {
+	     $('#mcover').hide();
+	  }, 
+	  fail: function (res) {
+	    alert(JSON.stringify(res));
+	  }
+	});
+}
+
+function shareQQ(shareTitle,descContent,lineLink){
+  wx.onMenuShareQQ({
+    title: shareTitle,
+    desc: descContent,
+    link: lineLink,
+    imgUrl: share_img,
+    trigger: function (res) {
+    	$('#mcover').hide();
+    },
+    fail: function (res) {
+      alert(JSON.stringify(res));
+    }
+  });
+};
+
+function shareWeibo(shareTitle,descContent,lineLink){
+  wx.onMenuShareWeibo({
+    title: shareTitle,
+    desc: descContent,
+    link: lineLink,
+    imgUrl: share_img,
+    trigger: function (res) {
+    	$('#mcover').hide();
+    },
+    fail: function (res) {
+      alert(JSON.stringify(res));
+    }
+  });
+};
+$(document).ready(function() {
+	/*
+	while(share_desc == ''){
+		setTimeout(function(){share_desc = $(document).attr("title");},500);
+	}
+	*/
+	
+	var url = location.href.split('#').toString();
+	$.ajax({
+		url: 'http://data.p5w.net/trs/sign.php',
+		type: 'post',
+		dataType: 'json',
+		data:{'url':url},
+		error:function(XMLHttpRequest, textStatus, errorThrown){
+			
+		},
+		success:function(signPackage){
+			if(signPackage)	{
+				var share_appid = signPackage.appId;
+				var share_nonceStr = signPackage.nonceStr;
+				var share_signature = signPackage.signature;
+				var share_timestamp = signPackage.timestamp;
+				
+				wx.config({
+					debug: false,
+					appId: share_appid,
+					timestamp: share_timestamp, 
+					nonceStr: share_nonceStr,
+					signature: share_signature,
+					jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo'] 
+				});
+		
+				wx.ready(function(){
+					
+					//发送给好友
+					shareFriend(share_title,share_desc,share_link);
+				
+					//分享到朋友圈
+					shareTimeline(share_desc,share_desc,share_link);
+					
+					//分享给QQ好友
+					shareQQ(share_title,share_desc,share_link);
+					
+					//分享到微博
+					shareWeibo(share_title,share_desc,share_link);
+				});
+		
+			}
+		}		
+	})
+});
+</script>
+</html>

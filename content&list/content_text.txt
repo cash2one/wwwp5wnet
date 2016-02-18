@@ -1,0 +1,81 @@
+正文：
+
+标题部分：
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+路径：
+<div class="dd" id="dPath"><a href="http://www.p5w.net/">首页</a>&nbsp;>&nbsp;<a href="http://www.p5w.net/stock/">股票频道</a>&nbsp;>&nbsp;<a href="../">公司新闻</a> > 正文</div>
+
+
+标题：
+<div class="title" id="dTitle"></div>
+
+来源：
+<span id="dSource">来源：<ins>全景网</ins> 发布时间：2014年06月09日 14:16</span>
+
+正文：
+<div class="text" id="dContent"></div>
+
+行情图：
+<iframe id="dQuote" src="http://www.p5w.net/quote/share_w.html?daima=002024" width="500" height="300" frameborder="0" scrolling="no"></iframe>
+
+公司新闻：
+<div class="rn-title">公司新闻:<span class="more" id="dCompanyMore"><a href="#" target="_blank">更多新闻...</a></span></div>
+
+<ul id="dCompany">
+    <li><a href="./t20140603_620866.htm" target="_blank">股市世界杯“魔咒”或将出现？ 巴西世界杯还...</a>2014/06/03</li>
+    （9条）
+</ul>
+
+提问：
+<input type="text" value="002024" name="stockcode" id="stockcode" />
+
+=====================================
+
+列表：
+
+标题部分：
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+路径：
+<div class="dd" id="dPath"><a href="http://www.p5w.net/">首页</a>&nbsp;>&nbsp;<a href="http://www.p5w.net/stock/">股票频道</a>&nbsp;>&nbsp;<a href="../">公司新闻</a> > 正文</div>
+
+栏目标题：
+<div class="nl-title" id="dPageTitle"></div>
+
+列表内容：
+<div class="nl-list" id="dList">
+    <ul>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        （15条）
+    </ul>
+    <ul>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        （15条）
+    </ul>
+    <ul>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        （15条）
+    </ul>
+    <ul>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        <li><a target="_blank" href="./201406/t20140611_632315.htm">宏源证券卷入理财代销风波 涉事产品或与“彭晨案”相关</a>2014-06-11 08:29</li>
+        （15条）
+    </ul>
+    （ul个数不少于4个）
+</div>
+
+分页：
+<div class="viciao" id="dPage"></div>
+

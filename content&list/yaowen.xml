@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<channel><TRS_DOCUMENTS NUM="50">
+  <item>
+    <title><![CDATA[<TRS_DOCUMENT field="DOCTITLE" autocolor="FALSE" autoformat="TRUE" autoformattype="XML" autolink="FALSE" />]]></title>
+    <link><![CDATA[<TRS_Document field="_RECURL" UrlIsAbs="true"/>]]></link>
+    <pubDate><![CDATA[<TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd HH:mm:ss"></TRS_DOCUMENT>]]></pubDate>
+  </item><TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
+  <item>
+    <title><![CDATA[<TRS_Document Field="USERTITLE2">标题2</TRS_Document>]]></title>
+    <link><![CDATA[<TRS_DOCUMENT field='USERLINK2'/>]]></link>
+    <pubDate><![CDATA[<TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd HH:mm:ss"></TRS_DOCUMENT>]]></pubDate>
+  </item></TRS_CONDITION><TRS_CONDITION condition="@USERTITLE3" operator='blank' not='true'>
+  <item>
+    <title><![CDATA[<TRS_Document Field="USERTITLE3">标题3</TRS_Document>]]></title>
+    <link><![CDATA[<TRS_DOCUMENT field='USERLINK3'/>]]></link>
+    <pubDate><![CDATA[<TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd HH:mm:ss"></TRS_DOCUMENT>]]></pubDate>
+  </item></TRS_CONDITION></TRS_DOCUMENTS>
+</channel>

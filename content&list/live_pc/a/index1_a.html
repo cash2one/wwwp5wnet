@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title><trs_curpage only="true" autolink="false">栏目路径</trs_curpage>_<trs_replace value='标题'></trs_replace>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="../style/basic.css" rel="stylesheet" />
+    <link type="text/css" href="../style/global.css" rel="stylesheet" />
+    <link type="text/css" href="../style/basic.fix.css" rel="stylesheet" />
+	<link type="text/css" href="http://www.p5w.net/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet"/>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public14-v1.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+	<script type="text/javascript" src="http://www.p5w.net/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="../js/func.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../datalist.js"></script>
+</head>
+<body>
+    <div class="mininav">
+        <script type="text/javascript">
+            mininav();
+        </script>
+    </div>
+    <div class="top">
+        <div class="top1">
+            <div class="logo2">
+                <img src="../images/logo.jpg" width="191" height="61" alt="全景网" />
+            </div>
+            <div class="time-k">
+                <div class="time-select">
+                    时间：<TRS_REPLACE value='时间'></TRS_REPLACE><br />
+                    <TRS_REPLACE value='人物'></TRS_REPLACE>
+                </div>
+            </div>
+            <div class="blank15"></div>
+            <div class="titlexx"><trs_curpage only="true" autolink="false">栏目路径</trs_curpage></div>
+            <div class="titlexy"><TRS_REPLACE value='导语'></TRS_REPLACE></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="stock-middle1">
+            <div class=" blank34"></div>
+            <div class="ht_box">
+                <dl class="hot_ht">
+                    <dt class="ht_bt">往期回顾</dt>
+                    <dt class="more"><!--<a href="../" target="_blank">更多&gt;&gt;</a>--></dt>
+                </dl>
+                <div class="ht_nr">
+                    <dl>
+                        <script type="text/javascript">
+                            dataist10();
+                        </script>
+                    </dl>
+                </div>
+            </div>
+            <div class=" blank34"></div>
+        </div>
+        <div class="newlist">
+            <div class=" blank34"></div>
+            <div class="lwt">
+                <div class="lwt-titlt">
+                    <span class="jin1">图文直播</span>
+                </div>
+                <div class="xgrl">
+                    <a href="javascript:;"><img src="../images/gex.jpg" width="31" height="31" alt="全景网" id="refresh" /></a>
+                </div>
+            </div>
+            <trs_documents num="200" pagesize="10" automore="FALSE">
+            <div class="btn">
+                <div class="btn-download">
+                    <div class="articletop">
+                        <div style="font-size: 16px; font-family: 微软雅黑; line-height: 28px; height: 35px;">
+                            <span style="float: left; color: #0951B2;"><TRS_DOCUMENT field="DOCRELTIME" dateformat="HH:mm">时间</TRS_DOCUMENT></span>
+                            <span style="float: right; margin-right: 5px; color: #999999;"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd">日期</TRS_DOCUMENT></span>
+                        </div>
+                        <div style="font-size: 18px; font-family: 微软雅黑;"><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank">文档标题</TRS_DOCUMENT></div>
+                    </div>
+                    <div class="articlemiddle">
+                        <div class="content_zd">
+                            <TRS_CONDITION condition='@docabstract' operator='blank' not='true'>
+                        　　    <TRS_Document Field="docabstract" TRUNCATEDFLAG="" num="260">文档摘要</TRS_Document>
+                            </TRS_CONDITION>
+                            <TRS_CONDITION condition='@docabstract' operator='blank'>
+                                <TRS_Document Field="doccontent" TRUNCATEDFLAG="" num="200">正文截取</TRS_Document>
+                            </TRS_CONDITION>
+                        </div>
+                        <div class="content_zk"><trs_document field="dochtmlcon">正文</trs_document></div>
+                        <div style="height: 40px;">
+                            <a href="javascript:;" class="pic_zk"><img src="../images/zk.jpg" alt="全景网" width="64" height="16" align="right" style="margin-right: 5px;" /></a>
+                        </div>
+                        <div class="contentpics">
+                            <trs_appendix mode="pic" index="-1" autolink="false" seperator="&nbsp;" upload="false" extra='width="150"' beginhtml='<a>' endhtml='</a>'>附件</trs_appendix>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                </div>
+            </div>
+            </trs_documents>
+            <div class="pages">
+                <div class="p5w-page">
+                    <script type="text/javascript">
+                        setPage(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blank50"></div>
+    <div class="clearfloat"></div>
+    <script type="text/javascript">
+        foot14();
+        shareButton();
+    </script>
+    <div class="footer">
+        <p></p>
+    </div>
+              
+</body>
+</html>

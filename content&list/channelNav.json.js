@@ -1,0 +1,1 @@
+var channelNavLinks = [{"t":"¹ÉÆ±Ê×Ò³", "l":"http://www.p5w.net/stock/"},<trs_documents num="30">{"t":"<TRS_DOCUMENT Field='DocTitle' autolink='false'></TRS_DOCUMENT>", "l":"<TRS_DOCUMENT Field='_recurl' UrlIsAbs='true'></TRS_DOCUMENT>"},</trs_documents>{"t":"0","l":"0"}];

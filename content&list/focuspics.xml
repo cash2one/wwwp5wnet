@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<channel><TRS_DOCUMENTS NUM="4">
+  <item>
+    <title><![CDATA[<TRS_DOCUMENT field="DOCTITLE" autocolor="FALSE" autoformat="TRUE" autoformattype="XML" autolink="FALSE" />]]></title>
+    <link><![CDATA[<TRS_Document field="_RECURL" UrlIsAbs="true"/>]]></link>
+    <appendix><![CDATA[<TRS_Appendix MODE="PIC" INDEX="0" field="_RECURL" UrlIsAbs="true">ͼƬ</TRS_Appendix>]]></appendix>
+    <pubDate><TRS_DOCUMENT FIELD="DOCPUBTIME"/></pubDate>
+  </item></TRS_DOCUMENTS>
+</channel>

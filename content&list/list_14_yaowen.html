@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title><trs_replace value='标题'></trs_replace>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link type="text/css" href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" />
+    <link type="text/css" href="/css/yaowen14.css" rel="stylesheet" />
+    <link type="text/css" href="/css/global.css" rel="stylesheet" />
+    <link type="text/css" href="/css/yaowen14.fix.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public14-v1.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+</head>
+<body>
+    <div class="mininav">
+        <script type="text/javascript">
+            mininav();
+        </script>
+    </div>
+    <div class="header">
+        <div class="t-ad">
+            <span class="top-ad-item-last">
+                <script src="http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_341/adlocation_341.js"></script>
+            </span>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="m-tit">
+            <img src="/images14/p14.jpg" width="1020" height="48" />
+        </div>
+        <div class="content"><trs_documents num="450" pagesize="30" order="docreltime desc" automore="FALSE">
+            <TRS_record num="1">
+            <dl class="c-1">
+                <dt>
+                    <TRS_Appendix MODE="PIC" INDEX="0" target="_blank" autolink="TRUE" memo="FALSE" EXTRA='width="86" height="64"'>图片</TRS_Appendix>
+                </dt>
+                <dd>
+                    <h2>
+                        <TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" TRUNCATEDFLAG="" num="34">标题1</TRS_DOCUMENT>
+                        <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
+                            <a href="<TRS_DOCUMENT field='USERLINK2'/>" class="<TRS_DOCUMENT FIELD='USERLIST2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
+                        </TRS_CONDITION>
+                    </h2>
+                </dd>
+                <dd>
+                    <p class="hui">
+                        <TRS_DOCUMENT field="docabstract" TRUNCATEDFLAG="" num="80">文档摘要</TRS_DOCUMENT>
+                        [<a href="<TRS_DOCUMENT field='USERLINK3'/>" target="_blank"><TRS_Document Field="USERTITLE3">标题2</TRS_Document></a>]
+                    </p>
+                </dd>
+                <dd class="time"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd HH:mm">日期</TRS_DOCUMENT></dd>
+            </dl></TRS_record>
+            <TRS_record num="1">
+            <dl class="c-2">
+                <dt>
+                    <TRS_Appendix MODE="PIC" INDEX="0" target="_blank" autolink="TRUE" memo="FALSE" EXTRA='width="86" height="64"'>图片</TRS_Appendix>
+                </dt>
+                <dd>
+                    <h2>
+                        <TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" TRUNCATEDFLAG="" num="30">标题1</TRS_DOCUMENT>
+                        <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
+                            <a href="<TRS_DOCUMENT field='USERLINK2'/>" class="<TRS_DOCUMENT FIELD='USERLIST2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
+                        </TRS_CONDITION>
+                    </h2>
+                </dd>
+                <dd>
+                    <p class="hui">
+                        <TRS_DOCUMENT field="docabstract" TRUNCATEDFLAG="" num="80">文档摘要</TRS_DOCUMENT>
+                        [<a href="<TRS_DOCUMENT field='USERLINK3'/>" target="_blank"><TRS_Document Field="USERTITLE3">标题2</TRS_Document></a>]
+                    </p>
+                </dd>
+                <dd class="time"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd HH:mm">日期</TRS_DOCUMENT></dd>
+            </dl>
+            </TRS_record></trs_documents>
+            <div class="cb"></div>
+            <div class="pages">
+                <div class="p5w-page">
+                    <script type="text/javascript">
+                        setPage(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="cb"></div>
+    </div>
+    <script type="text/javascript">
+        foot14();
+    </script>
+    <div class="footer">
+        <p></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title><trs_curpage only="TRUE" autolink="FALSE">当前栏目</trs_curpage><trs_replace value='标题'></trs_replace>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="/css/basic-list14.css" rel="stylesheet" />
+    <link type="text/css" href="/css/global.css" rel="stylesheet" />
+    <link type="text/css" href="/css/list14.css" rel="stylesheet" />
+    <link type="text/css" href="/css/list14.fix.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://data.p5w.net/stock/js/stocklib.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://data.p5w.net/stock/js/p5wLastVisit.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public14-v1.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/cmnt14_v1.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+</head>
+<body>
+    <div class="mininav">
+        <script type="text/javascript">
+            mininav();
+        </script>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <span class="top-ad-item-last">
+                <script src="http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_392/adlocation_392.js"></script>
+            </span>
+            <div class="clearfloat"></div>
+        </div>
+        <div class="hotspot">
+            <div class="hotspot_fk">
+                <div class="roll_box1">
+                    <div class="roll1">
+                        <div class="titlebox">
+                            <a href="http://hq.p5w.net/hq/index.php" target="_blank">
+                                <img src="/images14/hq.jpg" width="95" height="17" alt="全景网" /></a>
+                        </div>
+                        <div class="contentbox">
+                            <ul class="content" id="header_navi">
+                                <li class="fix" id="header_idx_summary" style="top: 0;"></li>
+                                <li class="fix" id="header_sh_ratio_inc"></li>
+                                <li class="fix" id="header_sh_ratio_dec"></li>
+                                <li class="fix" id="header_sz_ratio_inc"></li>
+                                <li class="fix" id="header_sz_ratio_dec"></li>
+                            </ul>
+                        </div>
+                        <div class="clearfloat"></div>
+                    </div>
+                </div>
+                <div class="blankspot"></div>
+                <div class="roll_box1">
+                    <div class="roll1">
+                        <div class="titlebox">
+                            <a href="http://hq.p5w.net/hq/index.php" target="_blank">
+                                <img src="/images14/zjfw.jpg" width="95" height="17" alt="全景网" /></a>
+                        </div>
+                        <div class="contentbox">
+                            <ul class="content">
+                                <li class="fix" style="top: 0;" id="LastVisit_Div"></li>
+                            </ul>
+                        </div>
+                        <div class="clearfloat"></div>
+                    </div>
+                </div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="blank15"></div>
+        <div class="fk-logo-path">
+            <div class="logo2">
+                <trs_channellogo id="parent:-1" index="1" showmode="SHOWPIC" />
+            </div>
+            <div class="mbx"><trs_curpage value="&nbsp;>&nbsp;" only="FALSE" autolink="true">栏目路径</trs_curpage></div>
+            <div class="clearfloat"></div>
+        </div>
+        <div class="blank15"></div>
+        <div class="sto-nav-fk sto-nav-fk-lst">
+            <div class="t1"><trs_channel id="parent:-1" field="chnldesc" autolink="true" target="_blank"></trs_channel></div>
+            <ul id="channelNav">
+                <script type="text/javascript">
+                    pubChannelNav("<TRS_CHANNEL id='parent:-1' field='chnldesc' autolink='false'></TRS_CHANNEL>");
+                </script>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+
+        <div class="sto-left">
+            <ul class="sto-left-list"><trs_documents num="400" pagesize="20" automore="FALSE">
+                <li>
+                    <h2 class="title"><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank" num="61">文档标题</TRS_DOCUMENT></h2>
+                    <p>
+                        <TRS_CONDITION condition='@docabstract' operator='blank' not='true'>
+                        　　<TRS_Document Field="docabstract" TRUNCATEDFLAG="" num="170">文档摘要</TRS_Document>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docabstract' operator='blank'>
+                            <TRS_Document Field="doccontent" TRUNCATEDFLAG="" num="170">文档摘要</TRS_Document>
+                        </TRS_CONDITION>
+                        <span class="time"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM月dd日 HH:mm">日期</TRS_DOCUMENT></span>
+                    </p>
+                </li></trs_documents>
+            </ul>
+            <div class="pages">
+                <div class="p5w-page">
+                    <script type="text/javascript">
+                        setPage(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="sto-right" id="cRight">
+            <iframe id="inRight" src="about:blank" scrolling="no" width="100%" height="0" frameborder="0"></iframe>
+            <div class="banner">
+                <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_368/adlocation_368.js' ignoreapd="1"></script>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="clearfloat"></div>
+    <script type="text/javascript">
+        foot14();
+    </script>
+    <div class="footer">
+        <p></p>
+    </div>
+    <div class="duilian duilianr" id="duilianr" style="display: none;"></div>
+    <div class="duilian duilianl" id="duilianl" style="display: none;"></div>
+    <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_397/adlocation_397.js'></script>
+</body>
+</html>

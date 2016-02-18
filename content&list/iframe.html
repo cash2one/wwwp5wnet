@@ -1,0 +1,27 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+
+</head>
+<body>
+  <div class="zwright" id="cRight">
+        <iframe id="inRight" src="about:blank" scrolling="no" width="100%" height="480" frameborder="0"></iframe>
+        <!--<div class="banner">
+          <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_368/adlocation_368.js' ignoreapd="1"></script>
+        </div>-->
+      </div>
+  <script type="text/javascript">
+    $(function () {
+      $("#cRight iframe").attr("src", "http://www.p5w.net/sy/inner_right.htm").load(function () {
+        alert($(this).contents());
+        var height = $(this).contents().find("#cInner").height() + 2;
+        alert(height);
+        $(this).height(height < 125 ? 125 : height);
+      });
+    });
+  </script>
+</body>
+</html>

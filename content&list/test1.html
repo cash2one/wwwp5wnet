@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<title>WEB前端开发最爱</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("#ad").slideDown();
+        },1000)
+        $("#close").click(function(){
+            $("#ad").slideUp();
+        })
+    })
+</script>
+</head>
+
+<style>
+*{ margin:0px; padding:0px;}
+#ad{ width:300px; height:200px; border:1px solid #000; position:absolute; bottom:0px; right:10px; display:none;}
+#ad a{ position:absolute; top:8px; right:8px; font-size:12px; text-decoration:none;}
+#ad h2{ font-size:24px; text-align:center; line-height:200px; font-family:"微软雅黑";}
+</style>
+<body>
+<div style="height:2000px; width:1000px; ">sdfsadf sdf</div>
+	<div id="ad">
+    	<a href="javaScript:void(0)" id="close">关闭</a>
+        <h2>WEB前端开发最爱</h2>
+    </div>
+</body>
+</html>
