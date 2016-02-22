@@ -54,6 +54,17 @@
         </div>
     </div>
 </div>
+<div class="content">
+    <!-- 120199：顶部下拉 类型：浮层广告位 尺寸：--->
+    <script type="text/javascript">//<![CDATA[
+    ac_as_id = 120199;
+    ac_format = 0;
+    ac_mode = 1;
+    ac_group_id = 1;
+    ac_server_base_url = "afp.csbew.com/";
+    //]]></script>
+    <script type="text/javascript" src="http://s.csbew.com/k.js"></script>
+</div>
 <!-- 广告位：顶部下拉 -->
 <script type="text/javascript">BAIDU_CLB_fillSlot("1166155");</script>
 <div class="header">
@@ -231,12 +242,22 @@
     </div>
     <div class="blank34"></div>
     <div class="news">
-        <div class="news-title title">
-            <span><TRS_Region name="14头条1"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">头条1</TRS_Document></TRS_Cell></TRS_Region></span>
+        <div class="news-title title"><TRS_DOCUMENTS id="首页_头条" num="1" select="wcmdocument.tagyw">
+            <span><TRS_CONDITION condition="@tagyw" operator='==' reference='a'><i>直播</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='b'><i class="hd">专题</i></TRS_CONDITION>
+                <TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
+            <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
+                <a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
+            </TRS_CONDITION></span></TRS_DOCUMENTS>
             <TRS_Region name="14相关1"><p class="zy"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">相关1</TRS_Document></TRS_Cell></p></TRS_Region>
         </div>
-        <div class="news-title title">
-            <span><TRS_Region name="14头条2"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">头条2</TRS_Document></TRS_Cell></TRS_Region></span>
+        <div class="news-title title"><TRS_DOCUMENTS id="首页_头条" num="1" startpos="1" select="wcmdocument.tagyw">
+            <span><TRS_CONDITION condition="@tagyw" operator='==' reference='a'><i>直播</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='b'><i class="hd">专题</i></TRS_CONDITION>
+                <TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
+            <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
+                <a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
+            </TRS_CONDITION></span></TRS_DOCUMENTS>
             <TRS_Region name="14相关2"><p class="zy"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">相关2</TRS_Document></TRS_Cell></p></TRS_Region>
         </div><TRS_DOCUMENTS id="新闻中心_首页推荐" num="2">
         <div class="news-title title">

@@ -248,3 +248,37 @@ ul.ipo-list li p.gray a:hover { color: #808080; text-decoration: underline; }
 
 .search { width: 358px; margin-left: 20px; margin-top: 20px; }
 .search .qjkh { width:357px; height: 53px; background:url(../images14/qjkh.jpg) no-repeat center; }
+
+.news-title span i {
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 2px;
+    line-height: 17px;
+    padding: 1px 5px;
+    position: relative;
+    display: inline-block;
+    background: #e4393c;
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-family: "微软雅黑";
+}
+
+.news-title span i:after {
+    content: " ";
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    border: solid;
+    border-width: 6px 0 0 10px;
+    border-color: transparent transparent transparent #e4393c;
+}
+
+.news-title span i.hd {
+    background: #178ee5;
+}
+
+.news-title span i.hd:after {
+    border-color: transparent transparent transparent #178ee5;
+}
