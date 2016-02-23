@@ -245,6 +245,9 @@
         <div class="news-title title"><TRS_DOCUMENTS id="首页_头条" num="1" select="wcmdocument.tagyw">
             <span><TRS_CONDITION condition="@tagyw" operator='==' reference='a'><i>直播</i></TRS_CONDITION>
                 <TRS_CONDITION condition="@tagyw" operator='==' reference='b'><i class="hd">专题</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='c'><i class="dj">独家</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='d'><i class="ly"><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='e'><i class="sb"><a href="http://www.p5w.net/stock/news/xsb/" target="_blank">三板</a></i></TRS_CONDITION>
                 <TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
             <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
                 <a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
@@ -254,14 +257,22 @@
         <div class="news-title title"><TRS_DOCUMENTS id="首页_头条" num="1" startpos="1" select="wcmdocument.tagyw">
             <span><TRS_CONDITION condition="@tagyw" operator='==' reference='a'><i>直播</i></TRS_CONDITION>
                 <TRS_CONDITION condition="@tagyw" operator='==' reference='b'><i class="hd">专题</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='c'><i class="dj">独家</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='d'><i class="ly"><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='e'><i class="sb"><a href="http://www.p5w.net/stock/news/xsb/" target="_blank">三板</a></i></TRS_CONDITION>
                 <TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
             <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
                 <a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
             </TRS_CONDITION></span></TRS_DOCUMENTS>
             <TRS_Region name="14相关2"><p class="zy"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">相关2</TRS_Document></TRS_Cell></p></TRS_Region>
-        </div><TRS_DOCUMENTS id="新闻中心_首页推荐" num="2">
+        </div><TRS_DOCUMENTS id="新闻中心_首页推荐" num="2" select="wcmdocument.tagyw">
         <div class="news-title title">
-            <span><TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
+            <span><TRS_CONDITION condition="@tagyw" operator='==' reference='a'><i>直播</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='b'><i class="hd">专题</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='c'><i class="dj">独家</i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='d'><i class="ly"><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></i></TRS_CONDITION>
+                <TRS_CONDITION condition="@tagyw" operator='==' reference='e'><i class="sb"><a href="http://www.p5w.net/stock/news/xsb/" target="_blank">三板</a></i></TRS_CONDITION>
+                <TRS_DOCUMENT field="doctitle" target="_blank">文档标题</TRS_DOCUMENT>
             <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'>
                 <a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a>
             </TRS_CONDITION></span>
