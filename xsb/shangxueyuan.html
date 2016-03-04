@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title><trs_curpage only="TRUE" autolink="FALSE">当前栏目</trs_curpage><trs_replace value='标题'></trs_replace>_全景新三板</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link href="/xsb/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/xsb/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="/xsb/css/main.css" rel="stylesheet" type='text/css'/>
+    <link href="/xsb/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/xsb/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/xsb/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/xsb/js/jquery.global.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+</head>
+<body>
+<div class="header2">
+    <div class="w1200 clearfix">
+        <div class="logo fl"><a href="index.html"><img src="/xsb/images/logo.png"/></a></div>
+        <ul class="nav">
+            <li class="current up_down"><a href="javascript:void(0);">资讯</a>
+                <ul class="nav_list">
+                    <li><a href="<TRS_Channel id='新三板_三板要闻' field='_RECURL'/>" target="_blank">三板要闻</a></li>
+                    <li><a href="<TRS_Channel id='新三板_三板快讯' field='_RECURL'/>" target="_blank">三板快讯</a></li>
+                    <li><a href="<TRS_Channel id='新三板_商学院' field='_RECURL'/>" target="_blank">商学院</a></li>
+                    <li><a href="<TRS_Channel id='新三板_创客秀' field='_RECURL'/>" target="_blank">创客秀</a></li>
+                </ul>
+            </li>
+            <li><a href="#">活动</a></li>
+            <li><a href="#">融资</a></li>
+            <li><a href="#">公司</a></li>
+            <li><a href="#">行情</a></li>
+        </ul>
+        <div class="top-search2 fr clearfix">
+            <div class="fl"><input name="input" type="text" class="top-search-input2 fl" placeholder="搜索   公司 / 资讯 / 活动"/>
+                <a href="#" class="ssan"></a></div>
+            <div class="header-top2"><a href="#">登录</a>|<a href="#">注册</a></div>
+        </div>
+
+    </div>
+</div>
+<div class="home-main w1200">
+    <div class="home-floor2"><img src="/xsb/images/aaaa.jpg" width="1200" height="90"/></div>
+    <div class="home-floor clearfix">
+        <div class="home-left2 ">
+            <div class="home-news2 fl">
+                <div class="title clearfix"><span class="fl">新三板商学院</span></div>
+                <trs_documents id="新三板_商学院_焦点图" num="1">
+                <li>
+                    <div class="img2">
+                        <trs_appendix mode="pic" index="0" autolink="true" target="_blank" seperator="" upload="false">附件</trs_appendix>
+                    </div>
+                    <div class="name2">
+                        <h2><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank" num="60">文档标题</TRS_DOCUMENT></h2>
+                    </div>
+                    <div class="brief2">
+                        <TRS_Document Field="docabstract" TRUNCATEDFLAG="" num="170">文档摘要</TRS_Document>
+                    </div>
+                </li></trs_documents>
+                <trs_documents num="240" pagesize="12" automore="FALSE">
+                <li>
+                    <div class="img">
+                        <trs_appendix mode="pic" index="0" autolink="true" target="_blank" seperator="" upload="false">附件</trs_appendix>
+                    </div>
+                    <div class="name">
+                        <h2><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank" num="60">文档标题</TRS_DOCUMENT></h2>
+                    </div>
+                    <div class="brief">
+                        <TRS_CONDITION condition='@docabstract' operator='blank' not='true'>
+                            <TRS_Document Field="docabstract" TRUNCATEDFLAG="" num="170">文档摘要</TRS_Document>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docabstract' operator='blank'>
+                            <TRS_Document Field="doccontent" TRUNCATEDFLAG="" num="170">文档摘要</TRS_Document>
+                        </TRS_CONDITION>
+                    </div>
+                    <div class="nexus">
+                        <span class="source"><TRS_DOCUMENT field="DOCSOURCE" autolink="TRUE" target="_blank" linkalt="FALSE">来源</TRS_DOCUMENT></span>
+                        <span class="time fr"><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd HH:mm">日期</TRS_DOCUMENT></span>
+                    </div>
+                </li></trs_documents>
+            </div>
+            <div class="clearfloat"></div>
+            <div class="pages">
+                <div class="xsb-page">
+                    <script type="text/javascript">
+                        setPage(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="home-right3 fr">
+            <iframe id="rightsiderFrame" src="/xsb/sbyw/rightsider.htm" width="100%" height="1750" scrolling="no" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    footer();
+    sideToolBar();
+</script>
+</body>
+</html>

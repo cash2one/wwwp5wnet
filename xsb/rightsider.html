@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <title>全景新三板</title>
+    <link href="/xsb/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/xsb/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="/xsb/css/main.css" rel="stylesheet" type='text/css'/>
+</head>
+<body style="width: auto; height: auto; min-width: 307px; max-width: 307px;">
+<div id="rightsiderInner" class="rightsider">
+    <div class="home-right3 fr" style="margin-bottom:60px;">
+        <ul class="home-school2 fl">
+            <div class="title clearfix"><span class="fl"><a href="#" target="_blank">热门活动</a></span></div>
+        </ul>
+        <div class="home-activity">
+            <ul class="home-act2 fl"><trs_documents id="新三板_首页维护_首页活动" num="3">
+                <li>
+                    <div class="img">
+                        <trs_appendix mode="pic" index="0" autolink="true" target="_blank" seperator="" upload="false" extra='width="200" height="120"'>附件</trs_appendix>
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='路演'>
+                            <i class="r1"><TRS_DOCUMENT field="docpeople" autolink="false">首页标题路演</TRS_DOCUMENT></i>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='调研'>
+                            <i class="r2"><TRS_DOCUMENT field="docpeople" autolink="false">首页标题调研</TRS_DOCUMENT></i>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='沙龙'>
+                            <i class="r3"><TRS_DOCUMENT field="docpeople" autolink="false">首页标题沙龙</TRS_DOCUMENT></i>
+                        </TRS_CONDITION>
+                    </div>
+                    <div class="name"><TRS_DOCUMENT field="doctitle" target="_blank" num="37">文档标题</TRS_DOCUMENT></div>
+                    <div class="ab">
+                        <TRS_CONDITION condition='@docabstract' operator='blank' not='true'>
+                            <div class="add">地点：<trs_document field="docabstract">摘要做地点</trs_document></div>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@subdoctitle' operator='blank' not='true'>
+                            <div class="time">时间：<trs_document field="subdoctitle">副标题做时间</trs_document></div>
+                        </TRS_CONDITION>
+                    </div>
+                    <div class="coming">
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='路演'>
+                            <a href="<TRS_DOCUMENT FIELD='_recurl'/>" target="_blank" class="coming01" onmouseover="this.innerHTML='点击观看'" onmouseout="this.innerHTML='进行中'">进行中</a>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='调研'>
+                            <a href="<TRS_DOCUMENT FIELD='_recurl'/>" target="_blank" class="coming02" onmouseover="this.innerHTML='分享活动'" onmouseout="this.innerHTML='预告'">预告</a>
+                        </TRS_CONDITION>
+                        <TRS_CONDITION condition='@docpeople' operator='==' reference='沙龙'>
+                            <a href="<TRS_DOCUMENT FIELD='_recurl'/>" target="_blank" class="coming02" onmouseover="this.innerHTML='我要报名'" onmouseout="this.innerHTML='报名中'">报名中</a>
+                        </TRS_CONDITION>
+                    </div>
+                </li></trs_documents>
+            </ul>
+        </div>
+    </div>
+    <div class="home-right3 fr">
+        <div class="title"><a href="<TRS_Channel id='新三板_三板要闻' field='_RECURL'/>" target="_blank">三板要闻</a></div>
+        <div class="viewpoint-wrap">
+            <ul><trs_documents id="新三板_三板要闻" num="10">
+                <li><TRS_DOCUMENT field="doctitle" target="_blank" num="36">文档标题</TRS_DOCUMENT></li></trs_documents>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfloat"></div>
+</div>
+</body>
+</html>
