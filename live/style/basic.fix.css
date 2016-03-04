@@ -8,7 +8,7 @@ ol, ul { list-style: none outside none; }
 .Pdialog-main .Pdialog-title { background-color: #eaeaea; color: #000; font-size: 12px; font-weight: bold; padding: 5px 15px; line-height: 25px; text-align: left; border-bottom: solid 1px #cccccc; border-radius: 5px 5px 0 0; }
 .Pdialog-main .Pdialog-content { padding: 0px; background-color: #fff; }
 .Pdialog-main .Pdialog-close { position: absolute; right: 8px; top: 8px; height: 18px; width: 18px; }
-.Pdialog-main a.pop-close { text-indent: -10000px; outline: 0 none; background: url('../images13/dialog.gif') no-repeat 0px 0px; cursor: pointer; height: 18px; width: 18px; display: block; }
+.Pdialog-main a.pop-close { text-indent: -10000px; outline: 0 none; background: url(http://www.p5w.net/images13/dialog.gif) no-repeat 0px 0px; cursor: pointer; height: 18px; width: 18px; display: block; }
 .Pdialog-main a.pop-close:hover { background-position: -18px 0; }
 .Pdialog-content .Pdialog-item-tab { background: #fff; height: 28px; border-bottom-color: #cccccc; border-bottom-width: 1px; border-bottom-style: solid; margin-top: 8px; }
 .Pdialog-content .Pdialog-item-tab ul { height: 28px; border-top-color: #000; border-top-width: 0px; border-top-style: solid; position: relative; }
@@ -57,6 +57,20 @@ ol, ul { list-style: none outside none; }
 .mininav .nav_login .loginarea { height: 32px; line-height: 32px; }
 
 .tj_www_ccc { clear: both; text-align: center; display: none; height: 1px; overflow: hidden; }
+
+.copyright{ width:100%; border-top:1px solid #ddd; background-color:#f8f8f8; height:165px; position:relative}
+.copyright-in{ padding-top: 30px;}
+.c-logo,.c-text,.c-img{ float:left; margin-right:30px; }
+.c-text{ width:450px; font-size:12px; line-height:22px; color:#8f8f8f}
+.c-img{ width:200px;}
+.c-logoright { width:342px; float: right; }
+.c-logoright p { color:#8f8f8f; line-height:22px; font-size:12px; }
+.c-logoright a, .c-logoright a:hover { color:#8f8f8f; }
+.c-logoright-1 { float: left; }
+.c-logoright-2 { float: left; }
+.c-logoright-3 { float: left; margin-top:20px; margin-left:5px; }
+.footer{ background-color:#b50001; height:40px;}
+.footer p{ width:1020px; margin:0 auto; height:40px; line-height:40px; color:#d3d3d3}
 
 /*.gototop-wrap { display: none; }*/
 .gototop { height: 36px; margin: 5px 0 0; position: static; width: 58px; }
