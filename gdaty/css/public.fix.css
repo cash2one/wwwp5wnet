@@ -61,6 +61,12 @@ ol, ul { list-style: none outside none; }
 .c-logo,.c-text,.c-img{ float:left; margin-right:30px; }
 .c-text{ width:500px; font-size:12px; line-height:22px; color:#8f8f8f}
 .c-img{ width:200px;}
+.c-logoright { width:342px; float: right; }
+.c-logoright p { color:#8f8f8f; line-height:22px; font-size:12px; }
+.c-logoright a, .c-logoright a:hover { color:#8f8f8f; }
+.c-logoright-1 { float: left; }
+.c-logoright-2 { float: left; }
+.c-logoright-3 { float: left; margin-top:20px; margin-left:5px; }
 
 .tj_www_ccc { clear: both; text-align: center; display: none; height: 1px; overflow: hidden; }
 
