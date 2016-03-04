@@ -950,6 +950,52 @@ $(function () {
     //});
 });
 
+var dynamicLoading = {
+    css: function(path, charset){
+        if(!path || path.length === 0){
+            throw new Error('argument "path" is required !');
+        }
+        if(!charset || charset.length === 0){
+            charset = 'utf-8';
+        }
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.href = path;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.charset = charset;
+        head.appendChild(link);
+    },
+    js: function(path, callback, charset){
+        if(!path || path.length === 0){
+            throw new Error('argument "path" is required !');
+        }
+        if(!charset || charset.length === 0){
+            charset = 'utf-8';
+        }
+        var done = false;
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.src = path;
+        script.type = 'text/javascript';
+        script.charset = charset;
+        script.onload = script.onreadystatechange = function () {
+            if (!done && (!script.readyState || script.readyState == 'loaded' || script.readyState == 'complete')) {
+                done = true;
+                script.onload = script.onreadystatechange = null;
+                if (callback) {
+                    callback.call(script)
+                }
+            }
+        };
+        head.appendChild(script);
+    }
+}
+
+$(function(){
+    dynamicLoading.css('http://www.p5w.net/css/navcopy.css');
+});
+
 function mininav() {
     document.writeln("  <div class=\"nc\">");
     document.writeln("    <ul class=\"nav\">");
@@ -989,7 +1035,18 @@ function foot14() {
     document.writeln('            <p class="mt10">全景网络有限公司版权所有</p>');
     document.writeln('            <p>未经全景网书面授权，请勿转载内容或建立镜像，违者依法必究！</p>');
     document.writeln('        </div>');
-    document.writeln('        <div class="c-img"><img src="http://www.p5w.net/images14/c-img.jpg" width="347" height="103" alt="全景网" /></div>');
+    //document.writeln('        <div class="c-img"><img src="http://www.p5w.net/images14/c-img.jpg" width="347" height="103" alt="全景网" /></div>');
+    document.writeln('        <div class="c-logoright">');
+    document.writeln('            <div class="c-logoright-1"><a target="_blank" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101901278"><img src="http://www.p5w.net/images14/footer_c1.jpg" width="74" height="95"></a></div>');
+    document.writeln('            <div class="c-logoright-2"><a target="_blank" href="http://www.sznet110.gov.cn/"><img src="http://www.p5w.net/images14/footer_c2.jpg" width="66" height="95"></a></div>');
+    document.writeln('            <div class="c-logoright-3">');
+    document.writeln('                <p><a target="_blank" href="http://www.miibeian.gov.cn/">经营许可证号 粤B2-20050249号</a></p>');
+    document.writeln('                <p>信息网络传播视听节目许可证</p>');
+    document.writeln('                <p>许可证号：1903034</p>');
+    document.writeln('            </div>');
+    document.writeln('            <div class="clearfloat"></div>');
+    document.writeln('        </div>');
+
     document.writeln('        <div class="clearfloat"></div>');
     document.writeln('    </div>');
     document.writeln('    <div class="tj_www_ccc">');
