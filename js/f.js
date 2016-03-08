@@ -1037,6 +1037,13 @@ $(function () {
 });
 
 $(function () {
+    $('.news .zy').each(function () {
+        var zy = $(this).html();
+        $(this).html(zy.replaceAll('&nbsp', '&ensp'));
+    });
+});
+
+$(function () {
     ipoList();
     hqSummary();
     //qgqpFive();
@@ -1060,6 +1067,8 @@ $(function () {
     s8161.start();
     scrollUpDown('header_navi', 'li');
     var p5wLV = new p5wLastVisit({ divID: 'LastVisit_Div', 'interval': 20 * 1000, numShow: 5 });
+
+
 
     var tagArr = {
         "a": { "n": "֤ȯ", "p": "zhengquan", "l": "http://www.p5w.net/stock/" },
