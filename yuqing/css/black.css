@@ -1,0 +1,5 @@
+a:link { color: #383838;TEXT-DECORATION: none}
+a:visited { color: #383838;TEXT-DECORATION: none}
+a:hover { color: #004276;TEXT-DECORATION: underline; padding-bottom:1px;}
+.cate-tag a{ float:left;  padding: 0px 10px 0px 13px; *padding: 1px 10px 0px 13px; margin: 0 0 0 -10px; *margin: -1px 0 0 -10px; _margin: 0 0 0 -10px;font-size: 13px; font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå"; color:#FFF; background-image: url(../images/tag_red.gif); background-repeat: no-repeat;}
+.cate-tag a:link, .cate-tag a:visited, .cate-tag a:hover { color: #fff;TEXT-DECORATION: none}
