@@ -249,6 +249,8 @@ ul.ipo-list li p.gray a:hover { color: #808080; text-decoration: underline; }
 .search { width: 358px; margin-left: 20px; margin-top: 20px; }
 .search .qjkh { width:357px; height: 53px; background:url(../images14/qjkh.jpg) no-repeat center; }
 
+.fast ul li span.lybt { font-size: 12px; float:left;background:url(../images14/dian.jpg) no-repeat 0 10px; padding-left:10px;}
+
 .news-title span i {
     font-style: normal;
     font-size: 12px;
@@ -311,4 +313,21 @@ ul.ipo-list li p.gray a:hover { color: #808080; text-decoration: underline; }
 
 .news-title span i.sb:after {
     border-color: transparent transparent transparent #17b3e5;
+}
+
+.news-title span i.zc {
+    background: #c96db3;
+}
+
+.news-title span i.zc:after {
+    border-color: transparent transparent transparent #c96db3;
+}
+
+
+.news-title span i.xg {
+    background: #81cb68;
+}
+
+.news-title span i.xg:after {
+    border-color: transparent transparent transparent #81cb68;
 }
