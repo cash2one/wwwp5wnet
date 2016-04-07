@@ -4,5 +4,11 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="public.index-v2" level="application" />
+    <orderEntry type="library" name="highstock" level="application" />
+    <orderEntry type="library" name="ds" level="application" />
+    <orderEntry type="library" name="cmnt14_v1.src" level="application" />
+    <orderEntry type="library" name="public-v4.src" level="application" />
+    <orderEntry type="library" name="cmnt_v3.src" level="application" />
   </component>
 </module>

@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/content&amp;list/content_text.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/gdaty/datalist.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/f.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/datalist.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/hqzb/datalist.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/hqzb/js/func.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/hqzb/style/basic.fix.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/hqzb/style/global.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/live/style/basic.fix.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/zjssgs/datalist.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/live/zjssgs/style/basic.fix.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stock/js/base.stock-v3.src.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stock/接口.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/xsb/js/jquery.global.js" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
