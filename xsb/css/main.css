@@ -61,12 +61,7 @@ figure h2 span {
   font-weight: 800;
   margin: 0;
 }
-figure p {
-  margin: 0;
-  color: #fff;
-  line-height:24px;
-  font-size: 15px;
-}
+
 
 .grid figure figcaption,
 .grid figure figcaption > a {
@@ -412,9 +407,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   transition-delay: 0.2s;
 }
 
-figure.effect-oscar {
-  background: #000;
-}
 figure.effect-oscar img {
   opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -427,21 +419,8 @@ figure.effect-oscar figcaption {
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
-figure.effect-oscar figcaption:before {
-  position: absolute;
-  top: 23px;
-  right: 23px;
-  bottom: 23px;
-  left: 23px;
-  border: 1px solid #cccccc;
-  border-radius:6px;
-  content: '';
-}
-figure.effect-oscar p {
-  color: #fff;
-  padding: 38px 0;
-   overflow:hidden;
-}
+
+
 figure.effect-oscar p a{
   color: #fff;}
 figure.effect-oscar h2 {
@@ -472,12 +451,35 @@ figure.effect-oscar:hover figcaption:before, figure.effect-oscar:hover p {
 figure.effect-oscar:hover figcaption {
 
 }
+figure.effect-oscar {
+  background: #000;
+}
+figure.effect-oscar figcaption:before {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  bottom: 23px;
+  left: 23px;
+  border: 1px solid #999;
+  content: '';
+}
 figure.effect-oscar:hover img {
   opacity: 0.4;
-  -webkit-transform: scale(1.08);
-transform: scale(1.08);
+  -webkit-transform: scale(1.06);
+transform: scale(1.06);
+}
+figure p {
+  margin: 0;
+  color: #fff;
+  line-height:28px;
+  font-size: 16px;
 }
 
+figure.effect-oscar p {
+  color: #fff;
+  padding: 42px 0 0 10px;
+   overflow:hidden;
+}
 figure.effect-marley {
   background: #3085a3;
 }
@@ -545,8 +547,8 @@ figure.effect-ruby img {
 }
 figure.effect-ruby:hover img {
   opacity: 0.5;
- -webkit-transform: scale(1.08);
-  transform: scale(1.08);
+ -webkit-transform: scale(1.07);
+  transform: scale(1.07);
 }
 figure.effect-ruby h2 {
   margin-top: 20%;
