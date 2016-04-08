@@ -1,0 +1,31 @@
+
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+#switch-1 ul { list-style: none; }
+#switch-1 .nav { overflow: hidden; }
+#switch-1 .nav li {  float: left;}
+#switch-1 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images/sub_menu_1_1.gif)  }
+
+#switch-2 ul { list-style: none; }
+#switch-2 .nav { overflow: hidden; }
+#switch-2 .nav li {  float: left;}
+#switch-2 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images/sub_menu_1_1.gif)  }
+
+#switch-3 ul { list-style: none; }
+#switch-3 .nav { overflow: hidden; }
+#switch-3 .nav li {  float: left;}
+#switch-3 li a.current,#example-two li a.current:hover { float:left; width:44px; height:27px; margin: 0 5px 0 0; padding: 3px 0 0 0; color:#FFF; text-align:center; background-image:url(../images/sub_menu_2_1.gif) }
+
+#switch-4 ul { list-style: none; }
+#switch-4 .nav { overflow: hidden; }
+#switch-4 .nav li {  float: left;}
+#switch-4 li a.current,#example-two li a.current:hover { float:left; width:66px; height:26px; margin: 0 5px 0 0; padding: 4px 0 0 0; color:#FFF; text-align:center; background-image:url(../images/sub_menu_1_1.gif)  }
+
+.ct_menu{float:left; height: 32px; width: 95%; padding: 8px 0 0 10px; }
+.ct_menu li {float:left;}
+.ct_menu li a{float:left; width:72px; height:25px; *height:24px; margin: 0 5px 0 0; padding: 1px 0 0 0; *padding: 2px 0 0 0; text-align:center; background-image:url(../images/ft_tag_bg_1_2.gif)}
+.ct_menu li.hover a{float:left; width:72px; height:25px; *height:24px; margin: 0 5px 0 0; padding: 1px 0 0 0; *padding: 2px 0 0 0; color:#FFF; text-align:center; background-image:url(../images/ft_tag_bg_1_1.gif)}
+.ct_menu li.hover A:link {color: #fff; TEXT-DECORATION: none}
+.ct_menu li.hover A:visited {color: #fff; TEXT-DECORATION: none}
+.ct_menu li.hover A:hover {color: #fff;TEXT-DECORATION:none}
