@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title><TRS_CURPAGE only="TRUE" autolink="FALSE">当前栏目</TRS_CURPAGE><TRS_REPLACE value='标题'></TRS_REPLACE>_全景网</title>
+<meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+<meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/black.css" rel="stylesheet" type="text/css" />
+<link href="css/switch.css" rel="stylesheet" type="text/css" />
+<link href="css/style.fix.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.p5w.net/scripts/jquery.min.js" ignoreapd="1"></script>
+<script type="text/javascript" src="http://www.p5w.net/scripts/jcarousellite.min.js" ignoreapd="1"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/easyui-1.3.2/easyloader.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/tradingday/zbxc/gsydt/index_438.js"></script>
+<script type="text/javascript" src="/js/public.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/base.stock.xingu.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/public.users.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/function.js" charset="utf-8"></script>
+</head>
+<body>
+<!-- 顶部导航开始 -->
+<div class="mininav">
+  <script type="text/javascript">
+    mininav();
+  </script>
+</div>
+<!-- 顶部导航结束 -->
+<div class="top-full-ad"><script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_341/adlocation_341.js' IGNOREAPD="1"></script></div>
+<!-- 头部开始 -->
+<div class="header">
+  <div class="top-logo"><a href="../" target="_blank"><img src="../images13/logo_stock.jpg" /></a></div>
+  <div class="top-search">
+    <span class="top-search-select"><input name="input" type="text" class="top-search-select-3" value="请输入证券代码、简称、首字母搜索证券资讯" /></span>
+    <span class="top-search-btn"><a href="#"><img src="images/btn_search_news.gif" /></a></span>
+  </div>
+  <div class="top-menu">
+    <div class="top-menu-title"><a href="/stock/" target="_blank"><img src="images/topmenu-text-1.gif" /></a></div>
+    <div class="top-menu-line"><img src="images/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul>
+        <li><a href="http://hangqing.p5w.net/stock/index.php" target="_blank">行情</a></li>
+        <li><a href="../zqgg/" target="_blank">公告</a></li>
+        <li><a href="../gpyb/" target="_blank">股评研报</a></li>
+        <li><a href="http://company.p5w.net/index.asp" target="_blank">自选股</a></li>
+        <li><a href="http://company.p5w.net/data/qgqp.asp" target="_blank">千股千评</a></li>
+      </ul>
+    </div>
+    <div class="top-menu-line"><img src="images/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul> 
+        <li><a href="../news/zonghe/" target="_blank">新闻</a></li>
+        <li><a href="../news/gsxw/" target="_blank">公司</a></li>
+        <li><a href="../xingu/" target="_blank">新股</a></li>
+        <li><a href="../cyb/" target="_blank">创业板</a></li>
+        <li><a href="../sme/" target="_blank">中小板</a></li>
+        <li><a href="../news/jgxw/" target="_blank">机构</a></li>
+        <li><a href="../hkstock/" target="_blank">港股</a></li>
+        <li><a href="../news/zqxt/" target="_blank">学堂</a></li>
+      </ul>
+    </div>
+    <div class="top-menu-line"><img src="images/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul>
+        <li><a href="http://irm.p5w.net/" target="_blank">互动</a></li>
+        <li><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></li>
+        <li><a href="http://blog.p5w.net/" target="_blank">博客</a></li>
+        <li><a href="http://www.p5w.net/tradingday/index.htm" target="_blank">视频</a></li>
+        <li><a href="http://bbs.p5w.net/" target="_blank">论坛</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="top-submenu">
+    <div class="top-submenu-title"><img src="images/topmenu-text-2.gif" /></div>
+    <div class="top-submenu-1">
+      <ul><TRS_DOCUMENTS id="证券_新股_导航" num="20">
+        <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<!-- 头部结束 -->
+
+<div class="page"> 
+  <!-- 首屏开始 -->
+  <div class="main-top"> 
+    <!-- 首屏左边开始 -->
+    <div class="colum-left">
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2> <a href="http://www.p5w.net/data/xgzt/index.html" target="_blank">新股数据</a></h2>
+        </div>
+        <div class="tline" id="newstockdata">
+          <div class="tline_title">
+            <li class="twa1">股票简称</li>
+            <li class="twa2">发行价</li>
+            <li class="twa3">中签率（%）</li>
+            <li class="twa4">市盈率</li>
+          </div>       
+        </div>
+      </div>
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2> 新股行情</h2>
+        </div>
+        <div class="tline" id="newstockhq">   
+           <div class="tline_title">
+            <li class="twa1">股票简称</li>
+            <li class="twa2">上市日期</li>
+            <li class="twa3">发行价</li>
+            <li class="twa4">最近收盘</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 首屏左边结束 --> 
+    
+    <!-- 首屏中间开始 -->
+    <div class="colum-middle">
+      <div class="headlines">
+        <h1 class="red"><TRS_Region id="证券_新股_要闻" Index="0"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">新股头条</TRS_Document></TRS_Cell></TRS_Region></h1>
+      </div>
+      <div class="head-list">
+        <ul><TRS_DOCUMENTS id="证券_新股_要闻" num="7">
+          <li><TRS_CONDITION condition='@USERLIST1' operator='blank' not='true'><span class="<TRS_DOCUMENT FIELD='USERLIST1'/>"><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">标题1</TRS_DOCUMENT></span></TRS_CONDITION><TRS_CONDITION condition='@USERLIST1' operator='blank' not='false'><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">标题1</TRS_DOCUMENT></TRS_CONDITION>
+            <TRS_CONDITION condition="@USERTITLE2" operator='blank' not='true'><TRS_CONDITION condition="@USERLIST2" operator='blank' not='true'><a href="<TRS_DOCUMENT field='USERLINK2'/>" class="<TRS_DOCUMENT FIELD='USERLIST2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a></TRS_CONDITION><TRS_CONDITION condition="@USERLIST2" operator='blank'><a href="<TRS_DOCUMENT field='USERLINK2'/>" target="_blank"><TRS_Document Field="USERTITLE2">标题2</TRS_Document></a></TRS_CONDITION></TRS_CONDITION>
+            <TRS_CONDITION condition="@USERTITLE3" operator='blank' not='true'><TRS_CONDITION condition="@USERLIST3" operator='blank' not='true'><a href="<TRS_DOCUMENT field='USERLINK3'/>" class="<TRS_DOCUMENT FIELD='USERLIST3'/>" target="_blank"><TRS_Document Field="USERTITLE3">标题3</TRS_Document></a></TRS_CONDITION><TRS_CONDITION condition="@USERLIST3" operator='blank'><a href="<TRS_DOCUMENT field='USERLINK3'/>" target="_blank"><TRS_Document Field="USERTITLE3">标题3</TRS_Document></a></TRS_CONDITION></TRS_CONDITION>
+          </li></TRS_DOCUMENTS>
+        </ul>
+      </div>
+      <div class="head-list">
+        <p><TRS_Region name="新股栏目底"><TRS_Cell><TRS_Document Field="DocTitle" target="_blank">新股栏目底</TRS_Document></TRS_Cell></TRS_Region></p>
+      </div>
+      <div class="head-list2">
+        <ul><TRS_DOCUMENTS id="新闻中心_新股动态" num="7"><TRS_record num="1">
+          <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT></li></TRS_record><TRS_record num="6">
+          <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT></li></TRS_record></TRS_DOCUMENTS>
+        </ul>
+      </div>
+    </div>
+    <!-- 首屏中间结束 --> 
+    
+    <!-- 首屏右边开始 -->
+    <div class="colum-right">
+      <div class="photo-news">
+        <div class="slides_container"><TRS_DOCUMENTS id="证券_新股_焦点图" num="3">
+          <div class="slide">
+            <TRS_Appendix MODE="PIC" INDEX="0" target="_blank" autolink="TRUE" EXTRA='width="333" height="202"'>图片</TRS_Appendix>
+          </div></TRS_DOCUMENTS>
+        </div>
+        <a href="javascript:void(0)" onfocus="this.blur()" class="prev" style="display: none;"><img src="/images13/arrow-prev.png" width="22" height="36" alt /></a>
+        <a href="javascript:void(0)" onfocus="this.blur()" class="next" style="display: none;"><img src="/images13/arrow-next.png" width="22" height="36" alt /></a>
+      </div>
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2><a href="http://www.p5w.net/tradingday/zbxc/lyzt/" target="_blank">新股视频</a></h2>
+        </div>
+        <div class="mod-list" id="lyztSP">
+         
+        </div>
+      </div>
+    </div>
+    <!-- 首屏右边结束 --> 
+  </div>
+  <!-- 首屏结束 -->
+  <div class="full-ad"><script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_342/adlocation_342.js' IGNOREAPD="1"></script></div>
+  
+  <!-- 页面中部开始 -->
+  <div class="main-md">
+    <div class="md-left">
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2><a href="http://rsc.p5w.net/rsc/" target="_blank">路演直击</a></h2>
+        </div>
+        <div class="mod-list4">
+          <ul><TRS_DOCUMENTS id="首页_路演活动" num="7">
+            <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT><TRS_DOCUMENT field="DOCRELTIME" dateformat="[yyyy-MM-dd]">日期</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+          </ul>
+        </div>
+      </div>
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2><a href="http://rsc.p5w.net/rsc/yhcq/yhcq.html" target="_blank">摇号抽签</a></h2>
+        </div>
+        <div class="mod-list4">
+          <ul><TRS_DOCUMENTS id="证券_新股_摇号抽签" num="6">
+            <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT><TRS_DOCUMENT field="DOCRELTIME" dateformat="[yyyy-MM-dd]">日期</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+          </ul>
+        </div>
+      </div>
+      <div class="mod-mc">
+        <div class="mod-title">
+          <h2>路演回放</h2>
+        </div>
+        <div class="mod-list4">
+          <ul><TRS_DOCUMENTS id="证券_新股_路演回放" num="6">
+            <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT><TRS_DOCUMENT field="DOCRELTIME" dateformat="[yyyy-MM-dd]">日期</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="md-right">
+      <div class="md-xgzt">
+        <div class="md-xgzt-link"><a href="/stock/xingu/zt/" target="_blank"><img src="/images13/blank.gif" width="80" height="25" /></a></div>
+        <div class="xgzt-arrow"><img src="images/xgzt_arrow_left.gif" id="xgzt-arrow-prev" /></div>
+        <div class="xgzt-content">
+          <ul><TRS_DOCUMENTS id="证券_新股_专题" num="8">
+            <li><TRS_Appendix MODE="PIC" INDEX="0" target="_blank" autolink="TRUE" EXTRA='width="61" height="44"'>图片</TRS_Appendix><p><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT></p></li></TRS_DOCUMENTS>
+          </ul>
+        </div>
+        <div class="xgzt-arrow2"><img src="images/xgzt_arrow_right.gif" id="xgzt-arrow-next" /></div>
+      </div>
+      <div class="md-cl">
+        <div class="md-ct1">
+          <div class="ct-title">
+            <h2><a href="<TRS_Channel id='证券_新股新闻' field='_RECURL'/>" target="_blank">新股新闻</a></h2>
+            <span class="ct-rt"><a href="<TRS_Channel id='证券_新股新闻' field='_RECURL'/>" target="_blank">更多</a></span>
+          </div>
+          <div class="ct-list">
+            <ul><TRS_DOCUMENTS id="证券_新股新闻" num="8">
+              <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" num="46">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+            </ul>
+          </div>
+        </div>
+        <div class="md-ct2">
+          <div class="ct-title">
+            <h2><a href="<TRS_Channel id='证券_新股_定价' field='_RECURL'/>" target="_blank">新股定价</a></h2>
+            <span class="ct-rt"><a href="<TRS_Channel id='证券_新股_定价' field='_RECURL'/>" target="_blank">更多</a></span> 
+          </div>
+          <div class="ct-list">
+            <ul><TRS_DOCUMENTS id="证券_新股_定价" num="8">
+              <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" num="46">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="md-cl">
+        <div class="md-ct1">
+          <div class="ct-title">
+            <h2><a href="<TRS_Channel id='证券_新股_公告' field='_RECURL'/>" target="_blank">新股公告</a></h2>
+            <span class="ct-rt"><a href="<TRS_Channel id='证券_新股_公告' field='_RECURL'/>" target="_blank">更多</a></span>
+          </div>
+          <div class="ct-list">
+            <ul><TRS_DOCUMENTS id="证券_新股_公告" num="8">
+              <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" num="46">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+            </ul>
+          </div>
+        </div>
+        <div class="md-ct2">
+          <div class="ct-title">
+            <h2><a href="<TRS_Channel id='证券_新股_过会信息' field='_RECURL'/>" target="_blank">过会信息</a></h2>
+            <span class="ct-rt"><a href="<TRS_Channel id='证券_新股_过会信息' field='_RECURL'/>" target="_blank">更多</a></span>
+          </div>
+          <div class="ct-list">
+            <ul><TRS_DOCUMENTS id="证券_新股_过会信息" num="8">
+              <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank" num="46">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面中部结束 --> 
+  <div class="clearfloat"></div>
+</div>
+<div class="foot">
+  <script type="text/javascript">
+    foot13();
+  </script>
+</div>
+
+</body>
+</html>

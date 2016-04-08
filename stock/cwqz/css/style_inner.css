@@ -1,0 +1,34 @@
+/* 初始化环境 */
+body { font-family:'宋体'; margin:0 auto; padding:0; font-size:12px; color:#004a9f; line-height:20px; }
+body > div { margin-right:auto; margin-left:auto; }
+div, form, ul, ol, li, span, p { margin:0; padding:0; border:0; }
+img, a img { border:0; margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size:12px; font-weight:normal; }
+ul, ol, li { list-style:none }
+table, td, input { font-size:12px }
+a {text-decoration:none; color:#004a9f;}
+a:hover {text-decoration:underline;}
+p { text-indent: 2em; padding:0 1em; text-align: justify; }/*em是相对单位，2em即现在一个字大小的两倍*/
+.dao { width:730px; height:134px; font-size:14px; padding:415px 0 0 130px; color:#FFF; margin:0 auto; line-height:25px; }
+.yes { background:url(../images/yes.jpg) no-repeat; background-position:center top; height:196px; }
+.no { background:url(../images/no.jpg) no-repeat; background-position:center top; height:200px; }
+.text { background:url(../images/text_0.jpg) no-repeat; background-position:center top; height:1259px; }
+.text_1 { width:957px; margin:0 auto; background:url(../images/text_1.jpg) repeat-y; background-position:center; }
+.one { width:465px; padding-top:15px; }
+.logo { width:77px;padding:0 8px 0 24px;text-align:center;float:left; border-right:1px solid #d0dae5; }
+.wen { float:left; }
+.shang { width:255px; background:url(../images/wen.jpg) no-repeat; padding:0 0 0 65px; }
+.da { width:290px; background:url(../images/da_1.jpg) no-repeat; padding:0 0 0 65px; }
+.da_wen { width:255px; padding:18px 0 0 0; word-break:break-all; }
+.da_di { background:url(../images/da_2.jpg) repeat-y; }
+.clear { clear:both; }
+.twe { width:470px; margin:25px 0 15px 0; float:right; }
+.left { width:470px; background:url(../images/left_yes.jpg) repeat-y; }
+.right { width:470px; float:right; background:url(../images/right_no.jpg) repeat-y; }
+.ed { width:959px; height:150px; background:url(../images/ed.jpg) no-repeat; margin:0 auto; }
+.left_1 { margin:25px 0 0 0;  FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; WIDTH:400px; PADDING-LEFT: 25px; }
+.right_1 { margin:25px 0 0 0; _margin:25px 0 0 0; float:right; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; WIDTH:420px; PADDING-right: 25px; }
+.right_1 td { text-align:center; }
+.end { background:url(../images/end.jpg) no-repeat; background-position:center top; margin:0 auto; height:125px; }
+.xu{ margin:15px 0 0 0;}
+

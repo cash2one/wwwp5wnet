@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<channel><TRS_DOCUMENTS NUM="500">
+  <item>
+    <title><![CDATA[<TRS_DOCUMENT field="DOCTITLE" autocolor="FALSE" autoformat="TRUE" autoformattype="XML" autolink="FALSE" />]]></title>
+    <link><![CDATA[<TRS_Document field="_RECURL" UrlIsAbs="true"/>]]></link>
+    <doctype><TRS_Document field="doctype"/></doctype>
+    <stockcode><TRS_Document field="stockcode"/></stockcode>
+    <doccontent><![CDATA[<TRS_Document field="doccontent"/>]]></doccontent>
+    <dochtmlcon><![CDATA[<TRS_Document field="dochtmlcon"/>]]></dochtmlcon>
+    <docabstract><![CDATA[<TRS_Document field="docabstract"/>]]></docabstract>
+    <pubDate><![CDATA[<TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd HH:mm:ss"></TRS_DOCUMENT>]]></pubDate>
+  </item></TRS_DOCUMENTS>
+</channel>

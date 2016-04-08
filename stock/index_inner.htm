@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>公司盈利预测_股票频道_全景网</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/black.css" rel="stylesheet" type="text/css" />
+<link href="css/switch.css" rel="stylesheet" type="text/css" />
+<link href="css/style.fix.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.p5w.net/scripts/jquery.min.js" ignoreapd="1"></script>
+<script type="text/javascript" src="http://www.p5w.net/scripts/jcarousellite.min.js" ignoreapd="1"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/easyui-1.3.2/easyloader.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/scripts/highstock.min.js"></script>
+<script type="text/javascript" src="http://www.p5w.net/tradingday/zbxc/gsydt/index_438.js"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/public.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/public.index.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/stock/js/base.stock.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/public.users.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/suggest.js"></script>
+<script type="text/javascript" src="http://www.p5w.net/stock/js/function.js"></script>
+</head>
+<body>
+<!-- 顶部导航开始 -->
+<div class="mininav">
+  <div class="mininav-left">
+    <a href="http://www.p5w.net" target="_blank">首页</a> | <a href="http://www.p5w.net/kuaixun/" target="_blank">快讯</a> | <a href="http://www.p5w.net/stock/" target="_blank">股票</a> | <a href="http://www.p5w.net/fund/" target="_blank">基金</a> | <a href="http://www.p5w.net/news/" target="_blank">财经</a> | <a href="http://www.p5w.net/futures/" target="_blank">期货</a> | <a href="http://www.p5w.net/money/" target="_blank">理财</a> | <a href="http://www.p5w.net/forex/" target="_blank">外汇</a> | <a href="http://www.p5w.net/zt/" target="_blank">专题</a> | <a href="http://bbs.p5w.net" target="_blank">社区</a> | <a href="http://zlzq.p5w.net/" target="_blank">专栏</a> | <a href="http://www.p5w.net/tradingday/" target="_blank">视频</a> | <a href="http://rsc.p5w.net" target="_blank">路演</a> | <a href="http://irm.p5w.net" target="_blank">互动平台</a>
+  </div>
+  <div class="mininav-right">
+    <div id="user-menu">
+      <ul class="menu">
+        <li class="item"><a class="link link-hover" href="http://www.p5w.net/cftxclub/club/201008/t20100825_97025.htm" target="_blank"><em>帮助</em></a></li>
+        <li class="item"><a class="link link-hover" href="http://company.p5w.net/passport/index.asp" target="_blank"><em>通行证</em></a></li>
+        <li class="item"><a class="link link-hover" href="http://company.p5w.net/passport/login.asp" name="userlogin_box"><em>登录</em></a></li>
+        <li class="item"><a class="link link-hover" href="http://company.p5w.net/passport/register.asp" target="_blank"><em>注册</em></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 顶部导航结束 -->
+<div class="top-full-ad">
+  <span class="top-ad-item"><script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_339/adlocation_339.js' IGNOREAPD="1"></script></span>
+  <span class="top-ad-item"><script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_340/adlocation_340.js' IGNOREAPD="1"></script></span>
+</div>
+<!-- 头部开始 -->
+<div class="header">
+  <div class="top-logo"><a href="http://www.p5w.net/stock/"><img src="http://www.p5w.net/stock/images13/logo_stock.jpg" /></a></div>
+  <div class="top-search">
+    <span class="top-search-select"><input name="code" type="text" class="top-search-input-1" id="stockcode" value="证券代码或简称" /></span>
+    <span class="top-search-select">
+    <select name="searchtype" class="top-search-select-2" id="searchtype">
+      <option value="1">个股新闻</option>
+      <option value="12">临时公告</option>
+      <option value="0">互动平台</option>
+      <option value="2">实时行情</option>
+      <option value="3">个股论坛</option>
+      <option value="4">公司概况</option>
+      <option value="5">高管人员</option>
+      <option value="6">财务指标</option>
+      <option value="7">分红配股</option>
+      <option value="8">发行筹资</option>
+      <option value="9">股本结构</option>
+      <option value="10">十大股东</option>
+      <option value="11">流通股东</option>
+      <option value="13">报告全文</option>
+      <option value="14">公司制度</option>
+    </select>
+    </span>
+    <span class="top-search-btn"><a href="javascript:;" id="btnSearch" target="_self"><img src="http://www.p5w.net/stock/images13/stock_btn_search.gif" /></a></span>
+  </div>
+  <div class="top-menu">
+    <div class="top-menu-title"><img src="http://www.p5w.net/stock/images13/topmenu-text-1.gif" /></div>
+    <div class="top-menu-line"><img src="http://www.p5w.net/stock/images13/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul>
+        <li><a href="http://hangqing.p5w.net/stock/index.php" target="_blank">行情</a></li>
+        <li><a href="http://www.p5w.net/stock/zqgg/" target="_blank">公告</a></li>
+        <li><a href="http://www.p5w.net/stock/hydx/" target="_blank">股评</a></li>
+        <li><a href="http://www.p5w.net/stock/lzft/" target="_blank">研报</a></li>
+        <li><a href="http://company.p5w.net/index.asp" target="_blank">自选股</a></li>
+        <li><a href="http://company.p5w.net/data/qgqp.asp" target="_blank">千股千评</a></li>
+      </ul>
+    </div>
+    <div class="top-menu-line"><img src="http://www.p5w.net/stock/images13/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul>
+        <li><a href="http://www.p5w.net/stock/news/zonghe/" target="_blank">新闻</a></li>
+        <li><a href="http://www.p5w.net/stock/news/gsxw/" target="_blank">公司</a></li>
+        <li><a href="http://www.p5w.net/stock/xingu/" target="_blank">新股</a></li>
+        <li><a href="http://www.p5w.net/stock/cyb/" target="_blank">创业板</a></li>
+        <li><a href="http://www.p5w.net/stock/sme/" target="_blank">中小板</a></li>
+        <li><a href="http://www.p5w.net/stock/news/jgxw/" target="_blank">机构</a></li>
+        <li><a href="http://www.p5w.net/stock/hkstock/" target="_blank">港股</a></li>
+        <li><a href="http://www.p5w.net/stock/news/zqxt/" target="_blank">学堂</a></li>
+      </ul>
+    </div>
+    <div class="top-menu-line"><img src="http://www.p5w.net/stock/images13/top_menu_line2.jpg" /></div>
+    <div class="top-menu-1">
+      <ul>
+        <li><a href="http://irm.p5w.net/" target="_blank">互动</a></li>
+        <li><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></li>
+        <li><a href="http://blog.p5w.net/" target="_blank">博客</a></li>
+        <li><a href="http://www.p5w.net/tradingday/" target="_blank">视频</a></li>
+        <li><a href="http://bbs.p5w.net/" target="_blank">论坛</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 头部结束 -->
+
+<div class="page">
+  <div style="border:#f9f0cf 1px solid;">
+    <iframe src="http://company.p5w.net/data/fxyc.asp" width="100%" height="850" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div class="clearfloat"></div>
+<div class="footer">
+  <div class="footer-left"> 合作电话：0755-83990201、83256219 Email: <a href="mailto:service@p5w.net" target="_blank">service@p5w.net</a> <br />
+    全景网络：获准从事登载财经类新闻业务 获准经营因特网信息服务业务<br />
+    Copyright&copy;2000-2012 Panorama Network Co., Ltd, All Rights Reserved<br />
+    全景网络有限公司版权所有<br />
+    未经全景网书面授权，请勿转载内容或建立镜像，违者依法必究！</div>
+  <div class="footer-right">
+    <div style="float:left"><a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101901278" target="_blank"><img src="http://www.p5w.net/images/sznet110anwang.gif" width="70" height="81" /></a></div>
+    <div style="float:left"><a href="http://www.sznet110.gov.cn/" target="_blank"><img src="http://www.p5w.net/images/sznet110gangting.gif" width="60" height="80" /></a></div>
+    <div style="float:left; margin-top:20px; margin-left:5px;"><a href="http://www.miibeian.gov.cn/" target="_blank">经营许可证号 粤B2-20050249号</a><br />
+      信息网络传播视听节目许可证 <br />
+      许可证号：1903034</div>
+  </div>
+</div>
+</div>
+</body>
+</html>

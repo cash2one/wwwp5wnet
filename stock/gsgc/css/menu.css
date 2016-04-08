@@ -1,0 +1,372 @@
+@charset "gb2312";
+/* CSS Document */
+.mininav {
+    height: 38px;
+    margin: 0 auto;
+    width: 1022px;
+}
+.mininav-left {
+    float: left;
+    margin: 10px 0 0;
+}
+.mininav-left a{ color: #383838; padding:0 2px;}
+.mininav-left a:hover{ color: #c80000}
+.mininav-right {
+    float: right;
+    margin: 8px 0 0;
+    width: 213px;
+}
+.mininav-register a {
+    background-image: url("../images/mininav_btn_1.gif");
+    float: left;
+    height: 24px;
+    width: 49px;
+}
+.mininav-register a:hover {
+    background-position: center bottom;
+}
+.mininav-login a {
+    background-image: url("../images/mininav_btn_2.gif");
+    float: left;
+    height: 24px;
+    margin: 0 0 0 3px;
+    width: 49px;
+}
+.mininav-login a:hover {
+    background-position: center bottom;
+}
+.mininav-pass a {
+    background-image: url("../images/mininav_btn_3.gif");
+    float: left;
+    height: 24px;
+    margin: 0 0 0 3px;
+    width: 57px;
+}
+.mininav-pass a:hover {
+    background-position: center bottom;
+}
+.mininav-help a {
+    background-image: url("../images/mininav_btn_4.gif");
+    float: left;
+    height: 24px;
+    margin: 0 0 0 3px;
+    width: 49px;
+}
+.mininav-help a:hover {
+    background-position: center bottom;
+}
+
+.mininav-right {
+    line-height: 36px;
+    margin-top: 4px;
+    width: 330px;
+}
+#user-menu {
+}
+.menu li.item {
+    display: inline;
+    float: right;
+    margin-right: 2px;
+    position: relative;
+}
+.menu .link {
+    color: #FFFFFF;
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 7px;
+    position: relative;
+    text-decoration: none;
+}
+.mininav-right .menu .link {
+    color: #000000;
+}
+.menu .link:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu .link span {
+    cursor: pointer;
+    padding-right: 11px;
+    position: relative;
+    z-index: 25;
+}
+.menu .link span em {
+    border-color: #636363 transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 3px 3px 0;
+    cursor: pointer;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.menu li.current {
+    background: none repeat scroll 0 0 #B93C3C;
+}
+.rq-ct {
+    height: 210px;
+}
+.menu li.hover {
+    border: 0 none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-left: -1px;
+    margin-right: 0;
+    position: relative;
+    z-index: 22;
+}
+.menu li.hover .link {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: transparent;
+    background-image: url("../images/layer_bg.png");
+    border-color: #000000 #000000 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #636363;
+    margin-bottom: -1px;
+    padding: 0 8px 0 7px;
+    position: relative;
+    text-decoration: none;
+    z-index: 24;
+}
+.menu li.hover .link:hover {
+    color: #636363;
+}
+.menu li.hover .link span {
+    top: -1px;
+}
+.menu li.hover .link span em {
+    border-color: #636363 transparent transparent;
+}
+.menu-sublist {
+    background: url("../images/layer_bg.png") repeat scroll 0 0 transparent;
+    border: 1px solid #000000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    display: none;
+    left: 0;
+    padding: 3px 2px;
+    position: absolute;
+    top: 33px;
+    width: 125px;
+    z-index: 21;
+}
+.menu-sublist .solid-line {
+    background: none repeat scroll 0 0 #DFDCDC;
+    font-size: 0;
+    height: 1px;
+    line-height: 1px;
+    margin: 3px 0;
+    overflow: hidden;
+}
+.menu-sublist .border {
+    background-color: transparent;
+    background-image: url("../images/menu_title_bg.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 4px 0 9px;
+}
+.menu div ul div {
+    border-top-left-radius: 3px;
+    left: 0;
+    margin-left: 120px;
+    top: 0;
+    z-index: 26;
+}
+.menu div ul div ul {
+}
+.menu div ul li {
+    padding: 0;
+    position: relative;
+    z-index: 24;
+}
+.menu div ul li span {
+    cursor: pointer;
+    padding-right: 60px;
+    position: relative;
+    z-index: 25;
+}
+.menu div ul li span em {
+    border-color: transparent #000000;
+    border-style: solid dashed dashed;
+    border-width: 3px 0 3px 3px;
+    cursor: pointer;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.menu div ul li a:hover span em {
+    border-color: transparent #FFFFFF;
+}
+.menu ul.ul-list {
+}
+.menu ul.ul-list li {
+    height: 25px;
+    line-height: 25px;
+    list-style: none outside none;
+    vertical-align: bottom;
+    width: auto;
+}
+.menu ul.ul-list li a {
+    color: #636363;
+    display: block;
+    padding-left: 10px;
+}
+.menu ul.ul-list li a:visited {
+    color: #636363;
+    display: block;
+    padding-left: 10px;
+}
+.menu ul.ul-list li a:link, .ul-list li a:active {
+    color: #636363;
+}
+.menu ul.ul-list li a:hover {
+    background-color: #B93C3C;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu .link-hover, .menu .link-hover em {
+    background: url("../images/btns.gif") no-repeat scroll -320px 0 transparent;
+    color: #636363;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+}
+.menu .link-hover {
+    background-position: -320px 0;
+    margin-left: 3px;
+    padding-left: 10px;
+}
+.menu .link-hover em {
+    background-position: right -28px;
+    color: #000000;
+    font-style: normal;
+    height: 28px;
+    padding-right: 10px;
+}
+.menu a.link-hover:hover em {
+    background-position: right -84px;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 28px;
+    text-decoration: none;
+}
+.menu a.link-hover:link {
+    text-decoration: none;
+}
+.menu a.link-hover:visited {
+    text-decoration: none;
+}
+.menu a.link-hover:hover {
+    background-position: -320px -56px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu .welcome {
+    color: #999999;
+    height: 28px;
+    line-height: 28px;
+    padding-top: 3px;
+}
+
+
+
+
+
+.pull-right {
+    float: right;
+}
+.pages {
+    padding: 20px 0 40px;
+}
+.pages span, .pages b, .pages em, .pages a {
+    background-color: #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 5px;
+    text-align: center;
+    width: 28px;
+}
+.pages em, .pages a, .pages .btn {
+    font-size: 12px;
+}
+.pages .input-append .btn {
+    background: none repeat scroll 0 0 #999999;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    padding: 4px 5px 3px;
+    text-shadow: none;
+}
+.pages .pages-ipt {
+    border: 1px solid #999999;
+    border-radius: 0 0 0 0;
+    padding-bottom: 3px;
+}
+.pages-ipt {
+    padding: 0 2px;
+    width: 32px;
+}
+.pages .first a, .pages .pre a, .pages .next a, .pages .end a {
+    background-image: url("../images/glyphicons-halflings.png");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.pages .first a {
+    background-position: -15px -160px;
+}
+.pages .pre a {
+    background-position: -39px -160px;
+}
+.pages .next a {
+    background-position: -63px -160px;
+}
+.pages .end a {
+    background-position: -87px -160px;
+}
+.pages .input-append {
+    float: left;
+}
+.pages b {
+    background-color: #333333;
+}
+.pages-nav {
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+.pages-nav h4 {
+    font-size: 14px;
+}
+.pages-nav ul {
+    font-size: 12px;
+}
+.pages-nav li {
+    float: left;
+    margin: 2px 0;
+    width: 49%;
+}
+.pages-nav li.active a, .pages-nav li.active {
+    color: #3399FF;
+}

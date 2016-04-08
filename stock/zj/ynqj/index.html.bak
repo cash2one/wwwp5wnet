@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>直击上市公司_股票频道_股票行情_股票查询_今日行情_大盘走势_股票分析_全景网</title>
+<meta name="keywords" content="直击上市公司，发现问题，追寻真相，舆情观察，专家点评" />
+<meta name="description" content="直击上市公司,发现问题，追寻真相，舆情观察，专家点评" />
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/basic.fix.css" />
+<script type="text/javascript" src="http://www.p5w.net/scripts/jquery.min.js" ignoreapd="1"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/easyui-1.3.2/easyloader.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/public.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/public.users.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/page_util.js" ignoreapd="1"></script>
+</head>
+
+<body>
+<div class="wrap_white">
+  <div class="all">
+    <div class="mininav">
+      <script type="text/javascript">
+        mininav();
+      </script>
+    </div>
+    <div class="header_o header_o_ynqj"></div>
+    <div class="layout">
+      <div class="content">
+        <div class="main fl">
+          <div class="text"><TRS_DOCUMENTS NUM="200" PAGESIZE="10" AUTOMORE="FALSE">
+            <h2><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank">文档标题</TRS_DOCUMENT><span><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy.MM.dd">日期</TRS_DOCUMENT></span></h2>
+            <p><TRS_DOCUMENT field="docabstract" autolink="false">文档摘要</TRS_DOCUMENT></p></TRS_DOCUMENTS>
+          </div>
+          <div class="number pull-right">
+            <div class="viciao">
+              <script language="javascript">
+                createPageHTML(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="slide fr">
+          <div class="zwright">
+            <div class="banner"><script src="http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_367/adlocation_367.js"></script></div>
+            <div class="news first">
+              <h3>头条关注</h3>
+            </div>
+            <div id="topnews" class="mod-list5">
+              <iframe width="100%" scrolling="no" height="245" frameborder="0" src="http://www.p5w.net/sy/index_45.htm" style="height: 245px;"></iframe>
+            </div>
+            <div id="cwqz">
+              <iframe width="100%" scrolling="no" height="125" frameborder="0" src="http://www.p5w.net/stock/cwqz/t/cwqz.htm" style="height: 126px;"></iframe>
+            </div>
+            <div class="news">
+              <h3><a target="_blank" href="http://irm.p5w.net/">全景互动</a></h3>
+              <div class="mt-rt"><a target="_blank" href="http://irm.p5w.net/"><img src="http://www.p5w.net/images13/mt_rt_logo_1.gif"></a></div>
+            </div>
+            <div id="hd">
+              <iframe width="100%" scrolling="no" height="300" frameborder="0" src="http://www.p5w.net/sy/hdcwqz.htm" style="height: 235px;"></iframe>
+            </div>
+            <div class="banner"><script src="http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_351/adlocation_351.js"></script> </div>
+            <div class="news">
+              <h3><a target="_blank" href="http://www.p5w.net/zt/">全景专题</a></h3>
+            </div>
+            <div id="zt">
+              <iframe width="100%" scrolling="no" height="290" frameborder="0" src="http://www.p5w.net/sy/index_46.htm" style="height: 300px;"></iframe>
+            </div>
+            <div class="news">
+              <h3><a target="_blank" href="http://bbs.p5w.net">论坛</a>·<a target="_blank" href="http://blog.p5w.net">博客</a></h3>
+            </div>
+            <div id="bbs" class="mod-list3">
+              <iframe width="100%" scrolling="no" height="200" frameborder="0" src="http://www.p5w.net/sy/index_47.htm"></iframe>
+            </div>
+            <div class="banner"><script src="http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_353/adlocation_353.js"></script></div>
+            <div class="news">
+              <h3><a target="_blank" href="http://www.p5w.net/kuaixun/">全景快讯</a></h3>
+            </div>
+            <div id="kuaixun" class="mod-list3">
+              <iframe width="100%" scrolling="no" height="245" frameborder="0" src="http://www.p5w.net/kuaixun/index_77.htm"></iframe>
+            </div>
+            <div class="news">
+              <h3><a target="_blank" href="http://www.p5w.net/tradingday/">全景视频</a></h3>
+            </div>
+            <div id="tradingday">
+              <iframe width="100%" scrolling="no" height="315" frameborder="0" src="http://www.p5w.net/sy/index_49.htm"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="clearb"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearb"></div>
+  <div class="foot">
+    <script type="text/javascript">
+      foot13();
+    </script>
+  </div>
+</body>
+</html>

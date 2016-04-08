@@ -1,0 +1,37 @@
+function navStock() {
+    document.writeln("<div class=\"top-menu-title\"><a href=\"http://www.p5w.net/stock/\"><img src=\"http://www.p5w.net/stock/images13/topmenu-text-1.gif\"></a></div>");
+	document.writeln("<div class=\"top-menu-line\"><img src=\"http://www.p5w.net/stock/images13/top_menu_line2.jpg\"></div>");
+	document.writeln("<div class=\"top-menu-1\">");
+	document.writeln("  <ul>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://hq.p5w.net/\">行情</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/zqgg/\">公告</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/gpyb/\">股评</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://data.p5w.net/yb/index.php\">研报</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://company.p5w.net/index.asp\">自选股</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://data.p5w.net/stock/qgqps.php\">千股千评</a></li>");
+	document.writeln("  </ul>");
+	document.writeln("</div>");
+	document.writeln("<div class=\"top-menu-line\"><img src=\"http://www.p5w.net/stock/images13/top_menu_line2.jpg\"></div>");
+	document.writeln("<div class=\"top-menu-1\">");
+	document.writeln("  <ul>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/news/zonghe/\">新闻</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/news/gsxw/\">公司</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/xingu/\">新股</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/cyb/\">创业板</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/sme/\">中小板</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/news/jgxw/\">机构</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/hkstock/\">港股</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/stock/news/zqxt/\">学堂</a></li>");
+	document.writeln("  </ul>");
+	document.writeln("</div>");
+	document.writeln("<div class=\"top-menu-line\"><img src=\"http://www.p5w.net/stock/images13/top_menu_line2.jpg\"></div>");
+	document.writeln("<div class=\"top-menu-1\">");
+	document.writeln("  <ul>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://irm.p5w.net/\">互动</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://rsc.p5w.net/rsc/\">路演</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://blog.p5w.net/\">博客</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://www.p5w.net/tradingday/index.htm\">视频</a></li>");
+	document.writeln("	<li><a target=\"_blank\" href=\"http://bbs.p5w.net/\">论坛</a></li>");
+	document.writeln("  </ul>");
+	document.writeln("</div>");
+}

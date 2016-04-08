@@ -1,0 +1,85 @@
+@charset "gb2312";
+/* CSS Document */
+.sto-nav{ width:1020px; margin:0 auto 0px; height:46px;background:url(../images14/sto-bg1.jpg) repeat-x; border-left:1px solid #eeeeee;}
+.sto-nav ul{   float:left}
+.sto-nav ul li{ font-family:"Î¢ÈíÑÅºÚ";width:51px; float:left; text-align:center; height:46px; line-height:46px; font-size:14px; border-right:1px solid #eeeeee;}
+.sto-nav ul li.t2{width:62px;}.sto-nav ul li.t3{width:73px;}
+.sto-nav .t1{ width:80px;  text-align:center;  float:left;font-family:"Î¢ÈíÑÅºÚ"; height:46px; line-height:46px; font-size:14px;border-right:1px solid #eeeeee;}
+.sto-nav ul li:hover {    background: url("../images14/sto-bg2.jpg") repeat-x scroll 0 0 ;  }
+.sto-nav ul li.hover{  background: url("../images14/sto-bg2.jpg") repeat-x scroll 0 0 ;  }
+ 
+.ad300x250,.gn-sto-r,.cwqz-sto-r,.spxy-sto-r,.sto-qp-box,.sto-pgt{ margin-bottom:20px;}
+.sto-left{ float:left; width:655px; padding-right:50px;border-right:1px solid #d6d6d6}
+.sto-right{ float:right;width:300px}
+.sto-left-list li{ padding-bottom:35px; margin-bottom:20px; border-bottom:1px solid #ebebeb; position:relative;_display:inline-block;/*Forie6*/}
+.sto-left-list li h2{      font-family:"Î¢ÈíÑÅºÚ";    font-size:21px;    color:#666;   line-height: 26px;    margin-bottom: 10px;}
+.sto-left-list li p{   color: #888;    font-size: 14px;    line-height: 24px;}
+.sto-left-list li p span.time{ position:absolute; font-size: 12px;  color: #aaa;    top:0px; right:5px;}
+
+
+.gn-sto-r { background:url(../images14/wbg-list.jpg) no-repeat; width:300px; height:177px; }
+.gn-sto-r ul li { float:left; width:75px; height:20px; text-align:center; margin:32px 0px 6px 0; font-family:"Î¢ÈíÑÅºÚ";}
+ 
+.cwqz-sto-r { width:300px;}
+.cwqz-sto-r dt{ float:left; width:106px; height:89px;}
+
+.cwqz-sto-r  .cwqz-bg{ background:url(../images14/cwqz-1.jpg) no-repeat right; width:300px; height:89px; float:left;}
+.cwqz-sto-r  dd h2{ font-size: 16px;font-weight: normal; margin-bottom:10px; font-family:"Î¢ÈíÑÅºÚ"; text-align:center; line-height:43px; }
+.cwqz-sto-r  dd p{ font-size:14px; color:#888;  line-height:14px;font-family:"Î¢ÈíÑÅºÚ";text-align:center;line-height:30px;}
+.cwqz-sto-r  ul{ margin-top:15px; width:300px; float:left;}
+.cwqz-sto-r  ul li { line-height:24px;}
+
+.spxy-sto-r  { width:300px;}
+.spxy-sto-r  dt{ float:left; width:102px; height:110px; float:left; margin-right:20px; }
+.spxy-sto-r  dt.jj img{ border:1px solid #eeeeee;}
+.spxy-sto-r  dt p{ font-size:14px; color:#FFF; background-color:#dbb75e; text-align:center; }
+.spxy-sto-r  dd h2{ font-size: 18px;font-weight: normal;  font-family:"Î¢ÈíÑÅºÚ";line-height:24px; margin-bottom:10px;  }
+.spxy-sto-r  dd h3{ font-size: 16px;font-weight: normal;  font-family:"Î¢ÈíÑÅºÚ";line-height:22px; margin-bottom:5px; height:38px;  }
+.spxy-sto-r  dd.lhb h3 { font-size: 16px;font-weight: normal;  font-family:"Î¢ÈíÑÅºÚ";line-height:24px; margin-bottom:10px; height:55px; }
+.spxy-sto-r  dd p{ font-size:12px; color:#888;  line-height:14px; line-height:22px;}
+.spxy-sto-r  p { color:#7a6119; font-size:18px; font-family:"Î¢ÈíÑÅºÚ"; }
+.spxy-sto-r  ul{ margin-top:24px; width:300px; float:left;}
+.spxy-sto-r  ul li { line-height:24px;}
+
+.sto-qp-box { clear:both}
+.sto-qp-box li.qp3 { width:110px; padding-left:10px; }
+.sto-qp-box li.qp4 { width:180px;  } 
+.sto-qp-box h3{ margin-bottom:10px;}
+
+.sto-qp-tit p {color:#7a6119; font-size:16px; font-family:"Î¢ÈíÑÅºÚ"; margin-bottom:18px; line-height:35px; margin:0 0 0 10px;}
+	ul.sto-qp-th { margin-top:8px;}
+	ul.sto-qp-th li {background-color:#dbb75e;  color:#fff; font-size:12px; float:left; line-height:24px; border-bottom:1px solid #dedede; margin-bottom:4px;}
+
+.sto-qp-list  li { font-size:12px; float:left; line-height:28px; }
+.sto-qp-list li.yellow{ background-color:#fcfaf1; border-bottom:#f9eedc 1px solid;}
+
+.pgt-top { background-color:#fcfbf1; border-top:1px solid #cb993e; width:300px; height:35px; }
+.pgt-top p {color:#7a6119; font-size:16px; font-family:"Î¢ÈíÑÅºÚ"; margin-bottom:18px; line-height:35px; margin:0 0 0 10px;}
+
+.sto-pgt dt{ float:left; width:59px; height:59px; float:left; margin-right:20px; }
+.sto-pgt h2{ font-size: 14px;font-weight: normal;  font-family:"Î¢ÈíÑÅºÚ";line-height:18px; margin-bottom:5px;  }
+.sto-pgt dd p{ font-size:12px; color:#888;  line-height:14px; line-height:20px;}
+.sto-pgt p { color:#7a6119; font-size:18px; font-family:"Î¢ÈíÑÅºÚ"; }
+.sto-pgt ul{ float:left; width:300px;border-top:#f9eedc 1px solid; padding-top:10px;}
+.sto-pgt ul li { line-height:24px; background:url(../images14/dian.jpg) no-repeat 0 10px; padding-left:10px;}
+.sto-pgt .pgt-cont { margin:16px 0  20px 10px;}
+
+.sto-bbs-r  { width:300px;}
+.sto-bbs-r  dt{ float:left; width:64px; height:64px; float:left; margin-right:20px; }
+.sto-bbs-r  dt p{ font-size:14px; color:#333; text-align:center; }
+.sto-bbs-r  dd h2{ font-size: 14px;  font-family:"Î¢ÈíÑÅºÚ";line-height:24px; margin-bottom:10px;  }
+.sto-bbs-r  dd.lhb h3 { font-size: 16px;font-weight: normal;  font-family:"Î¢ÈíÑÅºÚ";line-height:24px; margin-bottom:10px; height:55px; }
+.sto-bbs-r  dd p{ font-size:12px; color:#888;  line-height:14px; line-height:22px;}
+.sto-bbs-r  p { color:#7a6119; font-size:18px; font-family:"Î¢ÈíÑÅºÚ"; }
+.sto-bbs-r  ul{ margin-top:24px; width:300px; float:left;}
+.sto-bbs-r  ul li { line-height:24px;}
+.sto-bbs-r  dl{ height:115px;}
+
+
+.pages {  height: 60px;    margin: 0 auto; padding-top:20px; padding-bottom:20px;      text-align: center;height: 60px;      width: 500px;margin-top:50px;}
+.pages p {    color: #666;    margin: 5px 0 0;}
+.pages a {    border-color: #d0d0d0;    border-right: 1px solid #d0d0d0;    border-style: solid;    border-width: 1px;    color: #000;    margin-right: 7px;    padding:6px 10px;    text-decoration: none;}
+.pages a:hover {    background-color: #d21300;    border-color: #d21300;    border-right: 1px solid #d21300;    border-style: solid;    border-width: 1px;    color: #fff;    margin-right: 7px;      padding: 6px 10px;    text-decoration: none;}
+.pages a:active {    background-color: #d21300;    border-color: #d21300;    border-right: 1px solid #d21300;    border-style: solid;    border-width: 1px;    color: #fff;    margin-right: 7px;    padding: 4px 7px;    text-decoration: none;}
+.pages span.current {    background-color: #d21300;    border-color: #d21300;    border-right: 1px solid #d21300;    border-style: solid;    border-width: 1px;    color: #fff;    font-weight: bold;    margin-right: 5px;     padding: 6px 10px;}
+.pages span.disabled {    border-color: #ccc;    border-right: 1px solid #ccc;    border-style: solid;    border-width: 1px;    color: #ccc;    margin-right: 5px;    padding: 6px 10px;}

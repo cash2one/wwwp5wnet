@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title><TRS_CURPAGE only="TRUE" autolink="FALSE">当前栏目</TRS_CURPAGE><TRS_REPLACE value='标题'></TRS_REPLACE>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link rel="stylesheet" type="text/css" href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" />
+    <link href="css/style3.css" rel="stylesheet" type="text/css" />
+    <link href="css/black3.css" rel="stylesheet" type="text/css" />
+    <link href="css/switch3.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.fix-v3.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/poshytip/jquery.poshytip.min.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/images/Charts/FusionCharts.js"></script>
+    <script type="text/javascript" src="http://www.p5w.net/scripts/jcarousellite2.min.js"></script>
+    <script type="text/javascript" src="js/WdatePicker.js"></script>
+    <script type="text/javascript" src="js/base.stock.xingu-v3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public.v2.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://data.p5w.net/ipo/ipojson.php?m=eventdate&jsvar=dateinfo&upcache=1" ignoreapd="1"></script>
+    <script type="text/javascript" src="http://www.p5w.net/tradingday/zbxc/gsydt/index_438.js"></script>
+</head>
+<body>
+    <!-- 顶部导航开始 -->
+    <div class="mininav">
+        <script type="text/javascript">
+            mininav();
+        </script>
+    </div>
+    <!-- 顶部导航结束 -->
+    <div class="top-full-ad">
+        <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_386/adlocation_386.js' IGNOREAPD="1"></script>
+    </div>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="top-logo"><a href="../" target="_blank"><img src="../images13/logo_stock.jpg" /></a></div>
+        <div class="top-search">
+            <span class="top-search-select"><input name="input" type="text" class="top-search-select-3" value="请输入证券代码、简称、首字母搜索证券资讯" /></span>
+            <span class="top-search-btn"><a href="#"><img src="images3/btn_search_news.gif" /></a></span>
+        </div>
+        <div class="top-menu">
+            <div class="top-menu-title"><img src="images3/topmenu-text-1.gif" /></div>
+            <div class="top-menu-line"><img src="images3/top_menu_line2.jpg" /></div>
+            <div class="top-menu-1">
+                <ul>
+                    <li><a href="http://hangqing.p5w.net/stock/index.php" target="_blank">行情</a></li>
+                    <li><a href="../zqgg/" target="_blank">公告</a></li>
+                    <li><a href="../gpyb/" target="_blank">股评研报</a></li>
+                    <li><a href="http://company.p5w.net/index.asp" target="_blank">自选股</a></li>
+                    <li><a href="http://company.p5w.net/data/qgqp.asp" target="_blank">千股千评</a></li>
+                </ul>
+            </div>
+            <div class="top-menu-line"><img src="images3/top_menu_line2.jpg" /></div>
+            <div class="top-menu-1">
+                <ul>
+                    <li><a href="../news/zonghe/" target="_blank">新闻</a></li>
+                    <li><a href="../news/gsxw/" target="_blank">公司</a></li>
+                    <li><a href="../xingu/" target="_blank">新股</a></li>
+                    <li><a href="../cyb/" target="_blank">创业板</a></li>
+                    <li><a href="../sme/" target="_blank">中小板</a></li>
+                    <li><a href="../news/jgxw/" target="_blank">机构</a></li>
+                    <li><a href="../hkstock/" target="_blank">港股</a></li>
+                    <li><a href="../news/zqxt/" target="_blank">学堂</a></li>
+                </ul>
+            </div>
+            <div class="top-menu-line"><img src="images3/top_menu_line2.jpg" /></div>
+            <div class="top-menu-1">
+                <ul>
+                    <li><a href="http://irm.p5w.net/" target="_blank">互动</a></li>
+                    <li><a href="http://rsc.p5w.net/rsc/" target="_blank">路演</a></li>
+                    <li><a href="http://blog.p5w.net/" target="_blank">博客</a></li>
+                    <li><a href="http://www.p5w.net/tradingday/index.htm" target="_blank">视频</a></li>
+                    <li><a href="http://bbs.p5w.net/" target="_blank">论坛</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-submenu">
+            <div class="top-submenu-title"><img src="images3/topmenu-text-2.gif" /></div>
+            <div class="top-submenu-1">
+                <ul><TRS_DOCUMENTS id="证券_新股_导航" num="20">
+                    <li><TRS_DOCUMENT FIELD="DOCTITLE" target="_blank">文档标题</TRS_DOCUMENT></li></TRS_DOCUMENTS>
+                </ul>
+            </div>
+        </div>
+
+        <div class="xinguzhuanti">
+            <div class="xgzt-arrow"><img src="images3/xgzt_arrow_left.gif" id="xgzt-arrow-prev" /></div>
+            <div class="xinguzhuanti2" id="xgzt-content">
+                <ul><trs_documents id="证券_新股_专题" num="10">
+                    <li>
+                        <trs_appendix mode="PIC" index="0" target="_blank" autolink="TRUE" extra='width="77" height="61"'>图片</trs_appendix>
+                        <p><trs_document field="DOCTITLE" target="_blank">文档标题</trs_document></p>
+                    </li></trs_documents>
+                </ul>
+            </div>
+            <div class="xgzt-arrow2"><img src="images3/xgzt_arrow_right.gif" id="xgzt-arrow-next" /></div>
+        </div>
+        
+        <div class="colum-top">
+            <div class="l colum-left2">
+                <div class="l-box3">
+                    <div class="rl-tit"></div>
+                    <div class="rl-box" id="stock_calendar" lang="zh-cn"></div>
+                </div>
+            </div>
+            <div class="r colum-right2">
+                <div class="r-tit1"><span id="stock_event_date"></span></div>
+                <div class="r-box-1">
+                    <div class="list-box">
+                        <div class="list-f">招股公告</div>
+                        <div class="table-data1" id="stock_event_list1">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">询    价</div>
+                        <div class="table-data1" id="stock_event_list2">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">网上路演</div>
+                        <div class="table-data1" id="stock_event_list3">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">发行公告</div>
+                        <div class="table-data1" id="stock_event_list4">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">申    购</div>
+                        <div class="table-data1" id="stock_event_list5"></div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">公布中签率</div>
+                        <div class="table-data1" id="stock_event_list6">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">公布中签结果</div>
+                        <div class="table-data1" id="stock_event_list7">
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-f">上市</div>
+                        <div class="table-data1" id="stock_event_list8">
+                        </div>
+                    </div>
+                    <div class="rslides">
+                        <ul class="rslides_tabs" id="stock_event_page"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <div class="page">
+        <!-- 首屏开始 -->
+        <div class="main-top">
+            <!-- 首屏左边开始 -->
+            <div class="l colum-left3">
+                <div class="l-box2">
+                    <div class="xj-tit"><span id="lbl_curDate"></span></div>
+                    <div class="s-3">
+                        <div class="cake-box">
+                            <p class="cake-tit">发行阶段发行总数：</p>
+                            <div class="cake-data" id="chart_Count"></div>
+                        </div>
+
+                        <div class="s-3-data">
+                            <div class="fl p-t"><span>询价</span></div>
+                            <div class="fl p-box">
+                                <div class="p-1 tooltips" id="ipl_smes"></div>
+                                <div class="p-2 tooltips" id="ipl_chinext"></div>
+                                <div class="p-3 tooltips" id="ipl_sh"></div>
+                            </div>
+                        </div><div class="s-3-data">
+                            <div class="fl p-t"><span>定价</span></div>
+                            <div class="fl p-box">
+                                <div class="p-1 tooltips" id="fpl_smes"></div>
+                                <div class="p-2 tooltips" id="fpl_chinext"></div>
+                                <div class="p-3 tooltips" id="fpl_sh"></div>
+                            </div>
+                        </div>
+                        <div class="s-3-data">
+                            <div class="fl p-t"><span>发行</span></div>
+                            <div class="fl p-box">
+                                <div class="p-1 tooltips" id="il_smes"></div>
+                                <div class="p-2 tooltips" id="il_chinext"></div>
+                                <div class="p-3 tooltips" id="il_sh"></div>
+                            </div>
+                        </div>
+                        <div class="s-3-data">
+                            <div class="fl p-t-s"><span>等待上市</span></div>
+                            <div class="fl p-box">
+                                <div class="p-1 tooltips" id="wl_smes"></div>
+                                <div class="p-2 tooltips" id="wl_chinext"></div>
+                                <div class="p-3 tooltips" id="wl_sh"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix note-text"><span class="g-dot"><img src="images3/g-dot.jpg" /></span><span>中小板</span><span class="b-dot"><img src="images3/b-dot.jpg" /></span><span>创业板</span><span class="b-dot"><img src="images3/c-dot.jpg" /></span><span>沪市</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 首屏左边结束 -->
+            <!-- 首屏中间开始 -->
+            <div class="colum-middle">
+                <div class="headlines">
+                    <h1 class="red"><trs_region name="新股头条" index="0"><trs_cell><trs_document field="DocTitle" target="_blank">新股头条</trs_document></trs_cell></trs_region></h1>
+                </div>
+                <div class="head-list">
+                    <ul><trs_documents id="证券_新股_要闻" num="7">
+                        <li>
+                            <trs_condition condition='@USERLIST1' operator='blank' not='true'><span class="<trs_document field='USERLIST1' />"><trs_document field="DOCTITLE" target="_blank">标题1</trs_document></span></trs_condition><trs_condition condition='@USERLIST1' operator='blank' not='false'><trs_document field="DOCTITLE" target="_blank">标题1</trs_document></trs_condition>
+                            <trs_condition condition="@USERTITLE2" operator='blank' not='true'><trs_condition condition="@USERLIST2" operator='blank' not='true'><a href="<trs_document field='USERLINK2' />" class="<trs_document field='USERLIST2' />" target="_blank"><trs_document field="USERTITLE2">标题2</trs_document></a></trs_condition><trs_condition condition="@USERLIST2" operator='blank'><a href="<trs_document field='USERLINK2' />" target="_blank"><trs_document field="USERTITLE2">标题2</trs_document></a></trs_condition></trs_condition>
+                            <trs_condition condition="@USERTITLE3" operator='blank' not='true'><trs_condition condition="@USERLIST3" operator='blank' not='true'><a href="<trs_document field='USERLINK3' />" class="<trs_document field='USERLIST3' />" target="_blank"><trs_document field="USERTITLE3">标题3</trs_document></a></trs_condition><trs_condition condition="@USERLIST3" operator='blank'><a href="<trs_document field='USERLINK3' />" target="_blank"><trs_document field="USERTITLE3">标题3</trs_document></a></trs_condition></trs_condition>
+                        </li></trs_documents>
+                    </ul>
+                </div>
+                <div class="head-list">
+                    <p><trs_region name="新股栏目底"><trs_cell><trs_document field="DocTitle" target="_blank">新股栏目底</trs_document></trs_cell></trs_region></p>
+                </div>
+                <div class="head-list2">
+                    <ul><trs_documents id="新闻中心_新股动态" num="7">
+                        <li><trs_document field="DOCTITLE" target="_blank">文档标题</trs_document></li></trs_documents>
+                    </ul>
+                </div>
+            </div>
+            <!-- 首屏中间结束 -->
+            <!-- 首屏右边开始 -->
+            <div class="colum-right1">
+                <div class="xggz-box">
+                    <div class="mod-title-new">
+                        <div class="mod-title-left"><h5><a href="http://data.p5w.net/ipo/" target="_blank"><span class="fh">新股</span>关注</a></h5></div>
+                        <div class="mod-title-right">
+                            <ul class="rslides_tabs">
+                                <li class="rslides1_t1" id="xggz_prev"><a href="javascript:;"></a></li>
+                                <li class="rslides1_b1" id="xggz_next"><a href="javascript:;"></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfloat"></div>
+                    </div>
+                    <div class="blank10"></div>
+                    <div id="content_xggz">
+                        <ul><trs_documents id="首页_新股" num="50">
+                            <li>
+                                <div class="content_xggz_c">
+                                    <div class="xg-logo-l">
+                                        <trs_appendix mode="PIC" index="0" target="_blank" autolink="TRUE" memo="FALSE" extra='width="77" height="61"'>图片</trs_appendix>
+                                    </div>
+                                    <div class="xg-text-r">
+                                        <dl>
+                                            <dt><trs_document field="DocTitle" target="_blank">文档标题</trs_document></dt>
+                                            <dd>
+                                                <trs_condition condition="@USERTITLE2" operator='blank' not='true'>
+                                                    <span><a href="<trs_document field='USERLINK2' />" target="_blank"><trs_document field="USERTITLE2">标题2</trs_document></a></span>
+                                                </trs_condition>
+                                                <trs_condition condition="@USERTITLE3" operator='blank' not='true'>
+                                                    |&nbsp;<span><a href="<trs_document field='USERLINK3' />" target="_blank"><trs_document field="USERTITLE3">标题3</trs_document></a></span>
+                                                </trs_condition>
+                                                <trs_condition condition="@USERTITLE4" operator='blank' not='true'>
+                                                    |&nbsp;<span><a href="<trs_document field='USERLINK4' />" target="_blank"><trs_document field="USERTITLE4">标题4</trs_document></a></span>
+                                                </trs_condition>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="clearfloat"></div>
+                                </div>
+                            </li></trs_documents>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 首屏右边结束 -->
+        </div>
+        <!-- 首屏结束 -->
+        <div class="blank15"></div>
+        <!-- 页面中部开始 -->
+        <div class="main-md">
+            <div class="mt-title">
+                <h2><a href="http://data.p5w.net/ipo/sgxx.php" target="_blank">申购指南</a></h2>
+            </div>
+            <div class="mt-ct">
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="mt-table" id="sgxx-table">
+                    <thead>
+                        <tr class="mt-head">
+                            <td>股票代码</td>
+                            <td>证券简称</td>
+                            <td>申购代码</td>
+                            <td>申购日期</td>
+                            <td>
+                                发行价<br />
+                                (元)
+                            </td>
+                            <td>
+                                发行市<br />
+                                盈率
+                            </td>                           
+                            <td>
+                                发行总数<br />
+                                (万股)
+                            </td>
+                            <td>
+                                网上发行<br />
+                                (万股)
+                            </td>
+                            <td>
+                                申购上限<br />
+                                (万股)
+                            </td>
+                            <td>中签率</td>
+                            <td>
+                                中签率<br />
+                                公告日
+                            </td>
+                            <td>
+                                资金解<br />
+                                冻日
+                            </td>
+                            <td>上市日期</td>
+                            <td>中签结果</td>
+                            <td>招股说明书</td>
+                            <td>专题</td>
+                            <td>路演</td>
+                            <td>公司资讯</td>
+                            <td>互动</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!--
+            <div class="mt-title">
+                <h2><a href="" target="_blank">中签率、回报率预测</a></h2>
+            </div>
+            <div class="mt-ct">
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="mt-table" id="zqxx-table">
+                    <thead>
+                        <tr class="mt-head">
+                            <td>股票代码</td>
+                            <td>股票简称</td>
+                            <td>申购代码</td>
+                            <td>申购日期</td>
+                            <td>
+                                发行价<br />
+                                (元)
+                            </td>
+                            <td>
+                                网上发行<br />
+                                量(万股)
+                            </td>
+                            <td>
+                                2013每股<br />
+                                收益(元)
+                            </td>
+                            <td>
+                                平均预测每股<br />
+                                收益(2014)(元)
+                            </td>
+                            <td>
+                                行业平均<br />
+                                市盈率
+                            </td>
+                            <td>
+                                预计冻结<br />
+                                资金(亿元)
+                            </td>
+                            <td>
+                                预计中<br />
+                                签率
+                            </td>
+                            <td>
+                                中一签所需<br />
+                                资金(万元)
+                            </td>
+                            <td>
+                                预计开盘<br />
+                                价(元)
+                            </td>
+                            <td>
+                                预计收益<br />
+                                率(%)
+                            </td>
+                            <td>
+                                预计年化收<br />
+                                益率(%)
+                            </td>
+                            <td>专题</td>
+                            <td>公司资讯</td>
+                            <td>互动</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            -->
+        </div>
+
+        <div class="full-ad">
+            <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_343/adlocation_343.js' ignoreapd="1"></script>
+        </div>
+
+        <div class="main-md">
+            <div class="md-left">
+                <div class="mod-mc">
+                    <div class="mod-title">
+                        <h2><a href="http://rsc.p5w.net/rsc/" target="_blank">路演直击</a></h2>
+                    </div>
+                    <div class="mod-list4">
+                        <ul><trs_documents id="首页_路演活动" num="5">
+                            <li><trs_document field="DOCTITLE" target="_blank">文档标题</trs_document>[<trs_document field="subdoctitle">副标题</trs_document>]</li></trs_documents>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mod-mc">
+                    <div class="mod-title">
+                        <h2><a href="http://rsc.p5w.net/rsc/yhcq/yhcq.html" target="_blank">摇号抽签</a></h2>
+                    </div>
+                    <div class="mod-list4">
+                        <ul><trs_documents id="证券_新股_摇号抽签" num="5">
+                            <li><trs_document field="DOCTITLE" target="_blank">文档标题</trs_document><trs_document field="DOCRELTIME" dateformat="[yyyy-MM-dd]">日期</trs_document></li></trs_documents>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mod-mc">
+                    <div class="mod-title">
+                        <h2>路演回放</h2>
+                    </div>
+                    <div class="mod-list4">
+                        <ul><trs_documents id="首页_精彩回放" num="5">
+                            <li><trs_document field="DOCTITLE" target="_blank">文档标题</trs_document><trs_document field="DOCRELTIME" dateformat="[yyyy-MM-dd]">日期</trs_document></li></trs_documents>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="md-right">
+                <div class="md-cl">
+                    <div class="md-ct1">
+                        <div class="ct-title">
+                            <h2><a href="<trs_channel id='证券_新股新闻' field='_RECURL' />" target="_blank">新股新闻</a></h2>
+                            <span class="ct-rt"><a href="<trs_channel id='证券_新股新闻' field='_RECURL' />" target="_blank">更多</a></span>
+                        </div>
+                        <div class="ct-list">
+                            <ul><trs_documents id="证券_新股新闻" num="8">
+                                <li><trs_document field="DOCTITLE" target="_blank" num="46">文档标题</trs_document></li></trs_documents>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md-ct2">
+                        <div class="ct-title">
+                            <h2><a href="<trs_channel id='证券_新股_定价' field='_RECURL' />" target="_blank">新股定价</a></h2>
+                            <span class="ct-rt"><a href="<trs_channel id='证券_新股_定价' field='_RECURL' />" target="_blank">更多</a></span>
+                        </div>
+                        <div class="ct-list">
+                            <ul><trs_documents id="证券_新股_定价" num="8">
+                                <li><trs_document field="DOCTITLE" target="_blank" num="46">文档标题</trs_document></li></trs_documents>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-clggg">
+                    <div class="md-ct1">
+                        <div class="ct-title">
+                            <h2><a href="http://data.p5w.net/ipo/xxpl.php" target="_blank">新股公告</a></h2>
+                            <span class="ct-rt"><a href="http://data.p5w.net/ipo/xxpl.php" target="_blank">更多</a></span>
+                        </div>
+                        <div class="ct-list" id="xggg">
+                        </div>
+                    </div>
+                    <div class="md-ct2">
+                        <div class="ct-title">
+                            <h2><a href="http://www.p5w.net/tradingday/ipogc/" target="_blank">新股视频</a></h2>
+                            <span class="ct-rt"><a href="http://www.p5w.net/tradingday/ipogc/" target="_blank">更多</a></span>
+                        </div>
+                        <div class="ct-list" id="ipogc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-ad">
+            <script src='http://ad.p5w.net/trswcm_plugins/adintrs/data/script/adlocation_344/adlocation_344.js' ignoreapd="1"></script>
+        </div>
+        <div class="main-md">
+            <div class="mt-title">
+                <h2><a href="http://data.p5w.net/ipo/ghxx.php" target="_blank">过会情况</a></h2>
+            </div>
+            <div class="mt-ct">
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="mt-table" id="ghxx-table">
+                    <thead>
+                        <tr class="mt-head">
+                            <td>公司名称</td>
+                            <td>上会日期</td>
+                            <td>审议内容</td>
+                            <td>核审结果</td>
+                            <td>审核公告日</td>
+                            <td>保荐机构</td>
+                            <td>拟上市地址</td>
+                            <td>所属行业</td>
+                            <td>所属地区</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 页面中部结束 -->
+        <div class="clearfloat"></div>
+    </div>
+    <div class="foot">
+        <script type="text/javascript">
+            foot13();
+        </script>
+    </div>
+
+</body>
+</html>

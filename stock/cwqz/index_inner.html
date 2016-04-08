@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title><TRS_CURPAGE only="TRUE" autolink="FALSE">当前栏目</TRS_CURPAGE><TRS_REPLACE value='标题'></TRS_REPLACE>_全景网</title>
+<link type="text/css" rel="stylesheet" href="/stock/cwqz/css/style_inner.css" />
+<link type="text/css" rel="stylesheet" href="/stock/cwqz/css/style.fix.css" />
+<script type="text/javascript" src="/js/page_util.js" ignoreapd="1"></script>
+</head>
+
+<body>
+<div class="left"><TRS_DOCUMENTS NUM="45" PAGESIZE="5" select="docpeople">
+  <div class="one">
+    <div class="logo">
+    <TRS_CONDITION condition='@docpeople' operator='==' reference='0' not='true'>
+      <img src="http://irm.p5w.net/ssgs/S<TRS_DOCUMENT field='stockcode'>stockcode</TRS_DOCUMENT>/images/<TRS_DOCUMENT field='stockcode'>stockcode</TRS_DOCUMENT>.gif" />
+    </TRS_CONDITION>
+    <TRS_CONDITION condition='@docpeople' operator='==' reference='0' not='false'>
+      <img src="/stock/cwqz/images/irm_77_61.jpg" />
+    </TRS_CONDITION>
+      <a href="http://irm.p5w.net/ssgs/S<TRS_DOCUMENT field='stockcode'>stockcode</TRS_DOCUMENT>/" target="_blank"><TRS_DOCUMENT field='stockcode'>stockcode</TRS_DOCUMENT></a><br />
+      <a href="http://irm.p5w.net/ssgs/S<TRS_DOCUMENT field='stockcode'>stockcode</TRS_DOCUMENT>/" target="_blank"><trs_document field="DOCTITLE" autolink="false">文档标题</trs_document></a>
+    </div>
+    <div class="wen">
+      <div class="shang"><TRS_Document Field="doccontent">文档摘要</TRS_Document></div>
+      <div class="da_di">
+        <div class="da">
+          <div class="da_wen"><TRS_Document Field="docabstract">文档摘要</TRS_Document>（<TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT>）</div>
+        </div>
+        <div><img src="/stock/cwqz/images/da_4.jpg" /></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="xu"><img src="/stock/cwqz/images/xu.jpg" width="470" height="1" /></div>
+  </div></TRS_DOCUMENTS>
+  <div class="left_1">
+    <div class="viciao">
+      <script language="javascript">
+        createPageHTML(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+      </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

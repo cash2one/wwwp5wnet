@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title><trs_curpage only="TRUE" autolink="FALSE">当前栏目</trs_curpage><trs_replace value='标题'></trs_replace>_全景网</title>
+<meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+<meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+<link href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/basic.fix.css" />
+<script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/public.v2.src.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/cmnt_v3.src.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+</head>
+<body>
+<div class="wrap_white">
+  <div class="all">
+    <div class="mininav">
+      <script type="text/javascript">
+        mininav();
+      </script>
+    </div>
+    <div class="header_o" ></div>
+    <div class="layout">
+      <div class="content">
+        <div class="main fl">
+          <div class="text"><TRS_DOCUMENTS NUM="180" PAGESIZE="12" AUTOMORE="FALSE">
+            <h2><TRS_DOCUMENT field="doctitle" autolink="true" target="_blank">文档标题</TRS_DOCUMENT><span><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy.MM.dd">日期</TRS_DOCUMENT></span></h2>
+            <p><TRS_DOCUMENT field="docabstract" autolink="false">文档摘要</TRS_DOCUMENT></p></TRS_DOCUMENTS>
+          </div>
+          <div class="number pull-right">
+            <div class="viciao">
+              <script language="javascript">
+                createPageHTML(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="slide fr">
+          <div class="zwright" id="cRight">
+            <iframe id="inRight" src="about:blank" scrolling="no" width="100%" height="0" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="clearb"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearb"></div>
+  <div class="foot">
+    <script type="text/javascript">
+      foot13();
+    </script>
+  </div>
+</body>
+</html>
