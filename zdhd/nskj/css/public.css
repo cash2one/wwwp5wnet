@@ -1,0 +1,260 @@
+@charset "utf-8";
+/*全局样式*/
+body {
+	margin:0;
+	padding:0;
+ 
+	 
+	
+}
+div, dl, dt, td, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size:14px
+}
+i{ font-style:normal;}
+Form, Select {
+	margin: 0;
+	padding: 0;
+}
+input, textarea {
+	padding:2px;
+	font-size:12px;
+	resize:none;
+	outline:none;
+	border: 0;
+}
+div, h1, h2, p, Table, Tr, Td {
+	word-wrap:break-word;
+	word-break:break-all;
+}
+address, button, caption, cite, code, dfn, em, input, optgroup, option, select, strong, textarea, th, var {
+	font-style:normal;
+}
+ul li {
+	vertical-align:top;
+}
+/*链接样式*/
+a {
+	color:#333;
+	text-decoration:none;
+}
+a:focus {
+	outline:0;
+}
+a:link, a:visited {
+	text-decoration:none;
+	vertical-align:baseline;
+	word-break:break-all;
+	outline:none;
+}
+a:hover, a:active {
+	text-decoration:none;
+	vertical-align:baseline;
+	word-break:break-all;
+}
+a:hover span {
+	cursor:pointer;
+	text-decoration:none;
+}
+/* 清浮动 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/* 浮动 */
+.f-fl {
+	float: left;
+}
+.f-fr {
+	float: right;
+}
+.rxt_l {
+	text-align:left
+}
+.rxt_r {
+	text-align:right
+}
+.rxt_c {
+	text-align:center
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+	font: 14px/1.5 "Microsoft YaHei", 微软雅黑, \9ed1\4f53, \5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	color:#666
+}
+/* 去除 IE6 input/button 多余的空白 */
+button, input {
+ *width:auto;
+ *overflow:visible;
+	/* 让 input 和 button 一样高 */
+  line-height:normal;
+}
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/* 去除默认边框 */
+fieldset, img {
+	border:0;
+}
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+	-ms-interpolation-mode:bicubic;
+}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+	display:block;
+}
+/* 一致化 horizontal rule */
+hr {
+	border:none;
+	border-bottom:1px solid #cfcfcf;
+	margin-bottom:10px;
+ *color:pink;
+ *filter:chroma(color=pink);
+	height:10px;
+ *margin:-7px 0 2px;
+}
+.color1 {
+	color:#999;
+}
+.color2 {
+	color:#F30;
+}
+.color3 {
+	color:#ff7632;
+}
+
+.color_red{ color:#ff0000}
+.color_blue{ color:#008df3}
+.color_green{ color:#009900;}
+
+/*图片切换圆点*/
+ .slide-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 5;
+    margin-left:-80px;
+}
+.slide-pagination a {
+    float: left;
+    margin: 0 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #000;
+    font-size: 0;
+    filter: alpha(opacity=30);
+    opacity: .3;
+}
+.slide-pagination .active {
+    background-color: #178ee5;
+}
+.slide-pagination .active {
+ 
+    opacity: 1;
+}
+
+
+.slide-pagination2 {
+	clear:both;
+	text-align:center;
+	padding-top:20px; 
+	width:100%;  
+}
+.slide-pagination2 a {
+	display:inline-block;
+   
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    font-size: 0;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.slide-pagination2 .active {
+    background-color: #178ee5;
+}
+.slide-pagination2 .active {
+ 
+    opacity: 1;
+}
+
+/*翻页*/
+
+.pagination {
+	width: 100%;
+	float: left;
+	PADDING-BOTTOM: 30px;
+	PADDING-TOP: 30px;
+	TEXT-ALIGN: center;
+	height: 40px
+}
+.pagination a {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 12px;
+	margin: 0 4px;
+	COLOR: #323232;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+.pagination input {
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 6px;
+	margin: 0 4px;
+	text-align:center;
+	COLOR: #323232;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+ .pagination span {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	background-color: #fff; 
+	padding: 8px 12px;
+	margin: 0 4px;
+	COLOR: #c0c6c3;
+	TEXT-DECORATION: none;
+	border: 1px solid #e1e3e2;
+}
+.pagination a:hover {
+	background-color: #f8f9fb; 
+	border: 1px solid #cacaca;
+} 
+.pagination .current {
+	background-color: #339adc; 
+	border: 1px solid #339adc; 
+	COLOR: #fff;
+	TEXT-DECORATION: none;
+}
+.pagination .current.prev, .pagination .current.next {
+	background-color: #fff; 
+	padding: 4px 9px 4px 9px;
+	MARGIN-RIGHT: 5px;
+	COLOR: #767676;
+	TEXT-DECORATION: none;
+	border: 1px solid #c4c4c4;
+}
