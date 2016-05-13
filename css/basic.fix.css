@@ -323,11 +323,18 @@ ul.ipo-list li p.gray a:hover { color: #808080; text-decoration: underline; }
     border-color: transparent transparent transparent #c96db3;
 }
 
-
 .news-title span i.xg {
     background: #81cb68;
 }
 
 .news-title span i.xg:after {
     border-color: transparent transparent transparent #81cb68;
+}
+
+.news-title span i.sp {
+    background: #3159cb;
+}
+
+.news-title span i.sp:after {
+    border-color: transparent transparent transparent #3159cb;
 }
