@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimnum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="must-revalidate,no-cache" http-equiv="Cache-Control">
+    <meta name="format-detection" content="telephone=no">
+    <title><trs_curpage only="true" autolink="false">栏目路径</trs_curpage>_<trs_replace value='标题'></trs_replace>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>"/>
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>"/>
+    <link rel="stylesheet" type="text/css" href="/live/mobile/webcss/reset.css"/>
+    <script type="text/javascript" src="http://www.p5w.net/webjs/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/live/mobile/webjs/func.js"></script>
+    <script type="text/javascript">
+        var liveSrc = "<TRS_REPLACE value='视频直播地址'></TRS_REPLACE>";
+        var liveTitle = "<TRS_REPLACE value='视频直播标题'></TRS_REPLACE>";
+    </script>
+</head>
+
+<body id="webapp" bgcolor="#f2f1ef">
+<div class="temp-wrap header">
+    <a href="javascript:void(0)" class="fl"><img src="/live/mobile/webimages/logo.png" width="109" height="35"></a>
+    <a a href="javascript:void(0)" id="refresh" class="fr"><img src="/live/mobile/webimages/Refresh.png" width="27" height="31"></a>
+    <a href="m.htm" class="fr"><img src="/live/mobile/webimages/down.png" width="27" height="31"></a>
+</div>
+<div class="temp-wrap banner">
+    <TRS_CHANNELLOGO index="1" showpic="FALSE" nameonly="FALSE" showmode="SHOWPIC"></TRS_CHANNELLOGO>
+</div>
+<div class="temp-wrap live-title">
+    <h2 class="gray0"><trs_curpage only="true" autolink="false">栏目路径</trs_curpage></h2>
+    <p class="para">
+        <span><i class="icon icon01 full-bg"></i>时间：<TRS_REPLACE value='时间'></TRS_REPLACE></span>
+        <span><i class="icon icon02 full-bg"></i><TRS_REPLACE value='人物'></TRS_REPLACE></span>
+    </p>
+</div>
+<div class="temp-wrap live-intro">
+    <i class="icon full-bg"></i>
+    <p class="gray6 white-bg"><TRS_REPLACE value='导语'></TRS_REPLACE></p>
+</div>
+
+<!--新闻列表-->
+<trs_documents num="200" automore="FALSE" order="wcmdocument.docid">
+<div class="mypages"><trs_record num="10">
+    <div class="temp-wrap white-bg newsList">
+        <p>
+            <span class="themeBlue"><TRS_DOCUMENT field="DOCRELTIME" dateformat="HH:mm">时间</TRS_DOCUMENT></span>
+            <span class="themegrame fr"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd">日期</TRS_DOCUMENT></span>
+        </p>
+        <p class="f16 gray3"><TRS_DOCUMENT field="doctitle" autolink="false" target="_blank">文档标题</TRS_DOCUMENT></p>
+        <p class="row03">
+            <trs_document field="dochtmlcon">正文</trs_document>
+            <div class="contentpics">
+                <trs_appendix mode="pic" index="-1" autolink="false" seperator="&nbsp;" upload="false" extra='width="100%"'>附件</trs_appendix>
+            </div>
+        </p>
+        <p class="line"></p>
+        <!--<p class="rowCls1">
+            <a class="gray6"><i class="icon icon01 full-bg"></i>转发</a>
+            <a class="fr gray6"><i class="icon icon02 full-bg"></i>点赞</a>
+        </p>-->
+    </div></trs_record>
+</div>
+</trs_documents>
+
+<div class="temp-wrap">
+    <a id="pagemore" href="javascript:void(0)" class="loanMore f16 gray6 tc"><i><img src="/live/mobile/webimages/refleachGray.png" width="27" height="31"></i>戳我更多精彩</a>
+</div>
+
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    var share_title = $.trim($(document).attr('title'));
+    var desc = $('meta[name="description"]').attr('content');
+    var share_desc = $.trim(desc);
+    var share_link = location.href;
+    var share_img='http://www.p5w.net/live/images/wx_lytx.jpg';
+    // var share_img = $.trim($('.contentpics :last img').html());
+
+    function shareFriend(shareTitle,descContent,lineLink) {
+        wx.onMenuShareAppMessage({
+            title: shareTitle,
+            desc: descContent,
+            link: lineLink,
+            imgUrl: share_img,
+            trigger: function (res) {
+                $('#mcover').hide();
+            },
+            fail: function (res) {
+                alert(JSON.stringify(res));
+            }
+        });
+    }
+
+    function shareTimeline(shareTitle,descContent,lineLink) {
+        wx.onMenuShareTimeline({
+            title: descContent,
+            link: lineLink,
+            imgUrl: share_img,
+            trigger: function (res) {
+                $('#mcover').hide();
+            },
+            fail: function (res) {
+                alert(JSON.stringify(res));
+            }
+        });
+    }
+
+    function shareQQ(shareTitle,descContent,lineLink){
+        wx.onMenuShareQQ({
+            title: shareTitle,
+            desc: descContent,
+            link: lineLink,
+            imgUrl: share_img,
+            trigger: function (res) {
+                $('#mcover').hide();
+            },
+            fail: function (res) {
+                alert(JSON.stringify(res));
+            }
+        });
+    };
+
+    function shareWeibo(shareTitle,descContent,lineLink){
+        wx.onMenuShareWeibo({
+            title: shareTitle,
+            desc: descContent,
+            link: lineLink,
+            imgUrl: share_img,
+            trigger: function (res) {
+                $('#mcover').hide();
+            },
+            fail: function (res) {
+                alert(JSON.stringify(res));
+            }
+        });
+    };
+    $(document).ready(function() {
+        /*
+         while(share_desc == ''){
+         setTimeout(function(){share_desc = $(document).attr("title");},500);
+         }
+         */
+
+        var url = location.href.split('#').toString();
+        $.ajax({
+            url: 'http://data.p5w.net/trs/sign.php',
+            type: 'post',
+            dataType: 'json',
+            data:{'url':url},
+            error:function(XMLHttpRequest, textStatus, errorThrown){
+
+            },
+            success:function(signPackage){
+                if(signPackage)	{
+                    var share_appid = signPackage.appId;
+                    var share_nonceStr = signPackage.nonceStr;
+                    var share_signature = signPackage.signature;
+                    var share_timestamp = signPackage.timestamp;
+
+                    wx.config({
+                        debug: false,
+                        appId: share_appid,
+                        timestamp: share_timestamp,
+                        nonceStr: share_nonceStr,
+                        signature: share_signature,
+                        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo']
+                    });
+
+                    wx.ready(function(){
+
+                        //发送给好友
+                        shareFriend(share_title,share_desc,share_link);
+
+                        //分享到朋友圈
+                        shareTimeline(share_desc,share_desc,share_link);
+
+                        //分享给QQ好友
+                        shareQQ(share_title,share_desc,share_link);
+
+                        //分享到微博
+                        shareWeibo(share_title,share_desc,share_link);
+                    });
+
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>
