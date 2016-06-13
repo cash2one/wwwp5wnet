@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<doclist>
+    <TRS_DOCUMENTS NUM="40" PAGESIZE="20">
+    <item>
+        <title><TRS_DOCUMENT FIELD="DOCTITLE" AUTOFORMAT="TRUE" AUTOFORMATTYPE="XML" AUTOLINK="FALSE"/></title>
+        <category><TRS_CHANNEL FIELD="CHNLNAME" AUTOLINK="FALSE"/></category>
+        <stockcode><TRS_DOCUMENT field="stockcode"></TRS_DOCUMENT></stockcode>
+        <keywords><TRS_DOCUMENT field="dockeywords"></TRS_DOCUMENT></keywords>
+        <link><![CDATA[<TRS_Document field="_RECURL" UrlIsAbs="true"/>]]></link>
+        <pubDate><TRS_DOCUMENT FIELD="DOCPUBTIME"/></pubDate>
+        <source><TRS_DOCUMENT field="DOCSOURCE" autolink="false"></TRS_DOCUMENT></source>
+        <description><TRS_DOCUMENT FIELD="DOCABSTRACT" AUTOFORMAT="TRUE" AUTOFORMATTYPE="XML"/></description>
+        <image><TRS_Appendix field='_RECURL' UrlIsAbs='true' MODE='PIC' INDEX='-1' seperator=";" autolink='false' memo='FALSE' upload="true"></TRS_Appendix></image>
+    </item></TRS_DOCUMENTS>
+</doclist>
