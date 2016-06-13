@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset><TRS_DOCUMENTS id="理财_银行资讯" num="20">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_保险资讯" num="10">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_信托资讯" num="5">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财曝光台" num="2">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_债券资讯" num="5">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_理财综合" num="10">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_消费生活" num="3">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_另类投资" num="10">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS><TRS_DOCUMENTS id="理财_四眼画理财" num="1">
+  <url>
+    <loc><TRS_Document field="_RECURL" UrlIsAbs="true"/></loc>
+	<lastmod><TRS_DOCUMENT field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</TRS_DOCUMENT></lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url></TRS_DOCUMENTS>
+</urlset>

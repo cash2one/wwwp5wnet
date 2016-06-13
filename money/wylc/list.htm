@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title><trs_curpage only='true' autolink='false'>当前栏目</trs_curpage><trs_replace value='标题'></trs_replace>_<TRS_CHANNEL id="parent:-1" field="chnldesc" autolink="false"></TRS_CHANNEL>_全景网</title>
+    <meta name="description" content="<TRS_REPLACE value='描述'></TRS_REPLACE>" />
+    <meta name="keywords" content="<TRS_REPLACE value='关键词'></TRS_REPLACE>" />
+    <link href="http://www.p5w.net/js/jquery-ui-master/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/jquery.ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/public.v2.src.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://passport.p5w.net/js/Passport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.p5w.net/js/page_util.js"></script>
+</head>
+
+<body>
+    <div class="mininav">
+        <script type="text/javascript">
+            mininav();
+        </script>
+    </div>
+    <div class="blank317"></div>
+    <div class="nr">
+        <div class="left"><TRS_DOCUMENTS NUM="60" PAGESIZE="12" AUTOMORE="FALSE">
+            <div class="bg2">
+                <div class="hglist"> 
+                    <div class="hglist12"> 
+                        <div class="hglist-bt"><trs_document field="doctitle" autolink="true" target="_blank" classname="hei">文档标题</trs_document></div>
+                        <div class="hglist-time"><trs_document field="DOCRELTIME" dateformat="yyyy-MM-dd">日期</trs_document></div>
+                    </div>
+					<div class="hglist-img"><trs_appendix mode="PIC" index="0" target="_blank" autolink="TRUE" memo="FALSE" extra='width="158" height="136"'></trs_appendix></div>
+                    <div class="hglist-zy"><TRS_DOCUMENT field="docabstract" autolink="false" target="_blank">文档摘要</TRS_DOCUMENT></div>
+                    <div class="new_word3">
+                        <ul><TRS_RELNEWS startpos="0" num="10" mode="USERDEF">
+                            <li><trs_record num="1"><trs_document field="doctitle" target="blank"></trs_document></trs_record><trs_record num="1">&nbsp;|&nbsp;<trs_document field="doctitle" target="blank"></trs_document></trs_record></li></TRS_RELNEWS>
+                        </ul>
+                    </div>
+                </div>
+            </div></TRS_DOCUMENTS>
+            <div class="number">
+                <div class="viciao">
+                    <script type="text/javascript">
+                        createPageHTML(${PAGE_COUNT},${PAGE_INDEX},"${PAGE_NAME}","${PAGE_EXT}");
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="right" style="margin-top: 0; padding-top: 0">
+            <div class="about">
+                <div class="lmjs2"><a href="#">
+                    <img src="images/q5-11.jpg" alt="全景网" width="246" height="52" /></a></div>
+                <div class="about_2">本栏目紧跟互联网金融发展，为屌丝理财趋利避害着想，犀利独到而非随众忽悠，分享最有参考价值的见解。</div>
+            </div>
+            <div class="hg">
+                <div class="lmjs">
+                    <img src="images/q5-5.jpg" width="246" height="52" alt="全景网" />
+                </div>
+                <div class="wqhg">
+                    <iframe src="http://www.p5w.net/fund/jjxt/datalist.htm" height='405' width="100%" frameborder="0" scrolling="no" style="margin: 10px auto; text-align: center;"></iframe>
+                </div>
+                <div class="gd"><a href="http://www.p5w.net/fund/jjxt/" target="_blank">《更多</a></div>
+            </div>
+            <div class="clear"></div>
+            <div class="lmjs">
+                <img src="images/q5-4.jpg" width="246" height="34" alt="全景网" /></div>
+            <div class="mz">
+                欢迎分享您的精辟见解！<br />
+                主编:彭艳<br />
+                电话:0755-83990163<br />
+                邮箱:money@p5w.net
+            </div>
+            <div class="about">
+                <div class="lmjs2">
+                    <img src="images/q5-6.jpg" alt="全景网" width="246" height="52" /></div>
+                <div class="about_3">
+                    <img src="images/gz.jpg" alt="全景网" width="253" height="133" /></div>
+            </div>
+        </div>
+        <div style="clear: both; display: block;"></div>
+    </div>
+    <div class="foot">
+        <script type="text/javascript">
+            foot13();
+        </script>
+    </div>
+</body>
+</html>

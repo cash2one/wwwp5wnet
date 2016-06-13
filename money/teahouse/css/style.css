@@ -1,0 +1,182 @@
+/* 初始化环境 */
+body {font-family:'宋体';margin:0 auto;padding:0;font-size:12px;color:#333333;line-height:20px; background:#f9fbf0;}
+body > div {margin-right:auto;margin-left:auto;}
+div, form, ul, ol, li, span, p {margin:0;padding:0;border:0;}
+img, a img {border:0;margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0;font-size:12px;font-weight:normal;}
+
+table, td, input {font-size:12px}
+p { padding: 0 1em; text-align: justify; }
+
+/*em是相对单位，2em即现在一个字大小的两*/
+
+a:link {text-decoration: none;color: #666;}
+a:visited {text-decoration: none;color: #666;}
+a:hover {text-decoration: none;color: #666;}
+a:active {text-decoration: none;}
+body, td, th {font-family: "宋体";}
+
+.clear{clear:both;}
+.bai{color:#FFF;}
+.red{color:#ecdfb5;}
+.zi_1{font-size:16px; font-weight:bold; padding:0 0 0 25px;}
+.zi_2{font-size:12px; color:#FFF; padding:0 15px 10px 15px;}
+.zi_3{font-size:30px; font-family:"微软雅黑"; font-weight:bold;}
+.yahei{font-family:"微软雅黑";}
+.tu_3{padding:20px 0 0 0;}
+.yahei style3{}
+
+.top{ background:url(../images/top.jpg) no-repeat center top; margin:0 auto; height:256px;}
+.zi{ padding:112px 0 0 180px; font-size:16px; font-weight:bold; font-family:"微软雅黑"; width:100px; margin:0 auto; color:#482100;}
+
+.body_bottom{background:url(../images/text.jpg) top no-repeat;}
+.bottom{background:url(../images/bottom_1.jpg) no-repeat center; height:171px;}
+
+.text_top{ width:1031px; margin:0 auto; background:url(../images/left_top.png) no-repeat center bottom; height:22px; padding:20px 0 0 0;}
+.text_top_2{ width:1031px; margin:0 auto; background:url(../images/left_top_2.png) no-repeat center bottom; height:22px; padding:20px 0 0 0;}
+.text{ width:1031px; margin:0 auto; padding:0 0 20px 0; background:url(../images/left_text.jpg) repeat-y center top; }
+.text_2{ width:1031px; margin:0 auto; background:url(../images/left_text_2.jpg) repeat-y center top; }
+.text_bottom{ width:1031px; margin:0 auto; background:url(../images/left_bottom.jpg) no-repeat center bottom; height:22px;}
+.text_bottom_2{ width:1031px; margin:0 auto; background:url(../images/left_bottom_2.jpg) no-repeat center bottom; height:22px;}
+.text_ed{ width:1031px; margin:0 auto; padding:80px 0 0 0; background:url(../images/wangqi.jpg) no-repeat bottom; height:152px;}
+.left{width:731px; float:left;}
+.left_2{width:731px; float:left; padding:20px 0 0 0;}
+.left_top{ height:80px;}
+.left_text{
+	padding:20px;
+	line-height:35px;
+	font-size: 14px;
+}
+.left_text_2{
+	line-height:35px;
+	font-size: 14px;
+}
+.left_bottom{ height:27px;}
+.zhengwen{font-size:14px;}
+.xian{text-align:center;}
+
+.biao{padding:30px 0 0 0; height:30px; margin:0 auto; text-align:center; line-height:30px;}
+
+.right{ float:left;}
+
+.dao{padding:90px 0 0 0; margin:0 auto; width:800px;}
+.dao li{display:block; float:left;list-style:none; color:#FFF; font-size:16px; padding:0 5px 0 5px;}
+.dao li a{color:#FFF;}
+.ed{padding:35px 0 0 0;}
+
+.logobox { width:923px; margin:0 auto;}
+.logobox-l { float:left; padding:60px 0 0 0;}
+.logobox-q { float:left; width:848px; margin:0 5px;}
+.logobox-q img{ padding:0 8px 0 8px;}
+
+.logobox {position:relative;height:162px; }
+
+.head-list{ width:100%; padding:0 0 8px 0;}
+.head-list li{ width:100%;  padding:0 0 0 25px; margin: 2px 4px 6px 0; list-style:none; text-align:left;}
+.head-list li a{color:#FFF; font-size:12px;}
+
+.pin{width:980px; margin:0 auto;}
+
+.top_0 {width:100%; background:url(http://www.p5w.net/images13/bg.jpg);}
+.mininav{ width: 1044px; margin: 0 auto; height: 38px; font:12px/1.5 tahoma, '\5b8b\4f53', sans-serif;}
+.mininav a{color:#383838; font:12px/1.5 tahoma, '\5b8b\4f53', sans-serif; text-decoration:none;}
+.mininav a:hover{color:#c80000; text-decoration:underline;}
+.mininav-left{ float:left; margin: 10px 0 0 0; *margin: 11px 0 0 0}
+.mininav-right{ float:right; width: 213px; margin: 8px 0 0 0}
+.mininav-register a{ float:left; margin: 0 0 0 3px; width: 49px; height:24px; background-image:url(http://www.p5w.net/images13/mininav_btn_1.gif) }
+.mininav-register a:hover{ background-position:bottom}
+.mininav-login a{ float:left; margin: 0 0 0 3px; width: 49px; height:24px; background-image:url(http://www.p5w.net/images13/mininav_btn_2.gif) }
+.mininav-login a:hover{ background-position:bottom}
+.mininav-pass a{ float:left; margin: 0 0 0 3px; width: 57px; height:24px; background-image:url(http://www.p5w.net/images13/mininav_btn_3.gif) }
+.mininav-pass a:hover{ background-position:bottom}
+.mininav-help a{ float:left; margin: 0 0 0 3px; width: 49px; height:24px; background-image:url(http://www.p5w.net/images13/mininav_btn_4.gif) }
+.mininav-help a:hover{ background-position:bottom}
+.mininav-right { width: 380px; margin-top: 4px; line-height: 38px; }
+#user-menu { }
+.menu li.item { margin-right: 2px; float: right; display: inline; position: relative; }
+.menu .link { padding: 0px 7px; height: 33px; line-height: 33px; display: inline-block; position: relative; color: #fff; text-decoration: none; }
+.mininav-right .menu .link { color: #000; }
+.menu .link:hover { color: #fff; text-decoration: none; }
+.menu .link span { padding-right: 11px; position: relative; z-index: 25; cursor: pointer; _zoom: 1; }
+.menu .link span em { border-width: 3px 3px 0px; border-style: solid dashed dashed; border-color: rgb(99, 99, 99) transparent transparent; top: 50%; height: 0px; right: 0px; line-height: 0; font-size: 0px; margin-top: -2px; position: absolute; cursor: pointer; }
+.menu li.current { background: #b93c3c; }
+.rq-ct { height :210px; }
+.menu li.hover { border: 0; margin-right: 0px; margin-left: -1px; position: relative; z-index: 22; -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); box-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+.menu li.hover .link { background-image: url(http://www.p5w.net/images13/layer_bg.png); background-color: transparent; padding: 0px 8px 0px 7px; text-decoration: none; margin-bottom: -1px; border: solid 1px #000; border-bottom: none; position: relative; z-index: 24; _background: #FFF; color: rgb(99, 99, 99); }
+.menu li.hover .link:hover { color: rgb(99, 99, 99); }
+.menu li.hover .link span { top: -1px; }
+.menu li.hover .link span em { border-color: rgb(99, 99, 99) transparent transparent; }
+.menu-sublist { background: url(http://www.p5w.net/images13/layer_bg.png); padding: 3px 2px; border: 1px solid #000; width: 125px; position: absolute; z-index: 21; _background: #FFF; left: 0; top: 33px; display: none; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-border-radius-bottomright: 3px; -moz-border-radius-topright: 3px; -webkit-border-bottom-right-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-right-radius: 3px; }
+.menu-sublist .solid-line { background: rgb(223, 220, 220); margin: 3px 0px; height: 1px; line-height: 1px; overflow: hidden; font-size: 0px; }
+.menu-sublist .border { padding: 4px 0px 9px 0; margin: 0 0px 0 0px; zoom: 1; background-image: url(http://www.p5w.net/images13/menu_title_bg.png); background-color: transparent; background-repeat: repeat-x; background-position: 0% 0%; }
+.menu div ul div { top: 0; left: 0; margin-left: 120px; z-index: 26; border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; }
+.menu div ul div ul { }
+.menu div ul li { padding: 0; z-index: 24; position: relative; }
+.menu div ul li span { padding-right: 60px; position: relative; z-index: 25; cursor: pointer; _zoom: 1; }
+.menu div ul li span em { border-width: 3px 0px 3px 3px; border-style: solid dashed dashed; border-color: transparent #000 transparent; top: 50%; height: 0px; right: 0px; line-height: 0; font-size: 0px; margin-top: -2px; position: absolute; cursor: pointer; }
+.menu div ul li a:hover span em { border-color: transparent #fff transparent; }
+.menu ul.ul-list { }
+.menu ul.ul-list li { width: auto; height: 25px; line-height: 25px; vertical-align: bottom; list-style:none;}
+.menu ul.ul-list li a { color: rgb(99, 99, 99); padding-left: 10px; display: block; zoom: 1; }
+.menu ul.ul-list li a:visited { color: rgb(99, 99, 99); padding-left: 10px; display: block; zoom: 1; }
+.menu ul.ul-list li a:link, .ul-list li a:active { color: rgb(99, 99, 99); }
+.menu ul.ul-list li a:hover { text-decoration: none; background-color: #b93c3c; color: #fff; }
+
+.menu .link-hover, .menu .link-hover em { background: url(http://www.p5w.net/images13/btns.gif) no-repeat; height: 28px; color: #636363; line-height: 28px; font-size: 12px; font-weight: normal; text-decoration: none; display: inline-block; cursor: pointer; background-position: -320px 0; }
+.menu .link-hover { margin-left: 3px; background-position: -320px 0; padding-left: 10px; }
+.menu .link-hover em { background-position: right -28px; height: 28px; padding-right: 10px; font-style: normal; color: #000; }
+.menu a.link-hover:hover em { background-position: right -84px; height: 28px; text-decoration: none; display: inline-block; color: #fff; }
+.menu a.link-hover:link { text-decoration: none; }
+.menu a.link-hover:visited { text-decoration: none; }
+.menu a.link-hover:hover { text-decoration: none; background-position: -320px -56px; color: #fff; }
+.menu .welcome { padding-top: 3px; height: 28px; line-height: 28px; color: #999; }
+
+.foot { width:960px; height:130px; overflow:hidden; margin:24px auto 0 auto; }
+.foot13 { color:#fff; font-family:'宋体'; font-size:12px; width:960px; margin:4px auto 0 auto; height:130px; overflow:hidden; text-align:center;}
+.foot13 a { color:#fff; text-decoration:none; }
+.foot13 a:hover { color:#c80000; text-decoration:underline; }
+.foot13 p a { color:#fff; text-decoration:none; }
+.foot13 .foot13-inner {width:900px; margin:0 auto; height:120px; overflow:hidden; }
+.foot13 .f-l { width:480px; float:left; text-align:center; margin-top:8px; }
+.foot13 .f-l p { margin:0; padding:0; line-height:20px;text-align:center;}
+.foot13 .f-r { width:330px; float:right; margin-top:8px; margin-left:10px; line-height:22px; text-align:left; }
+.foot13 .f-r a { color:#fff; text-decoration:none; }
+.foot13 .fontArial {font-family:'Arial';}
+
+.wangqi{width:1029px; height:212px; background:url(../images/wangqi.jpg) no-repeat bottom; padding:20px 0 0 0;}
+.ed_1{background-color:#759d5f;}
+
+.box01{ width:960px; margin:0 auto; clear:both; overflow:hidden;}
+.arrow1{ float:left; margin: 50px 5px 0 0; cursor:pointer;}
+.arrow2{ float:left; margin: 50px 0 0 5px; cursor:pointer;}
+.content_pics {width:885px; float:left; overflow:hidden;}
+.content_pics {padding:0px 0px;}
+.content_pics ul{padding:0;}
+.content_pics ul li{ float:left; padding:0 22px; text-align:center}
+.content_pics ul li a img {border:1px solid #ccc;}
+.content_pics ul li a:hover img {border:1px solid #336;}
+.content_pics ul li img {padding:1px; border: 1px solid #ccc; width:173px; height:118px;}
+.content_pics .title {width:173px; line-height:16px; text-align:center;}
+
+.zhengwen p { line-height:23px; margin-bottom :15px  }
+.zhengwen img {text-align:center;}
+
+
+/* list */
+.hglist { float:left; border:1px solid #666; width:620px;_width:600px;/*ie6.0*/ background-color:#FFF; padding:20px 0 20px 8px; font-family:"宋体"; margin-bottom:8px; margin-left:52px; _margin-left:30px; margin-top:5px;}
+.hglist-img { float:left; margin-right:15px; border:solid 1px #CCC;}
+.hglist-bt { float:left; font-family:"微软雅黑", "宋体"; font-size:21px; margin-bottom:6px; line-height:30px;}
+.hglist-zy { float:left; width:430px;_width:410px;/*ie6.0*/ line-height:22px; color:#888888; font-family:"宋体"}
+.hglist-time { float:left; width:97%; text-align:right; font-size:12px; color:#888;}
+
+.number {margin-top:30px; font-size:12px;}
+.viciao { margin:0 auto; padding:10px 0 0 0; text-align:center}
+.viciao p { color:#666; margin: 5px 0 0 0; *margin: 10px 0 0 0}
+.viciao a {padding: 4px 7px 4px 7px; margin-right:7px; text-decoration:none; background: #999999; color: #fff;}
+.viciao a:hover {padding: 4px 7px 4px 7px; margin-right: 7px; text-decoration: none; background: #333333; color: #fff;}
+.viciao a:active {padding: 4px 7px 4px 7px; color: #fff; margin-right: 7px; text-decoration: none; background: #333333; color: #fff;}
+.viciao span.current {padding: 4px 7px 4px 7px; font-weight: bold; margin-right: 5px; text-decoration: none; background: #333333; color: #fff;}
+.viciao span.disabled {border:#ccc 1px solid;padding: 4px 7px 4px 7px; color: #ccc; margin-right: 5px;}
+
+
+.new_1{ width:690px; text-align:center;}

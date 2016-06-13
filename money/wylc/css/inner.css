@@ -1,0 +1,45 @@
+body { color: #383838; font-family: "ËÎÌו",Tahoma; font-size: 12px; line-height: 20px; margin: 0 auto; padding: 0; text-align: left; }
+dt, dd, dl { margin: 0; padding: 0; }
+a { color: #383838; text-decoration: none; }
+    a:hover { color: #c80000; text-decoration: underline; }
+.clearfloat { display: block; clear: both; content: ""; visibility: hidden; height: 0; line-height: 0; font-size: 1px; }
+.link-ctt { color: #212121; }
+    .link-ctt:visited { color: #212121; }
+    .link-ctt:hover { color: #0071b9; }
+.qj-content { width: 250px; margin: 0 auto; }
+    .qj-content dl { border-bottom: 1px dotted #dbdbdb; }
+    .qj-content dt { height: 20px; width: 250px; line-height: 20px; }
+        .qj-content dt em { float: left; vertical-align: middle; }
+        .qj-content dt a { float: left; font-size: 12px; line-height: 20px; width: 210px; }
+    .qj-content dd { display: none; margin-left: 0; }
+    .qj-content em { display: inline-block; height: 20px; line-height: 200px; margin-right: 6px; overflow: hidden; width: 20px; }
+    .qj-content .img { float: left; width: 75px; margin-top: 8px; margin-left: 3px; display: inline; }
+    .qj-content .content { float: left; width: 165px; color: #999; }
+    .qj-content .q1,
+    .qj-content .q2,
+    .qj-content .q3,
+    .qj-content .q4,
+    .qj-content .q5,
+    .qj-content .q6,
+    .qj-content .q7,
+    .qj-content .q8,
+    .qj-content .q9,
+    .qj-content .q10 { background-image: url("../images/ctt_bridge1.png"); }
+    .qj-content .q1 { background-position: 0 -43px; }
+    .qj-content .q2 { background-position: 0 -64px; }
+    .qj-content .q3 { background-position: -4px -22px; }
+    .qj-content .q4 { background-position: -17px -85px; }
+    .qj-content .q5 { background-position: -17px -106px; }
+    .qj-content .q6 { background-position: -20px -43px; }
+    .qj-content .q7 { background-position: -21px -64px; }
+    .qj-content .q8 { background-position: -26px -22px; }
+    .qj-content .q9 { background-position: -32px 0; }
+    .qj-content .q10 { background-position: -39px -85px; }
+    .qj-content dl.selected { *height: 120px; }
+        .qj-content dl.selected dt a { margin-top: 3px; }
+    .qj-content .selected dd { display: block; padding-bottom: 15px; margin-top: 5px; }
+    .qj-content .un-selected { height: 24px; line-height: 24px; margin-top: 4px; padding: 4px 0 2px; }
+
+.udv-clearfix:after { clear: both; content: " "; display: block; height: 0; }
+
+.un-selected { clear: both; }

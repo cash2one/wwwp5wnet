@@ -1,0 +1,3 @@
+﻿function datalist() {<TRS_Documents num="50">
+    document.writeln('<li><a href="<TRS_Document field='_RECURL' UrlIsAbs='true'/>" target="_blank"><img src="<TRS_Appendix field='_RECURL' UrlIsAbs='true' MODE='PIC' INDEX='0' autolink='false' memo='FALSE' upload='true'>图片</TRS_Appendix>" width="173" height="118" /></a><div class="title"><TRS_DOCUMENT field="doctitle" target="_blank" UrlIsAbs="true">文档标题</TRS_DOCUMENT></div></li>');</TRS_Documents>
+}
