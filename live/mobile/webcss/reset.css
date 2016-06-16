@@ -58,9 +58,9 @@ input[type=checkbox]:checked:after {content: '';display: block;position: relativ
 .globalBtn:hover{ opacity:0.9; filter:alpha(opacity=90);color:#FFF;}.Disable{ background-color:#ccc !important;cursor: default;}
 
 /*---Ö±²¥---*/
-.temp-wrap{ margin:12px 3%;}.full-bg{ background-size:100% !important; display:inline-block;}.white-bg{ background-color:#FFF;border-radius: 3px;}
+.temp-wrap{ margin:12px 3%;}.temp-wrap2{ margin-bottom:20px;}.full-bg{ background-size:100% !important; display:inline-block;}.white-bg{ background-color:#FFF;border-radius: 3px;}
 #webapp img{width:100%;height:auto;display:block;}
-.box, .live-intro, .newsList, .video, .header, .banner{border-radius: 3px;}
+.box, .live-intro, .newsList, .video, .header, {border-radius: 3px;}
 .banner{ overflow:hidden;}
 .header{ height:40px; background-color:#0078d2; padding: 0 3%; margin-top:0px; margin-left:0px; margin-right:0px;border-radius: 0px;}
 .header a{ display:block;}
