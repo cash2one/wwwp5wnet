@@ -65,6 +65,12 @@
 <div class="temp-wrap">
     <a id="pagemore" href="javascript:void(0)" class="loanMore f16 gray6 tc"><i><img src="/live/mobile/webimages/refleachGray.png" width="27" height="31"></i>戳我展开更多</a>
 </div>
+<div style="clear: both; text-align: center; display:none; height: 1px; overflow: hidden;">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fed9dac8a2b525df95dc69c97bbcda470' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
 
 <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
@@ -74,6 +80,10 @@
     var share_link = location.href;
     var share_img='http://www.p5w.net/live/images/wx_lytx.jpg';
     // var share_img = $.trim($('.contentpics :last img').html());
+    var channelLogo = '<TRS_CHANNELLOGO index="2" showpic="FALSE" nameonly="FALSE" showmode="FILEPARSE" UrlIsAbs="true"></TRS_CHANNELLOGO>';
+    if (channelLogo != '') {
+        share_img = channelLogo;
+    }
 
     function shareFriend(shareTitle,descContent,lineLink) {
         wx.onMenuShareAppMessage({

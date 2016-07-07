@@ -2,7 +2,7 @@
 /*ÍøÕ¾»ù±¾¶¨Òå*/
 div,form,img,ul,ol,li,dl,dt,dd,p,tr,td,input,body,strong,span,pre{margin:0; padding:0; border:0; background-repeat:no-repeat;}
 h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0; font-weight:normal;}
-body{font-family:"Microsoft Yahei","Î¢ÈíÑÅºÚ",Arial, Helvetica, sans-serif;font-size:14px; line-height:1.6;margin:0px;padding:0px;height:auto;clear:both;color:#666;background-size: cover;}
+body{font-family:"Microsoft Yahei","Î¢ÈíÑÅºÚ",Arial, Helvetica, sans-serif;font-size:14px; line-height:1.6;margin:0px;padding:0px;height:auto;clear:both;color:#666;background-size: cover;white-space:normal;}
 img{border:0px;}
 ul,li{ list-style:none;}
 em, i{ font-style:normal;}
@@ -59,6 +59,7 @@ input[type=checkbox]:checked:after {content: '';display: block;position: relativ
 
 /*---Ö±²¥---*/
 .temp-wrap{ margin:12px 3%;}.temp-wrap2{ margin-bottom:20px;}.full-bg{ background-size:100% !important; display:inline-block;}.white-bg{ background-color:#FFF;border-radius: 3px;}
+#webapp{width:100%; overflow:hidden;word-wrap: break-word; word-break: break-all;}
 #webapp img{width:100%;height:auto;display:block;}
 .box, .live-intro, .newsList, .video, .header, {border-radius: 3px;}
 .banner{ overflow:hidden;}
