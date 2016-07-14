@@ -99,7 +99,7 @@ input[type=checkbox]:checked:after {content: '';display: block;position: relativ
 .mypages {
     display: none;
 }
-
+.video {width: 93%; height: auto; }
 
 
 

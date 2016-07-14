@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:gs="http://www.gensee.com/ec">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimnum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
@@ -11,9 +11,12 @@
     <link rel="stylesheet" type="text/css" href="/live/mobile/webcss/reset.css"/>
     <script type="text/javascript" src="http://www.p5w.net/js/jquery-1.9.1.js" charset="utf-8"></script>
     <script type="text/javascript" src="/live/mobile/webjs/func.js"></script>
+    <script type="text/javascript" src="http://static.gensee.com/webcast/static/sdk/js/gssdk.js"></script>
     <script type="text/javascript">
         var liveSrc = "<TRS_REPLACE value='视频直播地址'></TRS_REPLACE>";
         var liveTitle = "<TRS_REPLACE value='视频直播标题'></TRS_REPLACE>";
+        var liveCode = "<TRS_REPLACE value='直播码'></TRS_REPLACE>";
+        var vodCode = "<TRS_REPLACE value='回放码'></TRS_REPLACE>";
     </script>
 </head>
 
@@ -40,30 +43,30 @@
 
 <!--新闻列表-->
 <trs_documents num="200" automore="FALSE" order="wcmdocument.docid desc">
-    <div class="mypages"><trs_record num="10">
-        <div class="temp-wrap white-bg newsList">
-            <p>
-                <span class="themeBlue"><TRS_DOCUMENT field="DOCRELTIME" dateformat="HH:mm">时间</TRS_DOCUMENT></span>
-                <span class="themegrame fr"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd">日期</TRS_DOCUMENT></span>
-            </p>
-            <p class="f16 gray3"><TRS_DOCUMENT field="doctitle" autolink="false" target="_blank">文档标题</TRS_DOCUMENT></p>
-            <p class="row03">
-                <trs_document field="dochtmlcon">正文</trs_document>
+<div class="mypages"><trs_record num="10">
+    <div class="temp-wrap white-bg newsList">
+        <p>
+            <span class="themeBlue"><TRS_DOCUMENT field="DOCRELTIME" dateformat="HH:mm">时间</TRS_DOCUMENT></span>
+            <span class="themegrame fr"><TRS_DOCUMENT field="DOCRELTIME" dateformat="MM-dd">日期</TRS_DOCUMENT></span>
+        </p>
+        <p class="f16 gray3"><TRS_DOCUMENT field="doctitle" autolink="false" target="_blank">文档标题</TRS_DOCUMENT></p>
+        <p class="row03">
+            <trs_document field="dochtmlcon">正文</trs_document>
             <div class="contentpics">
                 <trs_appendix mode="pic" index="-1" autolink="false" seperator="&nbsp;" upload="false" extra='width="100%"'>附件</trs_appendix>
             </div>
-            </p>
-            <p class="line"></p>
-            <!--<p class="rowCls1">
-                <a class="gray6"><i class="icon icon01 full-bg"></i>转发</a>
-                <a class="fr gray6"><i class="icon icon02 full-bg"></i>点赞</a>
-            </p>-->
-        </div></trs_record>
-    </div>
+        </p>
+        <p class="line"></p>
+        <!--<p class="rowCls1">
+            <a class="gray6"><i class="icon icon01 full-bg"></i>转发</a>
+            <a class="fr gray6"><i class="icon icon02 full-bg"></i>点赞</a>
+        </p>-->
+    </div></trs_record>
+</div>
 </trs_documents>
 
 <div class="temp-wrap">
-    <a id="pagemore" href="javascript:void(0)" class="loanMore f16 gray6 tc"><i><img src="/live/mobile/webimages/refleachGray.png" width="27" height="31"></i>戳我展开更多</a>
+    <a id="pagemore" href="javascript:void(0)" class="loanMore f16 gray6 tc"><i><img src="/live/mobile/webimages/refleachGray.png" width="27" height="31"></i>戳我更多精彩</a>
 </div>
 <div style="clear: both; text-align: center; display:none; height: 1px; overflow: hidden;">
     <script type="text/javascript">
