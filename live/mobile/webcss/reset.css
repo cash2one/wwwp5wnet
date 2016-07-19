@@ -59,7 +59,7 @@ input[type=checkbox]:checked:after {content: '';display: block;position: relativ
 
 /*---Ö±²¥---*/
 .temp-wrap{ margin:12px 3%;}.temp-wrap2{ margin-bottom:20px;}.full-bg{ background-size:100% !important; display:inline-block;}.white-bg{ background-color:#FFF;border-radius: 3px;}
-#webapp{width:100%; overflow:hidden;word-wrap: break-word; word-break: break-all;}
+#webapp{width:100%; word-wrap: break-word; word-break: break-all;}
 #webapp img{width:100%;height:auto;display:block;}
 .box, .live-intro, .newsList, .video, .header, {border-radius: 3px;}
 .banner{ overflow:hidden;}
@@ -100,6 +100,7 @@ input[type=checkbox]:checked:after {content: '';display: block;position: relativ
     display: none;
 }
 .video {width: 93%; height: auto; }
+.video .mbody { height: 250px; }
 
 
 
