@@ -1015,6 +1015,7 @@ function mininav() {
     document.writeln("      <li><a href=\"http://irm.p5w.net\" target=\"_blank\">\u4e92\u52a8\u5e73\u53f0</a></li>");
     document.writeln("      <li><a href=\"http://www.p5w.net/yuqing/\" target=\"_blank\">\u8206\u60c5</a></li>");
     document.writeln("      <li><a href=\"http://city.wangdaizhijia.com/qj\" target=\"_blank\">\u7406\u8d22</a></li>");
+    document.writeln("      <li><a href=\"http://www.p5w.net/money/ggcj/\" target=\"_blank\">\u80a1\u54e5</a></li>");
     document.writeln("    </ul>");
     document.writeln("    <div class=\"nav_login\">");
     document.writeln("      <div class=\"loginarea\" action-type=\"loginArea\">");
